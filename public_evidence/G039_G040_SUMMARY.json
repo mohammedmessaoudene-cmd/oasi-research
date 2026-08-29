@@ -1,0 +1,24 @@
+{
+  "schema": "oasi.public.evidence.g039-g040.v1",
+  "g039": {
+    "status": "TERMINAL_HOLD_G039_MANIFEST_FORMAT_INCOMPATIBLE_NO_REPLAY",
+    "manifest_sha256": "cf0796fc04f4a0b77e9de365efb38717877c755bcf23bdc24491c6cd4be36770",
+    "modified_or_replayed": false
+  },
+  "g040": {
+    "status": "PASS_G040_PREPARED_ONLY_CLOSURE",
+    "manifest_sha256": "79dd92107cfb4bc30a0f85a2e86b606a94fce8e737650de51d40a0b036c89e9a",
+    "files": 280,
+    "directories": 21,
+    "bytes": 4155722,
+    "role_receipt_created": false,
+    "execution_binding_created": false,
+    "materialization_performed": false,
+    "build_started": false,
+    "qemu_started": false,
+    "stage7_started": false,
+    "performance_or_science_read": false,
+    "production_or_publication": false
+  },
+  "scope": "Public summary of pinned private evidence; operational identifiers and paths omitted."
+}

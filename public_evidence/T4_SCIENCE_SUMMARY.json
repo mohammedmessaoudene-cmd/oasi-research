@@ -1,0 +1,18 @@
+{
+  "schema": "oasi.public.evidence.t4-science.v1",
+  "scientific_verdict": "T4_CONSTRUCT_VALIDITY_FAILURE_CONFIRMED",
+  "t4_result": "SCIENTIFIC_NEGATIVE_CONFIRMED",
+  "mechanism_status": "MECHANISM_NOT_IDENTIFIED",
+  "paired_lives": 1000,
+  "aligned_events": 600000,
+  "control_projection_divergences": 0,
+  "broad_oasi_claim": "NOT_REFUTED_AND_NOT_DEMONSTRATED",
+  "t5_authorized": false,
+  "t5_executed": false,
+  "key_source_hashes": {
+    "claim_classification_sha256": "303ce33f98d98977627031569f871443cecd1e2a0062b4b241fca4017245be00",
+    "identifiability_certificate_sha256": "b4e9cbc6ce041b8e82352e0182b4f78ad5ad47525af90916b667f21cb9d67e24",
+    "transition_system_sha256": "2a4153649899418d44d3cdfb52b5e94a299f143dcd7b3707ec9d5459c6ccc1d6"
+  },
+  "scope": "Historical causal audit summary; raw traces are intentionally omitted."
+}

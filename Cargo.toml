@@ -1,0 +1,23 @@
+[package]
+name = "osia-core-r1"
+version = "0.1.0-research-preview"
+edition = "2024"
+rust-version = "1.97.1"
+license = "Apache-2.0 OR MIT"
+description = "Bounded user-space AERA reference runtime for OASI research"
+
+[lib]
+name = "osia_core_r1"
+path = "src/lib.rs"
+
+[[bin]]
+name = "osia-core-r1-demo"
+path = "src/bin/osia_core_demo.rs"
+
+[[bin]]
+name = "osia-core-r1-replay"
+path = "src/bin/semantic_replay.rs"
+
+[[bin]]
+name = "osia-core-r1-ledger-verify"
+path = "src/bin/ledger_verify.rs"

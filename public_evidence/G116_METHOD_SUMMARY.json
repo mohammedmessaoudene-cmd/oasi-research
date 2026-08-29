@@ -1,0 +1,27 @@
+{
+  "schema": "oasi.public.g116-method-summary.v1",
+  "status": "METHODOLOGICAL_EXAMPLE_ONLY",
+  "source_scope": "Internally reproduced fixture-only review",
+  "declared_internal_catalogue": {
+    "passed": 330,
+    "total": 330
+  },
+  "reproduced_omitted_attack_classes": [
+    "missing terminal supervisor accepted",
+    "forged direct-child identity accepted",
+    "indeterminate post-commit state later promoted",
+    "substitute child forged transition and commit evidence",
+    "action digest omitted executable and launch-context binding"
+  ],
+  "bounded_conclusion": "A green internal catalogue can omit decisive attacks; adversarial completeness must not be inferred from aggregate gate counts.",
+  "non_claims": {
+    "production_carrier_validated": false,
+    "real_build_executed": false,
+    "qemu_executed": false,
+    "stage6r_executed": false,
+    "stage7_executed": false,
+    "performance_interpreted": false,
+    "scientific_success_claimed": false,
+    "external_validation_claimed": false
+  }
+}

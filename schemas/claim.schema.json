@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/oasi/schemas/claim.schema.json",
+  "title": "OASI bounded public claim",
+  "type": "object",
+  "required": ["id", "wording", "evidence", "scope", "exclusions", "confidence"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^CL-[0-9]{3}$"},
+    "wording": {"type": "string", "minLength": 1},
+    "evidence": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/evidence"}},
+    "scope": {"type": "string", "minLength": 1},
+    "exclusions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "confidence": {"enum": ["DEFINITION", "REPRODUCED_LOCAL", "VERIFIED_HISTORICAL_AUDIT", "PINNED_EVIDENCE", "BOUNDED_INFERENCE"]}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

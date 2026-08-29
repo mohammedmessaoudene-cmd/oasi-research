@@ -1,0 +1,2110 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "creationInfo": {
+    "created": "2026-08-28T00:00:00Z",
+    "creators": [
+      "Tool: OASI deterministic metadata builder"
+    ]
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.1.0-research-preview-local-candidate",
+  "files": [
+    {
+      "SPDXID": "SPDXRef-File-0001",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fb427e17dda623ada0dd34d772fca62c147c59c019050b14fd298a19e7d5af12"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./.gitattributes",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0002",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9d8de6fde28b40539da8c92abd70804d19732bdd5b8bb872319d3b68f6981dda"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./.github/SECURITY.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0003",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "56bd614d3a6f4bfbc7eab9a0a538cedc3438a92e384580aec190328e6128ad14"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./.gitignore",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0004",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1e0aefde7cbfae11b3e305dd5b0861169a973017cb629475a05fe702b38f8f09"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./AERA_SPECIFICATION.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0005",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0dbf5cc8a455fb2b6c14e26ba1395e670a18b08195ec73b446bce618c490de0a"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./AFFILIATION_STATEMENT.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0006",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5f3452ea723591e2a49c01709bc5bc04087391c034d9d1d21a13013033703a5f"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./AI_ASSISTED_DEVELOPMENT.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0007",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "db5ad41f51754427fd8efdffc480bb873a927da133bec8093a82712e9dd85b19"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./ARCHITECTURE.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0008",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "328cb2b1dd3f0c3f753bbfe02a02668ae2935d51ae9523a14fd346d5e1b2e7cd"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./AUTHORS.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0009",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "362d1d02ca27bebc220447700b8d791d1f3f2bf6b8e9588afd87eb7a416394ea"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./CITATION.cff",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0010",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "49ae8154f6c9f2bb2a5960c8df7edad3cfc95aa7f402df326f9aa501698fafb6"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./CLAIMS_AND_EVIDENCE.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0011",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f5e7ee1c119ee950c1202a6116cb9380beeea3272e575d241cde869f3d16d28f"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./CONTRIBUTING.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0012",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a35ec3874220d884c6b59c0a3310d25e476607a9532495e636f3d07ba4533114"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./COPYRIGHT.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0013",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d57e75e158f26a9adcfe91d3e78f1ce0d6ac46a36012207803d82261fa03a28a"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./Cargo.lock",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0014",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4e33980b42aeb06164ff0a22e660a6ef20a96f71eb10f92e5a6b34306113efe0"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./Cargo.toml",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0015",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f4ddd464c4364559510569cf2dfc74fe30544dd54f25c5ff5333fe6916aa8cdd"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./KNOWN_LIMITATIONS.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0016",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./LICENSE",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "LicenseRef-License-Document",
+      "licenseInfoInFiles": [
+        "LicenseRef-License-Document"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0017",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./LICENSES/Apache-2.0.txt",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "LicenseRef-License-Document",
+      "licenseInfoInFiles": [
+        "LicenseRef-License-Document"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0018",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./LICENSES/CC-BY-4.0.txt",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "LicenseRef-License-Document",
+      "licenseInfoInFiles": [
+        "LicenseRef-License-Document"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0019",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./LICENSES/MIT.txt",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "LicenseRef-License-Document",
+      "licenseInfoInFiles": [
+        "LicenseRef-License-Document"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0020",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c33801c676cd307e76fc7ca3975ad789605af149a622a4ecf3ce59da85752035"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./LICENSING.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0021",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d4de974e26301d0764a641c013433a4f17591b20852b560445926cda57127738"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./LICENSING_DECISION.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0022",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c9405ce056bebf24597bfbfd268bcb82e313572611c633fb2ea9071c1d420ed1"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./NEGATIVE_RESULTS.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0023",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "da83f29cce98f4a51643fd777d1a2cfa7a97d1662de50b5d0d3598b70d3762c3"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./OASI_PHILOSOPHY.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0024",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e977bd9bdd71a6d719e8775aee74f2b8b085c7e297ff26a84c5b0619b2809abe"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0025",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7a8097a563086e30a901fbf67e8f4745aee075a0e1de282cded6cd3178a338c6"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./PUBLICATION_STATUS.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0026",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e63d9dd087bbea09f1c5313bd324ee10d90197e1e596b0ec98213c2751f74e75"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./README.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0027",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ce48ff809941974c60b08c0f1d622fb4d2c9cf7eff95fa3c146a2228b56edbde"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./README_FR.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0028",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "46a783f8b9caaf6b0b07a0de6ad14451ac14c6c571cb47318f799471f8c1a94d"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./RELEASE_NOTES.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0029",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bcbd4c539a22c2b0c9ed32147b14e1a8673457245980c3fdef408678175cc5a2"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./REPRODUCIBILITY.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0030",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e6fa5531aeb839fd42e1b654c57bce3421e06e490bebd22d143f0349159ae0ae"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./ROADMAP.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0031",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3ca9862e037401b724c1a2348ce78cac619b3785eea542954a1ab77f982cf9ee"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./SECURITY.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0032",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "785513a7f120666cf09cadf0b9207bd24ba3bf7f7c5a54f746d34c1b31783e9c"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./THIRD_PARTY_NOTICES.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0033",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "df443b84fb1846eeaeeb7886ffd31f9305c5cd3fceb4b8f1ea98bd1dc726e8b4"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./THREAT_MODEL.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0034",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2c888d376716967f97ab695e57ff54f2178500d4763dc46992a41c6d9326a1a3"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./examples/README.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0035",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d899b31a2d3193c010c331323c752a59bbd35c036b69e5af2b56490fa46632bf"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/ABSTRACT_FR.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0036",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fe16f56630186e28e35bcc18460684756f13c992ec1a7b77369e274cbd2c3f01"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/CLAIMS_AND_EVIDENCE_V0_3.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0037",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4171f8e0b1b5094c6bc6fb1542f2224c181313bef650781152698eab89e7b711"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/LICENSE.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0038",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d23939b8908d3ac2db9360e610a1af2033b4a98a6b7910aaffff4257ede33192"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_3.pdf",
+      "fileTypes": [
+        "BINARY"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0039",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8b7571060312c11739755d4bc32b4b7dfa950414656b5df7f5878561b1d55111"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/README.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0040",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bd6f49f8154a8a28f3bba304c9237457a89aebbd7125dc6088a0fb93e61c668a"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/RESPONSE_TO_REVIEWER_2_V0_3.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0041",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "06f4bf0e34e40604efa97c756230e6708c9e4289b651a93fce0d8e3a59eaff49"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/RESULTS_INSERTION_PROTOCOL_V0_3.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0042",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8bee2d7b52254ad4aafb0cbf04e8fff84932a4267b887fb84dc11c5ebf6cec49"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/REVIEWER_2_REPORT_V0_3.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0043",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "24a690cfceb8f863ef9a59a3ac2672730c5fae42f801ae38fe16b6e6622a6d9e"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig1_layered_vs_organismic.pdf",
+      "fileTypes": [
+        "BINARY"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0044",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a169f4021ee4ffb654d50916503194a9582535cb27a3b96d5b8f4ad2ccb6cedb"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig1_layered_vs_organismic.svg",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0045",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e5c1cd1803343921e825cb6da520f5b8bdd8d466c5898889be0461b26efaae61"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig1_layered_vs_organismic.tex",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0046",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a9f87958959f99f9acd3e0841a4979a94be83c09397dbe9fb88cf63ee827f0ff"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig2_cognition_reflex_aera.pdf",
+      "fileTypes": [
+        "BINARY"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0047",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "02de63237aef7f7dc49e43ac3bbee7e32bfc9d0778ddb9a1574076e318eb43e3"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig2_cognition_reflex_aera.svg",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0048",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9dcd78cabc7c54e14eb8e1beeacb5d275deab07d4e655b1c6419995862eeb928"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig2_cognition_reflex_aera.tex",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0049",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b6ac7deeee07a15eb72e7faf066bced7f221bbec99f050ef0f743e3f50515d1d"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig3_authority_lifecycle.pdf",
+      "fileTypes": [
+        "BINARY"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0050",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d11a015e308e809e6b594f9e089693b4d242b6ae5cd93416559eaf71742bdbdd"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig3_authority_lifecycle.svg",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0051",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "30f1ca4000e3602d2f221b36ab646171bfd4cfed04a35ae43a24ab7d964fcb31"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig3_authority_lifecycle.tex",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0052",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e19f9bbdd89e6e180892601c7f12f81f37fc44c3bd60f9275811990aaad403c0"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig4_evidence_ladder.pdf",
+      "fileTypes": [
+        "BINARY"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0053",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5c68b79e7d480e9dcacea1d5d2f49140a074b6562232f9838d5ee278516a0ec3"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig4_evidence_ladder.svg",
+      "fileTypes": [
+        "OTHER"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0054",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a0067c3f1508f4fbcc620ee25c55eb3d5506c95ffa54cb4bb357e374f0832927"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/figures/fig4_evidence_ladder.tex",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0055",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "77fafcbf12c2a8d4c639cd7001671fe9a95ccd0881520572084fe6ccdbefa6dc"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/main.tex",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0056",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "70c13f3e02842d098f2b036922b6fa0d1485fcaa42416d3ac19d0af8ad591686"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./paper/v0.3/source/references.bib",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0057",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "050a2e8979f226822f8f16498a96cacccdfb0fce2e753b3a8cacef6903ac0d06"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./public_evidence/CLAIMS_EVIDENCE_LEDGER.json",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0058",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "067d96b7bd08ffebfb2f7a7293238a9fcf16d7efef89c273c6eae6750a466631"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./public_evidence/G039_G040_SUMMARY.json",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0059",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b14ba6e165eaa8377777e0db5b9f321068caab760a0c3fb505cd2cdd6fd84193"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./public_evidence/G116_METHOD_SUMMARY.json",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0060",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cdff970527790de19adec3273acad4b05ddce4fdcf877e5624a0faee6be721e5"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./public_evidence/PRIVATE_EVIDENCE_OMISSIONS.md",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0061",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c8e7a50271d9db0394180feff51d3ead07cdefa1166fce736cc60b070b79b3f0"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./public_evidence/R3_ENGINEERING_SUMMARY.json",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0062",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "675f4dc025951878e58e194333bc90281f3b47c1f79df5893ca8af8521d62e1d"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./public_evidence/SOURCE_PROVENANCE.json",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0063",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "25ec09176c4dedf7f4f04b126cf921656003d80cd7d970796b0a0567bc4e61ab"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./public_evidence/T4_SCIENCE_SUMMARY.json",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0064",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "26764e210ddc882e8e2f1eb2d049bb77d614e849c1fe46aa45296287eeab3cb9"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./schemas/claim.schema.json",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0065",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bd968d35fc92129e36119594986b3cca4005f69fddbb06fd370568ef93113161"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./src/bin/ledger_verify.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0066",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "512762d86d45e03e351bdb1e8584d3c051bbbdb141e1d9bf5941ff316fabe669"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./src/bin/osia_core_demo.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0067",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9f2b487141d5d0dbfde81d82602f7ba17b377f25af8211f9548944b89ea062d6"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./src/bin/semantic_replay.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0068",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eb2a8dbca3f833c621dcbeb11158eabd21a20e61b3a51b0ce9f09c8473334d36"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./src/ledger.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0069",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "44125bce2a23f56f24d385af88e4f95213a1362f524100fb66a6e7ddaacc4f8b"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./src/lib.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0070",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d40e12310c617a0e9bc3b4c2279e119479454224cfa50f4073b3d27bc1d724dd"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./src/model.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0071",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "91467c490befb12714d774831f8bc5717982bccd63670ad61b8bd76e3150f63f"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./src/protocol.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0072",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "dea05dd73bcb318b62a5d739e1c3bc359c6fadaaa4c08525d3c993fc588b91a8"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./src/runtime.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0073",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "124cf03c80bc20b6cf72ca972e7dce05463995bccb0d51cf8ff39243e23ce22c"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tests/authority.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0074",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5a1f77b7eddc9525bd79310c493e77ef7e55bf80e5c4c3c3690345f0c71a23c9"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tests/authority_transaction.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0075",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "960c49a85a9cee601d8ff9a60032405daf71b761ecfd563fb6d6812c89a03898"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tests/child_fail_closed.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0076",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "618b3b4c552a978ed6352d8e2c1431537c6f3e59ced7bba03e7b7d9b8322b1c0"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tests/ledger.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0077",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c23a0b8d39d04f289ac4ce19595ca0108f4904bcf39c5bdb01c75fba16b335cf"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tests/protocol.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0078",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "585d3a83d11d961c07555ea63fb8f7418b9aae1d8b141d499412b21c93aa9f0a"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tests/r1_r5_extreme.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0079",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3fc3604e3dd1eed559e369a9a83e7ee19605c5439a2b79bbe537b77ecfc0e088"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tests/runtime_io_assurance.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0080",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "21374991896138f31cfdeab580d332b6f6f9130e622fbe8f7fbf3d5532f0052d"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tests/wake_safety_equivalence.rs",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0 OR MIT",
+      "licenseInfoInFiles": [
+        "Apache-2.0 OR MIT"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0081",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e699fda26683e8c2e5f0871ce559682a2c37befadfa523eed782194901f7cbd0"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tools/build_article.ps1",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0082",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "09c70437503d0935fdf1bc35f119c7aae1d95e7a06f0cb595a92f7460459ff55"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tools/build_article.sh",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0083",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "743dd0a003116b6922c9c756bf0c8763571a7848ce1f2006995ced083d22e486"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tools/build_deterministic_zip.py",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0084",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3408fa312f53e1bb3bdeca799e15c89447fb1a42f11e09c11e6d7111417b0196"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tools/rebuild_release_metadata.py",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0085",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2adb47cb98e9df8a5d3073c4582319a3674474bf44d4d9062ff05a460bc8d06c"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tools/run_tests.ps1",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0086",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bd8942a3251108ca636cb1c6a013f6fe8e3f2e36e318fb6742fb35a69e060d34"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tools/run_tests.sh",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-File-0087",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "53756e86ea32a28dcc7e082d39b14f804882a04a118efaf867a4fc23f7725ae1"
+        }
+      ],
+      "copyrightText": "NOASSERTION",
+      "fileName": "./tools/verify_release.py",
+      "fileTypes": [
+        "SOURCE"
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ]
+    }
+  ],
+  "name": "OASI-AERA-v0.1.0-research-preview-SBOM",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-OASI",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "OASI-AERA research preview",
+      "versionInfo": "0.1.0-research-preview"
+    },
+    {
+      "SPDXID": "SPDXRef-Tool-01",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "Python",
+      "versionInfo": "3.11.9"
+    },
+    {
+      "SPDXID": "SPDXRef-Tool-02",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "Rust",
+      "versionInfo": "1.97.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Tool-03",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "Cargo",
+      "versionInfo": "1.97.1"
+    },
+    {
+      "SPDXID": "SPDXRef-Tool-04",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "Git for Windows",
+      "versionInfo": "2.55.0.windows.5"
+    },
+    {
+      "SPDXID": "SPDXRef-Tool-05",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "MiKTeX-pdfTeX",
+      "versionInfo": "4.23"
+    },
+    {
+      "SPDXID": "SPDXRef-Tool-06",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "Biber",
+      "versionInfo": "2.21"
+    },
+    {
+      "SPDXID": "SPDXRef-Tool-07",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "Poppler-pdfinfo",
+      "versionInfo": "26.05.0"
+    },
+    {
+      "SPDXID": "SPDXRef-Tool-08",
+      "copyrightText": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "name": "Poppler-pdffonts",
+      "versionInfo": "24.04.0"
+    }
+  ],
+  "relationships": [
+    {
+      "relatedSpdxElement": "SPDXRef-File-0001",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0002",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0003",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0004",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0005",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0006",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0007",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0008",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0009",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0010",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0011",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0012",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0013",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0014",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0015",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0016",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0017",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0018",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0019",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0020",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0021",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0022",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0023",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0024",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0025",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0026",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0027",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0028",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0029",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0030",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0031",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0032",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0033",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0034",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0035",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0036",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0037",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0038",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0039",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0040",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0041",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0042",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0043",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0044",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0045",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0046",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0047",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0048",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0049",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0050",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0051",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0052",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0053",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0054",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0055",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0056",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0057",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0058",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0059",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0060",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0061",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0062",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0063",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0064",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0065",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0066",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0067",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0068",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0069",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0070",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0071",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0072",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0073",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0074",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0075",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0076",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0077",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0078",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0079",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0080",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0081",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0082",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0083",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0084",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0085",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0086",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    },
+    {
+      "relatedSpdxElement": "SPDXRef-File-0087",
+      "relationshipType": "CONTAINS",
+      "spdxElementId": "SPDXRef-Package-OASI"
+    }
+  ],
+  "spdxVersion": "SPDX-2.3"
+}

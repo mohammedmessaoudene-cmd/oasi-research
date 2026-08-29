@@ -1,0 +1,161 @@
+{
+  "claims": [
+    {
+      "confidence": "DEFINITION",
+      "evidence": [
+        {
+          "path": "OASI_PHILOSOPHY.md",
+          "sha256": "da83f29cce98f4a51643fd777d1a2cfa7a97d1662de50b5d0d3598b70d3762c3"
+        }
+      ],
+      "exclusions": [
+        "Not a completed system or scientific validation."
+      ],
+      "id": "CL-001",
+      "scope": "Program definition.",
+      "wording": "OASI is a research program for developmental OS-AI integration."
+    },
+    {
+      "confidence": "REPRODUCED_LOCAL",
+      "evidence": [
+        {
+          "path": "Cargo.toml",
+          "sha256": "4e33980b42aeb06164ff0a22e660a6ef20a96f71eb10f92e5a6b34306113efe0"
+        },
+        {
+          "path": "src/runtime.rs",
+          "sha256": "dea05dd73bcb318b62a5d739e1c3bc359c6fadaaa4c08525d3c993fc588b91a8"
+        },
+        {
+          "path": "tests/authority_transaction.rs",
+          "sha256": "5a1f77b7eddc9525bd79310c493e77ef7e55bf80e5c4c3c3690345f0c71a23c9"
+        }
+      ],
+      "exclusions": [
+        "No kernel, hypervisor, hardware, production, or universal security claim."
+      ],
+      "id": "CL-002",
+      "scope": "Shipped source and finite public tests.",
+      "wording": "The shipped Rust crate implements a bounded user-space AERA reference mechanism."
+    },
+    {
+      "confidence": "REPRODUCED_LOCAL",
+      "evidence": [
+        {
+          "path": "AERA_SPECIFICATION.md",
+          "sha256": "1e0aefde7cbfae11b3e305dd5b0861169a973017cb629475a05fe702b38f8f09"
+        },
+        {
+          "path": "src/model.rs",
+          "sha256": "d40e12310c617a0e9bc3b4c2279e119479454224cfa50f4073b3d27bc1d724dd"
+        },
+        {
+          "path": "tests/authority_transaction.rs",
+          "sha256": "5a1f77b7eddc9525bd79310c493e77ef7e55bf80e5c4c3c3690345f0c71a23c9"
+        }
+      ],
+      "exclusions": [
+        "Not a formal proof for all environments."
+      ],
+      "id": "CL-003",
+      "scope": "Finite user-space reference model.",
+      "wording": "The tested design binds authority to body, epoch, generation, certificate, principal, resource, and action and revalidates it at commit."
+    },
+    {
+      "confidence": "VERIFIED_HISTORICAL_AUDIT",
+      "evidence": [
+        {
+          "path": "public_evidence/T4_SCIENCE_SUMMARY.json",
+          "sha256": "25ec09176c4dedf7f4f04b126cf921656003d80cd7d970796b0a0567bc4e61ab"
+        }
+      ],
+      "exclusions": [
+        "No general theorem about all organismic architectures."
+      ],
+      "id": "CL-004",
+      "scope": "Historical frozen T4 domain.",
+      "wording": "T4 produced a negative result: shared state alone did not establish decision superiority in the frozen task."
+    },
+    {
+      "confidence": "VERIFIED_HISTORICAL_AUDIT",
+      "evidence": [
+        {
+          "path": "public_evidence/T4_SCIENCE_SUMMARY.json",
+          "sha256": "25ec09176c4dedf7f4f04b126cf921656003d80cd7d970796b0a0567bc4e61ab"
+        }
+      ],
+      "exclusions": [
+        "Does not convert a negative result into positive OASI evidence."
+      ],
+      "id": "CL-005",
+      "scope": "Historical causal/source audit.",
+      "wording": "T4 had construct-validity limits and did not operationalize broad organismic non-separability."
+    },
+    {
+      "confidence": "BOUNDED_INFERENCE",
+      "evidence": [
+        {
+          "path": "public_evidence/T4_SCIENCE_SUMMARY.json",
+          "sha256": "25ec09176c4dedf7f4f04b126cf921656003d80cd7d970796b0a0567bc4e61ab"
+        },
+        {
+          "path": "KNOWN_LIMITATIONS.md",
+          "sha256": "f4ddd464c4364559510569cf2dfc74fe30544dd54f25c5ff5333fe6916aa8cdd"
+        }
+      ],
+      "exclusions": [
+        "No feasibility or superiority claim."
+      ],
+      "id": "CL-006",
+      "scope": "Inference from the bounded experimental design.",
+      "wording": "The broad OASI thesis remains neither demonstrated nor refuted."
+    },
+    {
+      "confidence": "PINNED_EVIDENCE",
+      "evidence": [
+        {
+          "path": "public_evidence/G039_G040_SUMMARY.json",
+          "sha256": "067d96b7bd08ffebfb2f7a7293238a9fcf16d7efef89c273c6eae6750a466631"
+        }
+      ],
+      "exclusions": [
+        "No repaired or replayed G039 claim."
+      ],
+      "id": "CL-007",
+      "scope": "Pinned G039/G040 report summary.",
+      "wording": "G039 is immutable HOLD/NO-REPLAY history."
+    },
+    {
+      "confidence": "PINNED_EVIDENCE",
+      "evidence": [
+        {
+          "path": "public_evidence/G039_G040_SUMMARY.json",
+          "sha256": "067d96b7bd08ffebfb2f7a7293238a9fcf16d7efef89c273c6eae6750a466631"
+        }
+      ],
+      "exclusions": [
+        "No build, QEMU, Stage 7, performance, science, production, or publication."
+      ],
+      "id": "CL-008",
+      "scope": "Pinned G040 report summary.",
+      "wording": "G040 is prepared-only technical closure."
+    },
+    {
+      "confidence": "INTERNALLY_REPRODUCED_METHOD",
+      "evidence": [
+        {
+          "path": "public_evidence/G116_METHOD_SUMMARY.json",
+          "sha256": "b14ba6e165eaa8377777e0db5b9f321068caab760a0c3fb505cd2cdd6fd84193"
+        }
+      ],
+      "exclusions": [
+        "No carrier validation, real build, QEMU, production, or scientific-success claim."
+      ],
+      "id": "CL-009",
+      "scope": "Sanitized G116 fixture-only methodological summary.",
+      "wording": "A green internal gate catalogue can omit decisive adversarial cases."
+    }
+  ],
+  "forbidden_claims_reviewed": true,
+  "schema": "oasi.public.claims-evidence.v2"
+}

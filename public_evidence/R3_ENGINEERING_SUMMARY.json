@@ -1,0 +1,12 @@
+{
+  "schema": "oasi.public.evidence.r3-engineering.v1",
+  "source_generation": "rc2-musl-h06-g3",
+  "status": "PERFECT_WITHIN_DECLARED_USER_SPACE_SCOPE",
+  "runtime_sha256": "ec9a35485a2a7615940f781fc0e3a2f999a79ec42d39800446549bd02e199821",
+  "release_zip_sha256": "8f9fa198eabafc8b1ef86c8820f88d3e7695235a64edfe9e979d6d7fe89bafcb",
+  "applicable_engineering_gates_passed": 176,
+  "production_ready": false,
+  "oasi_complete": false,
+  "human_external_reproduction": false,
+  "scope": "Finite declared user-space gate system; historical evidence summary only."
+}
