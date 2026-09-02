@@ -1,0 +1,10 @@
+{
+  "cells": 40,
+  "conclusion": "MECHANISM_ADVANTAGE_NOT_ESTABLISHED_AGAINST_B3",
+  "network_calls": 0,
+  "oasi_safety_violations": 0,
+  "raw_sha256": "9a089564929e989fc1e7e1bab44ff9a2e11633e8e93f53b1904bea523e31a0fd",
+  "runs": 1200,
+  "schema": "oasi.s5.independent-verification.v1",
+  "status": "PASS"
+}

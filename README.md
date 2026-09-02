@@ -10,45 +10,83 @@
 
 OASI is a research program exploring the thesis that operating-system activity, embodiment, system organization, and intelligence may form one developmental causal history: `OS = AI = continuous activity of one artificial organism`.
 
-This `v0.1.0-research-preview` does **not** demonstrate that complete vision. It publishes the narrower and more mature AERA contribution: a user-space reference design in which authority is bound to a body identity, epoch, generation, certificate, principal, resource, action, and expiration, then revalidated when an effect commits.
+This `v0.2.0-research-preview` does **not** demonstrate that complete vision. It publishes the bounded AERA reference contribution and adds two local deterministic effect-boundary simulations. Their combined conclusion is negative or diagnostic: S5 does not establish an advantage over a cooperative idempotent receiver, and S6 exposes a retry-versus-omission tradeoff without isolating an OASI-specific advantage.
 
 ## What is included
 
 - a bounded Rust reference runtime and its public tests;
 - the AERA specification and threat model;
-- the v0.3 preprint, source, bibliography, and vector figures;
+- the v0.4 preprint, source, bibliography, and vector figures;
+- the sealed S5/S6 raw records, runners relocatable on Linux/WSL and qualified
+  on WSL1 x86_64, detached aggregate checkers,
+  tests, protocols, environment record, and data dictionary;
 - an exact claims-to-evidence ledger;
 - the negative T4 result and construct-validity diagnosis;
 - reproducibility, licensing, security, and supply-chain documentation;
 - public evidence summaries and hashes for larger private evidence.
 
-The Rust crate retains the historical package name `osia-core-r1`; the public research program and architecture are named OASI/AERA.
+The Rust crate retains the historical package name `osia-core-r1` and crate
+version `0.1.0-research-preview` because its code is unchanged. Version `v0.2`
+identifies the aggregate research release that adds the S5/S6 evidence and
+article v0.4; the public research program and architecture are named OASI/AERA.
 
-## Persistent identifiers
+## Current persistent identifiers (v0.2/v0.4)
 
-- Scientific preprint: [doi:10.5281/zenodo.22151556](https://doi.org/10.5281/zenodo.22151556)
-- Software research preview: [doi:10.5281/zenodo.22151560](https://doi.org/10.5281/zenodo.22151560)
+- Scientific preprint v0.4: [doi:10.5281/zenodo.22262138](https://doi.org/10.5281/zenodo.22262138)
+- Aggregate software/data preview v0.2: [doi:10.5281/zenodo.22262143](https://doi.org/10.5281/zenodo.22262143)
+
+These distinct version-specific DOI values were reserved before the final
+artifact build. Each resolves through Zenodo once its corresponding record is
+public; the software and article records remain separate because their
+licensing scopes differ.
+
+## Historical persistent identifiers (v0.1)
+
+- Prior scientific preprint v0.3: [doi:10.5281/zenodo.22151556](https://doi.org/10.5281/zenodo.22151556)
+- Prior software research preview v0.1: [doi:10.5281/zenodo.22151560](https://doi.org/10.5281/zenodo.22151560)
 - Source repository: <https://github.com/mohammedmessaoudene-cmd/oasi-research>
 
-The two Zenodo records are separate because the preprint is licensed CC BY 4.0
-while the software archive uses the path-specific license map described below.
+These two historical Zenodo records remain identifiers for v0.1 materials and
+do not identify this v0.2/v0.4 release.
 
 ## Quick verification
 
-Full-suite requirements: Linux, Rust/Cargo 1.97.1, and Python 3.11 or later. A bounded Windows/GNU subset is provided separately because several assurance tests intentionally inspect Linux `/proc` and `/bin` behavior.
+The qualified full-suite wrapper requires Linux x86_64, the exact Rust/Cargo
+1.97.1 builds recorded in `TOOLCHAIN_PROVENANCE.json`, and exactly CPython
+3.12.3, PyYAML 6.0.1, cryptography 41.0.7, and SQLite 3.45.1. A bounded
+Windows/GNU subset uses the separately pinned publication environment because
+several assurance tests intentionally inspect Linux `/proc` and `/bin`
+behavior. Other Python 3.11+ environments may be useful for exploratory manual
+reproduction, but they are outside the qualified wrapper surface.
 
 ```text
-cargo test --locked --all-targets
-python -I -B tools/verify_release.py .
+sh tools/run_tests.sh post-doi
 ```
 
-On Windows, run `powershell -File tools/run_tests.ps1` for the portable subset and public verifier; that result must not be reported as the full Linux suite. The verifier checks the manifest, claim schema, allowlist, license inventory, SBOM coverage, article files, and forbidden public-data patterns. It distinguishes symbolic protocol fields such as `nonce` from leaked operational authorization values.
+The `post-doi` phase requires the final, distinct software and article DOI
+records above. On Windows, run
+`powershell -File tools/run_tests.ps1 post-doi` for the bounded Rust subset and
+read-only S5/S6 data checks; that result must not be reported as the full Linux
+suite or as S5/S6 execution qualification. The verifier checks the manifest,
+claim schema, allowlist, license inventory, SBOM coverage, article files, and
+forbidden public-data patterns. It distinguishes symbolic protocol fields such
+as `nonce` from leaked operational authorization values.
 
 ## Scope
 
 The implementation exercises a finite user-space model and tests fail-closed behavior, bound authority, ledgers, protocol parsing, rollback, child isolation, and wake-safety equivalence. It is not a kernel, hypervisor, complete operating system, production safety case, formal proof of universal security, or evidence of consciousness.
 
 See [Claims and evidence](CLAIMS_AND_EVIDENCE.md), [limitations](KNOWN_LIMITATIONS.md), [negative results](NEGATIVE_RESULTS.md), and the [French overview](README_FR.md).
+
+## S5/S6 scientific update
+
+The release contains 2,700 retained deterministic records across 90 cells.
+The 30 repetitions per cell are implementation-stability traces, not
+independent population samples. The fault labels are simulated control-flow
+traces, not physical power loss, killed processes, severed sockets, or storage
+tears. No inferential probability, exactly-once, production, performance,
+external-replication, or general-superiority claim is made. See
+[S5/S6 results and boundary](SCIENTIFIC_RESULTS_S5_S6.md).
 
 ## Publication and provenance status
 
@@ -62,4 +100,4 @@ The release preserves the historical source declaration:
 - original documentation, specifications, paper, and public evidence: `CC-BY-4.0`;
 - OASI name and any future logo: trademark rights reserved; no registration is claimed.
 
-AGPL is not applied retroactively to v0.1. A future clean-slate runtime may consider it only after a new chain-of-title and compatibility audit. No third-party source tree is vendored. See [LICENSING.md](LICENSING.md).
+AGPL is not applied retroactively. A future clean-slate runtime may consider it only after a new chain-of-title and compatibility audit. No third-party source tree is vendored. See [LICENSING.md](LICENSING.md).

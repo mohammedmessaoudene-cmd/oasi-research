@@ -1,0 +1,18 @@
+{
+  "schema": "oasi.public.s6-science-summary.v1",
+  "status": "DIAGNOSTIC_POLICY_TRADEOFF_MECHANISM_SPECIFIC_ADVANTAGE_NOT_ESTABLISHED",
+  "local_only": true,
+  "fixture_only": true,
+  "deterministic_trace_simulation": true,
+  "measured_records": 1500,
+  "cells": 50,
+  "repetitions_per_cell": 30,
+  "post_effect_ambiguity": {"redispatch_duplicates": 60, "redispatch_records": 60, "oasi_duplicates": 0, "oasi_records": 60},
+  "pre_effect_ambiguity": {"prepared_aborts": 30, "post_consumed_blocks": 60, "oasi_omissions": 90, "oasi_records": 90, "redispatch_omissions": 0, "redispatch_records": 90},
+  "raw_sha256": "e21c6c9cd551b599768ef9451e07d7f1b079b95d598ef1068840c8b8fb5503a9",
+  "summary_sha256": "c81f24834192ebf53d3f3b106b056de90a04510cb3d9258a12a1027724093f31",
+  "result_manifest_sha256": "cd92e30cf7c9113da9d69a1313ae0308486ca06964aec0841f488dcdc35df303",
+  "publication_interpretation": "The observed difference is a retry-versus-no-retry safety/availability policy tradeoff. S6 lacks a policy-matched at-most-once baseline and does not establish an OASI-specific advantage.",
+  "excluded_claims": ["Wilson population inference", "real crash or disconnect", "physical torn write", "universal exactly-once", "production", "external replication", "general superiority"]
+}
+

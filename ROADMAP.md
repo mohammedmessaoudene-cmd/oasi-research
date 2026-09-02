@@ -1,12 +1,14 @@
 # Roadmap
 
-## Near term
+## Near term after v0.2
 
-- obtain explicit ownership, affiliation, funding, and patent-impact decisions;
-- publish the bounded `v0.1.0-research-preview` only after digest-bound human approval;
 - obtain independent external reproduction of the public test suite;
 - stabilize AERA terminology and a versioned conformance schema;
 - add reproducible Linux CI without weakening current tests.
+- add a policy-matched durable at-most-once baseline to the non-cooperative
+  sink comparison;
+- inject real process death, socket disconnection, and storage faults while
+  preserving independently checkable per-run evidence;
 
 ## Research
 

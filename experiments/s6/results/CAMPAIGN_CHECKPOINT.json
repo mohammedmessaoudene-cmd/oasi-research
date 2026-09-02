@@ -1,0 +1,17 @@
+{
+  "completed_cases": [
+    "nominal",
+    "replay",
+    "cross_generation",
+    "altered_signature",
+    "crash_prepared",
+    "crash_consumed_before_effect",
+    "disconnect_before_effect",
+    "disconnect_after_effect",
+    "ack_lost_after_effect",
+    "torn_write_after_effect"
+  ],
+  "measured_runs": 1500,
+  "schema": "oasi.s6.campaign-checkpoint.v1",
+  "warmups_done": 250
+}

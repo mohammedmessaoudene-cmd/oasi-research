@@ -1,25 +1,20 @@
 cff-version: 1.2.0
-message: "If you use this research preview, please cite the software and the accompanying report."
-title: "OASI / AERA research preview"
+message: "If you use this research preview, please cite the aggregate release and the accompanying article."
+title: "OASI/AERA: Bounded User-Space Research Preview"
 type: software
 authors:
   - family-names: "Messaoudene"
     given-names: "Mohammed"
     orcid: "https://orcid.org/0009-0007-4665-2548"
     affiliation: "Belhadj Bouchaib University of Ain Temouchent, Algeria"
-version: "0.1.0-research-preview"
-date-released: "2026-08-29"
+version: "0.2.0-research-preview"
 repository-code: "https://github.com/mohammedmessaoudene-cmd/oasi-research"
-url: "https://doi.org/10.5281/zenodo.22151560"
+date-released: "2026-09-02"
+url: "https://doi.org/10.5281/zenodo.22262143"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.22151560"
-    description: "Software research preview"
-  - type: doi
-    value: "10.5281/zenodo.22151556"
-    description: "Accompanying scientific preprint"
-license: "Apache-2.0 OR MIT"
-abstract: "Bounded user-space AERA reference runtime, specification, negative T4 result, and explicit limitations for the OASI research program."
+    value: "10.5281/zenodo.22262143"
+abstract: "Bounded user-space AERA reference runtime and specification for the OASI research program, with negative T4 and S5 results, a diagnostic S6 safety-availability tradeoff, path-specific licensing, and explicit claim limitations."
 keywords:
   - OASI
   - AERA
@@ -35,5 +30,5 @@ preferred-citation:
       given-names: "Mohammed"
       orcid: "https://orcid.org/0009-0007-4665-2548"
   year: 2026
-  version: "0.3-preprint"
-  doi: "10.5281/zenodo.22151556"
+  version: "0.4-preprint"
+  doi: "10.5281/zenodo.22262138"

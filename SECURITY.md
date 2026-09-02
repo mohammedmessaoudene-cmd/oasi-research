@@ -8,7 +8,13 @@ Security reports should concern the source in the tagged research preview and in
 
 ## Reporting
 
-Until a dedicated private reporting channel is published, prepare a minimal encrypted or private report and contact the project owner through the future repository's private security-advisory feature. Do not create a public issue containing a secret or exploit.
+Send an initial, minimal, non-sensitive report to
+`mohammed.messaoudene@univ-temouchent.edu.dz`. Do not include credentials,
+personal data, operational authorization material, or exploit details in that
+first message. If a private exchange is needed, agree on a channel explicitly.
+This policy promises neither encryption, a response time, an embargo, a bounty,
+nor acceptance of a report. Do not create a public issue containing a secret or
+exploit.
 
 ## Safe testing
 

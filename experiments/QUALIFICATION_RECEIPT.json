@@ -1,0 +1,63 @@
+{
+  "schema": "oasi.s5-s6.public-runner-qualification.v1",
+  "date_utc": "2026-09-02",
+  "classification": "project-controlled local qualification; not external replication",
+  "scope": "Linux/WSL1 x86_64, fixture-only, offline",
+  "environment": {
+    "architecture": "x86_64",
+    "kernel": "4.4.0-26100-Microsoft",
+    "python": "CPython 3.12.3",
+    "pyyaml": "6.0.1",
+    "cryptography": "41.0.7",
+    "sqlite": "3.45.1",
+    "rustc": "1.97.1 (8bab26f4f 2026-07-14)",
+    "cargo": "1.97.1 (c980f4866 2026-06-30)",
+    "rust_host": "x86_64-unknown-linux-gnu"
+  },
+  "rust_toolchain_source": {
+    "url": "https://static.rust-lang.org/dist/rust-1.97.1-x86_64-unknown-linux-gnu.tar.xz",
+    "bytes": 201303968,
+    "sha256": "88f28fa9af20594179f85d6df67078dfd6fa93e2f6da5e1e9b0ac4997988ca4f",
+    "checksum_match": true,
+    "network_used_by_test_execution": false
+  },
+  "checks": {
+    "rust_all_targets": {
+      "command": "cargo test --offline --locked --all-targets",
+      "exit_code": 0,
+      "tests_passed": 33,
+      "tests_failed": 0
+    },
+    "s5_unit": {"tests_passed": 6, "tests_failed": 0},
+    "s6_unit": {"tests_passed": 7, "tests_failed": 0},
+    "s5_mutant": {"expected_rejection_observed": true},
+    "s6_mutant": {"expected_rejection_observed": true},
+    "s5_fresh_campaign": {
+      "records": 1200,
+      "detached_checker_exit_code": 0,
+      "raw_sha256": "5193886c704a4e4a70638b6f38459c1d2b500a06d7b20f60c802556c532b3204",
+      "categorical_missing": 0,
+      "categorical_extra": 0,
+      "categorical_mismatches": 0
+    },
+    "s6_fresh_campaign": {
+      "records": 1500,
+      "detached_checker_exit_code": 0,
+      "raw_sha256": "8e6f5b50cb733c8c5c3235aeb4d18359fc6294120256193c7989d5fc7c99a44b",
+      "categorical_missing": 0,
+      "categorical_extra": 0,
+      "categorical_mismatches": 0
+    }
+  },
+  "categorical_comparator_fields": [
+    "schema", "effect_count", "double_effect", "delivered_exactly_once",
+    "delivery_lost", "deterministic_terminal", "replay_accepted",
+    "cross_generation_accepted", "altered_signature_accepted", "disposition",
+    "network_calls", "real_effect", "ambiguous_post_effect",
+    "pre_effect_uncertainty", "effect_expected", "sink_profile",
+    "sink_idempotency_supported", "sink_query_supported",
+    "sink_transaction_supported", "b3_idempotency_request_honored"
+  ],
+  "fresh_outputs_retained_in_release": false,
+  "receipt_limit": "The hashes identify ephemeral project-controlled reruns. The rerun files are not shipped, so this receipt is auditable as a declared execution record but is not an independent reproduction certificate."
+}

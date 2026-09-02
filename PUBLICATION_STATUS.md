@@ -1,6 +1,6 @@
 # Publication status
 
-Current state: `PASS_OWNER_REPRESENTATION_ACCEPTED_FOR_RELEASE`.
+Current state: `PASS_OWNER_REPRESENTATION_ACCEPTED_FOR_V0_2_RELEASE`.
 
 Mohammed Messaoudene has supplied the explicit representation in
 `OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md`. It states that the sanitized
@@ -18,3 +18,8 @@ campaign dependencies are not vendored and retain their own licenses.
 This acceptance records the owner's representation for this bounded release;
 it is not a judicial, institutional, or patentability determination. Any later
 contradictory evidence must be evaluated rather than hidden.
+
+The v0.2 addendum covers the sanitized S5/S6 code, sealed local fixture data,
+revised interpretation, and preprint v0.4. It does not reclassify internal
+adversarial review as external peer review or authorize claims beyond the
+published evidence boundary.

@@ -11,3 +11,15 @@
 - G040 prepared a build-kit generation but created no execution authority and performed no build, QEMU run, Stage 7, science, production, or publication.
 - Rights clearance is based on the owner's explicit factual representation and a contradiction search over this allowlisted tree; it is not a court or institutional ruling.
 - No patent, trademark registration, certification, or legal opinion is claimed.
+- S5 and S6 are deterministic Python/SQLite trace simulations. They do not kill
+  processes, sever live transports, inject physical torn writes, run in QEMU or
+  a guest, or exercise real external effects.
+- S5/S6 categorical outcomes are invariant within each cell. Thirty repeated
+  rows do not constitute independent population samples; sealed Wilson
+  intervals are not used for publication-level inference.
+- S6 has no durable policy-matched at-most-once baseline. Its observed
+  duplicate/omission difference cannot be attributed specifically to OASI.
+- The detached aggregate checkers validate record and summary consistency but
+  cannot inspect per-run databases removed by the generators.
+- S5/S6 CPU, RSS, heap, storage, and latency fields are exploratory one-host
+  micro-measurements, not performance benchmarks.

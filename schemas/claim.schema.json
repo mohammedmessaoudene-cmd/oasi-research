@@ -10,7 +10,7 @@
     "evidence": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/evidence"}},
     "scope": {"type": "string", "minLength": 1},
     "exclusions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
-    "confidence": {"enum": ["DEFINITION", "REPRODUCED_LOCAL", "VERIFIED_HISTORICAL_AUDIT", "PINNED_EVIDENCE", "BOUNDED_INFERENCE"]}
+    "confidence": {"enum": ["DEFINITION", "IMPLEMENTED_AND_TESTED_LOCAL", "VERIFIED_HISTORICAL_AUDIT", "PINNED_EVIDENCE", "BOUNDED_INFERENCE", "INTERNAL_METHOD_REEXECUTION", "LOCAL_DETERMINISTIC_NEGATIVE", "BOUNDED_DIAGNOSTIC"]}
   },
   "additionalProperties": false,
   "$defs": {

@@ -1,0 +1,29 @@
+{
+  "schema": "oasi.s5-s6.executed-source-pins.v1",
+  "scope": "Hashes of the private executed sources; private absolute paths and operational state are intentionally omitted.",
+  "common": {
+    "oasi_broker.py": {
+      "sha256": "6f1363187de5a9e694cd61aa5a0601d9bddbb2ff6f06c0719f9007da33c791c3",
+      "size": 19476,
+      "public_copy_byte_identical": true
+    }
+  },
+  "s5": {
+    "experiment.py": {"sha256": "b89ad9e27a560069a23781de0b9e6efc34056fcedcfcae4a22935f4574f7fce8", "size": 25436},
+    "verify_results.py": {"sha256": "16e647225725640ed49ed658e589872f3558cc9774de1e0fe631bcf50f86b9a5", "size": 5776},
+    "red_green_verifier_test.py": {"sha256": "5fb2bc4c9a0ef99d0be97bc132df432021ec0337754d70c35487a52d60cd6d3b", "size": 1513},
+    "tests/test_experiment.py": {"sha256": "bc0478baec93487fd3a019383c7702f17525160c05170243a1d6dbe8fc61c77e", "size": 2393},
+    "PROTOCOL.md": {"sha256": "2b2e73c95e164e30d50441ad96f143ab269d3080e12209d1a6d6a26238d1596e", "size": 2921}
+  },
+  "s6": {
+    "experiment.py": {"sha256": "f5cdcd3778ca87f42de2ba0d90e4e9db39f51759b302ea8d9e767dd0e41a8396", "size": 25734},
+    "verify_results.py": {"sha256": "5dd1d2806783ee200b1db613aed4aea2376273861d72b987fe8ace1ce96a0bb5", "size": 7400},
+    "red_green_verifier_test.py": {"sha256": "c755a5f0c5c8ad6be9fd35d1a6b103228fc6a8d25d8af4ba9374696ba6050aa8", "size": 1531},
+    "tests/test_experiment.py": {"sha256": "3dae67b4f6d98c12ed988bb0483a65e13e69eb80854e857641e6dc1b08deeefc", "size": 2806},
+    "PROTOCOL.md": {"sha256": "cd993de7ef878b78f85aa49121de144ad20ce8a001c732d01764d856c44cbbe3", "size": 2277}
+  },
+  "relocation_delta": {
+    "files": ["s5/PROTOCOL.md", "s5/experiment.py", "s5/red_green_verifier_test.py", "s6/experiment.py", "s6/red_green_verifier_test.py"],
+    "change": "The private S1_BROKER and sealed-result absolute paths were replaced by repository-relative paths. S5_PROTOCOL.md also replaces the private WSL distribution name and drive letter with environment-neutral wording. No experiment branch, metric, seed, baseline, fault logic, mutant, or acceptance criterion was changed."
+  }
+}

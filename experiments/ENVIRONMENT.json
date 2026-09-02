@@ -1,0 +1,20 @@
+{
+  "schema": "oasi.s5-s6.environment.v1",
+  "executed": {
+    "architecture": "x86_64",
+    "cryptography": "41.0.7",
+    "cryptography_license": "Apache-2.0 OR BSD-3-Clause",
+    "os_kernel": "Linux 4.4.0-26100-Microsoft",
+    "python": "CPython 3.12.3",
+    "sqlite": "3.45.1",
+    "virtualization_context": "WSL; not QEMU or guest measurement"
+  },
+  "privacy": "Host name, user path, CPU serials, and internal distribution name omitted.",
+  "reproduction": {
+    "minimum_python": "3.11",
+    "required_python_packages": {"cryptography": "41.0.7"},
+    "network_required": false,
+    "real_effects": false
+  }
+}
+

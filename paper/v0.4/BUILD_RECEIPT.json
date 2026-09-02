@@ -1,0 +1,507 @@
+{
+  "article": {
+    "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a",
+    "size": 430121
+  },
+  "build_definitions": {
+    "tools/build_article.ps1": {
+      "sha256": "8af4df570a7628f076388a89b16e84057c02949a059454951afc05d14ce4a433",
+      "size": 247
+    },
+    "tools/build_article.sh": {
+      "sha256": "e645e23384b7497b6a3c0d551a3f89f98af8bad36dae8dafff51985f5bac21cc",
+      "size": 160
+    },
+    "tools/build_article_verified.py": {
+      "sha256": "af7906f27023d1332bfd9ca29a3afad4afc5088ee93364fd306171cf99e40d87",
+      "size": 28454
+    }
+  },
+  "builds": {
+    "A": {
+      "outputs": {
+        "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf": {
+          "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a",
+          "size": 430121
+        },
+        "paper/v0.4/source/figures/fig1_layered_vs_organismic.pdf": {
+          "sha256": "07ef1af62ec9242c211dd5316d755ad2446453e7ebd9a64b8c1a1f24460b70e8",
+          "size": 108362
+        },
+        "paper/v0.4/source/figures/fig1_layered_vs_organismic.svg": {
+          "sha256": "0f089e7d81be73a2f2cd7c6ca4547789ed22ab1a459aabeb7f9e41e1e836d81e",
+          "size": 158934
+        },
+        "paper/v0.4/source/figures/fig2_cognition_reflex_aera.pdf": {
+          "sha256": "c71858d0c9ed9ac26770fb67cd8e863359cd4e1496045faea7c2529b7fdd7e80",
+          "size": 109435
+        },
+        "paper/v0.4/source/figures/fig2_cognition_reflex_aera.svg": {
+          "sha256": "04fb39dd8844fe0993fde7df149454da5a75d1a2609ccf9df04445779344626f",
+          "size": 234627
+        },
+        "paper/v0.4/source/figures/fig3_authority_lifecycle.pdf": {
+          "sha256": "3cad01504057d1df48ef6d1978b819d73863a3e1532f6efb807b8b6e6f10b437",
+          "size": 38878
+        },
+        "paper/v0.4/source/figures/fig3_authority_lifecycle.svg": {
+          "sha256": "586f7a18d88c62f47934a7ed9f0b0aaf551aa2afb2e4a3e96adbcb13e304e66d",
+          "size": 61572
+        },
+        "paper/v0.4/source/figures/fig4_evidence_ladder.pdf": {
+          "sha256": "41a6f9c26ffb6ae17e72f87dd678ca7fa6d4546e18b58064bc3c166455d1da08",
+          "size": 74894
+        },
+        "paper/v0.4/source/figures/fig4_evidence_ladder.svg": {
+          "sha256": "3576dff69688113abbec54057118ad4615799354b1c1d908a31ca5dd29e0024e",
+          "size": 128979
+        }
+      },
+      "validation": {
+        "article": {
+          "all_fonts_embedded": true,
+          "biber_log_policy": "NO_WARN_OR_ERROR_LINES",
+          "biber_warning_or_error_lines": 0,
+          "bibliography_sha256": "08f97eeb649b8b4855ac2328babbd7473eeb430b8a4d93da7ab7a9bc258c3d5f",
+          "encrypted": false,
+          "font_count": 27,
+          "javascript": false,
+          "latex_log_sha256": "f79496a42d08b1c44194f8b551dcd4ad9d0581e23271865340e8e580994ffd69",
+          "latex_warnings": {
+            "accepted_package_warning_first_lines": [
+              "Package epstopdf Warning: Shell escape feature is not enabled."
+            ],
+            "latex_warning_lines": 0,
+            "overfull_hbox": 0,
+            "overfull_vbox": 0,
+            "package_warning_first_lines": [
+              "Package epstopdf Warning: Shell escape feature is not enabled."
+            ],
+            "package_warning_lines": 1,
+            "package_warning_packages": [
+              "epstopdf"
+            ],
+            "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+            "underfull_hbox": 26,
+            "underfull_vbox": 0
+          },
+          "pages": 13,
+          "pdf_version": "1.7",
+          "text_sha256": "636d542770316f2443addfae462e9949ebbce17f6221a9f1ac7dd1405afbac95"
+        },
+        "figures": {
+          "fig1_layered_vs_organismic": {
+            "latex_warnings": {
+              "accepted_package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "latex_warning_lines": 0,
+              "overfull_hbox": 0,
+              "overfull_vbox": 0,
+              "package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "package_warning_lines": 1,
+              "package_warning_packages": [
+                "shellesc"
+              ],
+              "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+              "underfull_hbox": 0,
+              "underfull_vbox": 0
+            },
+            "pdf": {
+              "all_fonts_embedded": true,
+              "encrypted": false,
+              "font_count": 5,
+              "javascript": false,
+              "pages": 1,
+              "pdf_version": "1.5",
+              "text_sha256": "f0d049c055612a1c1f358b81151b0495e1866716cb8fad79d22aba1e77341f5f"
+            },
+            "svg": {
+              "sha256": "0f089e7d81be73a2f2cd7c6ca4547789ed22ab1a459aabeb7f9e41e1e836d81e",
+              "size": 158934,
+              "xml_root": "svg"
+            }
+          },
+          "fig2_cognition_reflex_aera": {
+            "latex_warnings": {
+              "accepted_package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "latex_warning_lines": 0,
+              "overfull_hbox": 0,
+              "overfull_vbox": 0,
+              "package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "package_warning_lines": 1,
+              "package_warning_packages": [
+                "shellesc"
+              ],
+              "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+              "underfull_hbox": 0,
+              "underfull_vbox": 0
+            },
+            "pdf": {
+              "all_fonts_embedded": true,
+              "encrypted": false,
+              "font_count": 3,
+              "javascript": false,
+              "pages": 1,
+              "pdf_version": "1.5",
+              "text_sha256": "abed46403b3c5c91760a5423ae3ad3848d5650f2fd8ca09fe7e731c081543f87"
+            },
+            "svg": {
+              "sha256": "04fb39dd8844fe0993fde7df149454da5a75d1a2609ccf9df04445779344626f",
+              "size": 234627,
+              "xml_root": "svg"
+            }
+          },
+          "fig3_authority_lifecycle": {
+            "latex_warnings": {
+              "accepted_package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "latex_warning_lines": 0,
+              "overfull_hbox": 0,
+              "overfull_vbox": 0,
+              "package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "package_warning_lines": 1,
+              "package_warning_packages": [
+                "shellesc"
+              ],
+              "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+              "underfull_hbox": 0,
+              "underfull_vbox": 0
+            },
+            "pdf": {
+              "all_fonts_embedded": true,
+              "encrypted": false,
+              "font_count": 1,
+              "javascript": false,
+              "pages": 1,
+              "pdf_version": "1.5",
+              "text_sha256": "0302fe12af1fde97d232d25af231c17b2e42ae51c014c460558d81b26884c87d"
+            },
+            "svg": {
+              "sha256": "586f7a18d88c62f47934a7ed9f0b0aaf551aa2afb2e4a3e96adbcb13e304e66d",
+              "size": 61572,
+              "xml_root": "svg"
+            }
+          },
+          "fig4_evidence_ladder": {
+            "latex_warnings": {
+              "accepted_package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "latex_warning_lines": 0,
+              "overfull_hbox": 0,
+              "overfull_vbox": 0,
+              "package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "package_warning_lines": 1,
+              "package_warning_packages": [
+                "shellesc"
+              ],
+              "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+              "underfull_hbox": 0,
+              "underfull_vbox": 0
+            },
+            "pdf": {
+              "all_fonts_embedded": true,
+              "encrypted": false,
+              "font_count": 2,
+              "javascript": false,
+              "pages": 1,
+              "pdf_version": "1.5",
+              "text_sha256": "5be6b1217d661751f5e4ab2b03fdd0562e3fcdde733164633560294a8dbb1565"
+            },
+            "svg": {
+              "sha256": "3576dff69688113abbec54057118ad4615799354b1c1d908a31ca5dd29e0024e",
+              "size": 128979,
+              "xml_root": "svg"
+            }
+          }
+        }
+      }
+    },
+    "B": {
+      "outputs": {
+        "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf": {
+          "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a",
+          "size": 430121
+        },
+        "paper/v0.4/source/figures/fig1_layered_vs_organismic.pdf": {
+          "sha256": "07ef1af62ec9242c211dd5316d755ad2446453e7ebd9a64b8c1a1f24460b70e8",
+          "size": 108362
+        },
+        "paper/v0.4/source/figures/fig1_layered_vs_organismic.svg": {
+          "sha256": "0f089e7d81be73a2f2cd7c6ca4547789ed22ab1a459aabeb7f9e41e1e836d81e",
+          "size": 158934
+        },
+        "paper/v0.4/source/figures/fig2_cognition_reflex_aera.pdf": {
+          "sha256": "c71858d0c9ed9ac26770fb67cd8e863359cd4e1496045faea7c2529b7fdd7e80",
+          "size": 109435
+        },
+        "paper/v0.4/source/figures/fig2_cognition_reflex_aera.svg": {
+          "sha256": "04fb39dd8844fe0993fde7df149454da5a75d1a2609ccf9df04445779344626f",
+          "size": 234627
+        },
+        "paper/v0.4/source/figures/fig3_authority_lifecycle.pdf": {
+          "sha256": "3cad01504057d1df48ef6d1978b819d73863a3e1532f6efb807b8b6e6f10b437",
+          "size": 38878
+        },
+        "paper/v0.4/source/figures/fig3_authority_lifecycle.svg": {
+          "sha256": "586f7a18d88c62f47934a7ed9f0b0aaf551aa2afb2e4a3e96adbcb13e304e66d",
+          "size": 61572
+        },
+        "paper/v0.4/source/figures/fig4_evidence_ladder.pdf": {
+          "sha256": "41a6f9c26ffb6ae17e72f87dd678ca7fa6d4546e18b58064bc3c166455d1da08",
+          "size": 74894
+        },
+        "paper/v0.4/source/figures/fig4_evidence_ladder.svg": {
+          "sha256": "3576dff69688113abbec54057118ad4615799354b1c1d908a31ca5dd29e0024e",
+          "size": 128979
+        }
+      },
+      "validation": {
+        "article": {
+          "all_fonts_embedded": true,
+          "biber_log_policy": "NO_WARN_OR_ERROR_LINES",
+          "biber_warning_or_error_lines": 0,
+          "bibliography_sha256": "08f97eeb649b8b4855ac2328babbd7473eeb430b8a4d93da7ab7a9bc258c3d5f",
+          "encrypted": false,
+          "font_count": 27,
+          "javascript": false,
+          "latex_log_sha256": "f79496a42d08b1c44194f8b551dcd4ad9d0581e23271865340e8e580994ffd69",
+          "latex_warnings": {
+            "accepted_package_warning_first_lines": [
+              "Package epstopdf Warning: Shell escape feature is not enabled."
+            ],
+            "latex_warning_lines": 0,
+            "overfull_hbox": 0,
+            "overfull_vbox": 0,
+            "package_warning_first_lines": [
+              "Package epstopdf Warning: Shell escape feature is not enabled."
+            ],
+            "package_warning_lines": 1,
+            "package_warning_packages": [
+              "epstopdf"
+            ],
+            "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+            "underfull_hbox": 26,
+            "underfull_vbox": 0
+          },
+          "pages": 13,
+          "pdf_version": "1.7",
+          "text_sha256": "636d542770316f2443addfae462e9949ebbce17f6221a9f1ac7dd1405afbac95"
+        },
+        "figures": {
+          "fig1_layered_vs_organismic": {
+            "latex_warnings": {
+              "accepted_package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "latex_warning_lines": 0,
+              "overfull_hbox": 0,
+              "overfull_vbox": 0,
+              "package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "package_warning_lines": 1,
+              "package_warning_packages": [
+                "shellesc"
+              ],
+              "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+              "underfull_hbox": 0,
+              "underfull_vbox": 0
+            },
+            "pdf": {
+              "all_fonts_embedded": true,
+              "encrypted": false,
+              "font_count": 5,
+              "javascript": false,
+              "pages": 1,
+              "pdf_version": "1.5",
+              "text_sha256": "f0d049c055612a1c1f358b81151b0495e1866716cb8fad79d22aba1e77341f5f"
+            },
+            "svg": {
+              "sha256": "0f089e7d81be73a2f2cd7c6ca4547789ed22ab1a459aabeb7f9e41e1e836d81e",
+              "size": 158934,
+              "xml_root": "svg"
+            }
+          },
+          "fig2_cognition_reflex_aera": {
+            "latex_warnings": {
+              "accepted_package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "latex_warning_lines": 0,
+              "overfull_hbox": 0,
+              "overfull_vbox": 0,
+              "package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "package_warning_lines": 1,
+              "package_warning_packages": [
+                "shellesc"
+              ],
+              "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+              "underfull_hbox": 0,
+              "underfull_vbox": 0
+            },
+            "pdf": {
+              "all_fonts_embedded": true,
+              "encrypted": false,
+              "font_count": 3,
+              "javascript": false,
+              "pages": 1,
+              "pdf_version": "1.5",
+              "text_sha256": "abed46403b3c5c91760a5423ae3ad3848d5650f2fd8ca09fe7e731c081543f87"
+            },
+            "svg": {
+              "sha256": "04fb39dd8844fe0993fde7df149454da5a75d1a2609ccf9df04445779344626f",
+              "size": 234627,
+              "xml_root": "svg"
+            }
+          },
+          "fig3_authority_lifecycle": {
+            "latex_warnings": {
+              "accepted_package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "latex_warning_lines": 0,
+              "overfull_hbox": 0,
+              "overfull_vbox": 0,
+              "package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "package_warning_lines": 1,
+              "package_warning_packages": [
+                "shellesc"
+              ],
+              "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+              "underfull_hbox": 0,
+              "underfull_vbox": 0
+            },
+            "pdf": {
+              "all_fonts_embedded": true,
+              "encrypted": false,
+              "font_count": 1,
+              "javascript": false,
+              "pages": 1,
+              "pdf_version": "1.5",
+              "text_sha256": "0302fe12af1fde97d232d25af231c17b2e42ae51c014c460558d81b26884c87d"
+            },
+            "svg": {
+              "sha256": "586f7a18d88c62f47934a7ed9f0b0aaf551aa2afb2e4a3e96adbcb13e304e66d",
+              "size": 61572,
+              "xml_root": "svg"
+            }
+          },
+          "fig4_evidence_ladder": {
+            "latex_warnings": {
+              "accepted_package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "latex_warning_lines": 0,
+              "overfull_hbox": 0,
+              "overfull_vbox": 0,
+              "package_warning_first_lines": [
+                "Package shellesc Warning: Shell escape disabled on input line 73."
+              ],
+              "package_warning_lines": 1,
+              "package_warning_packages": [
+                "shellesc"
+              ],
+              "package_warning_policy": "EXACT_FIRST_LINE_ALLOWLIST",
+              "underfull_hbox": 0,
+              "underfull_vbox": 0
+            },
+            "pdf": {
+              "all_fonts_embedded": true,
+              "encrypted": false,
+              "font_count": 2,
+              "javascript": false,
+              "pages": 1,
+              "pdf_version": "1.5",
+              "text_sha256": "5be6b1217d661751f5e4ab2b03fdd0562e3fcdde733164633560294a8dbb1565"
+            },
+            "svg": {
+              "sha256": "3576dff69688113abbec54057118ad4615799354b1c1d908a31ca5dd29e0024e",
+              "size": 128979,
+              "xml_root": "svg"
+            }
+          }
+        }
+      }
+    }
+  },
+  "comparison": {
+    "article_byte_identical": true,
+    "figure_pdf_svg_byte_identical": true,
+    "output_set_identical": true
+  },
+  "expected_article_doi": "10.5281/zenodo.22262138",
+  "fixed_build_time_utc": "2026-09-02T00:00:00Z",
+  "phase": "final",
+  "promoted_outputs": {
+    "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf": {
+      "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a",
+      "size": 430121
+    },
+    "paper/v0.4/source/figures/fig1_layered_vs_organismic.pdf": {
+      "sha256": "07ef1af62ec9242c211dd5316d755ad2446453e7ebd9a64b8c1a1f24460b70e8",
+      "size": 108362
+    },
+    "paper/v0.4/source/figures/fig1_layered_vs_organismic.svg": {
+      "sha256": "0f089e7d81be73a2f2cd7c6ca4547789ed22ab1a459aabeb7f9e41e1e836d81e",
+      "size": 158934
+    },
+    "paper/v0.4/source/figures/fig2_cognition_reflex_aera.pdf": {
+      "sha256": "c71858d0c9ed9ac26770fb67cd8e863359cd4e1496045faea7c2529b7fdd7e80",
+      "size": 109435
+    },
+    "paper/v0.4/source/figures/fig2_cognition_reflex_aera.svg": {
+      "sha256": "04fb39dd8844fe0993fde7df149454da5a75d1a2609ccf9df04445779344626f",
+      "size": 234627
+    },
+    "paper/v0.4/source/figures/fig3_authority_lifecycle.pdf": {
+      "sha256": "3cad01504057d1df48ef6d1978b819d73863a3e1532f6efb807b8b6e6f10b437",
+      "size": 38878
+    },
+    "paper/v0.4/source/figures/fig3_authority_lifecycle.svg": {
+      "sha256": "586f7a18d88c62f47934a7ed9f0b0aaf551aa2afb2e4a3e96adbcb13e304e66d",
+      "size": 61572
+    },
+    "paper/v0.4/source/figures/fig4_evidence_ladder.pdf": {
+      "sha256": "41a6f9c26ffb6ae17e72f87dd678ca7fa6d4546e18b58064bc3c166455d1da08",
+      "size": 74894
+    },
+    "paper/v0.4/source/figures/fig4_evidence_ladder.svg": {
+      "sha256": "3576dff69688113abbec54057118ad4615799354b1c1d908a31ca5dd29e0024e",
+      "size": 128979
+    }
+  },
+  "schema": "oasi.article-build-receipt.v1",
+  "source_date_epoch": 1788307200,
+  "source_manifest": {
+    "path": "paper/v0.4/ARTICLE_SOURCE_MANIFEST.sha256",
+    "sha256": "9d1190a54aebfa3dbc98433f27c2e4ddd3eef6b1b475c586efe67f55b515bfe2",
+    "size": 676
+  },
+  "status": "PASS_REPRODUCIBLE_ARTICLE_BUILD",
+  "toolchain": {
+    "biber": "biber version: 2.21",
+    "pdffonts": "pdffonts version 24.04.0",
+    "pdfinfo": "pdfinfo version 26.05.0",
+    "pdflatex": "MiKTeX-pdfTeX 4.23 (MiKTeX 25.12)",
+    "pdftocairo": "pdftocairo version 24.04.0",
+    "pdftotext": "pdftotext version 24.04.0",
+    "python": "3.11.9"
+  }
+}

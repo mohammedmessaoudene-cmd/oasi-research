@@ -1,0 +1,16 @@
+{
+  "schema": "oasi.public.s5-science-summary.v1",
+  "status": "NEGATIVE_MECHANISM_ADVANTAGE_NOT_ESTABLISHED",
+  "local_only": true,
+  "fixture_only": true,
+  "deterministic_trace_simulation": true,
+  "measured_records": 1200,
+  "cells": 40,
+  "repetitions_per_cell": 30,
+  "raw_sha256": "9a089564929e989fc1e7e1bab44ff9a2e11633e8e93f53b1904bea523e31a0fd",
+  "summary_sha256": "d7bbfbc93baa8692af7940aaf8aed6d04dadc83435e39c34fd48ad2a6afceefb",
+  "result_manifest_sha256": "de80a5abf983a23dd7a0ecfb2c6d27c2612d46b5e42e502980791c4aa2b24100",
+  "publication_interpretation": "A cooperative idempotent receiver matched observed OASI safety and recovered more deliveries; no OASI mechanism advantage was established.",
+  "excluded_claims": ["population inference", "real fault injection", "QEMU or guest result", "production", "external replication", "general superiority"]
+}
+

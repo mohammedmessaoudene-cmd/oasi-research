@@ -1,4 +1,41 @@
-# v0.1.0-research-preview
+# v0.2.0-research-preview
+
+Persistent identifiers: scientific preprint
+`10.5281/zenodo.22262138`; aggregate software/data research preview
+`10.5281/zenodo.22262143`.
+
+## Scientific update
+
+- Adds the v0.4 preprint and byte-for-byte preserved S5/S6 result directories:
+  2,700 retained deterministic records across 90 cells.
+- Adds relocatable Linux/WSL runner copies qualified on WSL1 x86_64, exact
+  pins for the sources that produced the sealed results, detached
+  aggregate checkers, unit and mutant tests, environment metadata, a data
+  dictionary, and sealed result manifests.
+- Preserves S5 as a negative result: the cooperative idempotent B3 receiver
+  matched observed OASI safety and recovered more deliveries.
+- Reclassifies S6 after adversarial source review. The experiment shows a
+  redispatch-versus-no-redispatch duplicate/omission tradeoff, not an
+  OASI-specific advantage.
+- Explicitly withdraws population interpretation of Wilson intervals over
+  deterministic repeated branches and labels crash/disconnect/torn-write cases
+  as trace simulations.
+- Corrects the v0.3 README audit-file list in v0.4 without modifying either
+  prior Zenodo record, the v0.1 Git tag, or any v0.1 release asset.
+
+## Boundaries
+
+- No complete OASI, universal exactly-once, production, performance,
+  independent-team replication, real-fault injection, or general-superiority
+  claim.
+- The v0.1 Git tag, Zenodo records, and GitHub/Zenodo release assets remain
+  immutable; v0.2 is a distinct version and does not replace them.
+- The unchanged Rust crate remains `0.1.0-research-preview`; `v0.2` versions
+  the aggregate research release, not a new Rust implementation.
+
+---
+
+# v0.1.0-research-preview (historical)
 
 Persistent identifiers: scientific preprint
 `10.5281/zenodo.22151556`; software research preview

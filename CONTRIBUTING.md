@@ -1,6 +1,8 @@
 # Contributing
 
-Issues and private security reports are welcome after the repository becomes public. External code is not merged in `v0.1.0-research-preview` until a contribution policy protects provenance and any future licensing options.
+Issues and private security reports are welcome. External code is not merged
+into the `v0.2.0-research-preview` release until a contribution policy protects
+provenance and any future licensing options.
 
 For now:
 

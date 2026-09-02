@@ -16,7 +16,7 @@
       "wording": "OASI is a research program for developmental OS-AI integration."
     },
     {
-      "confidence": "REPRODUCED_LOCAL",
+      "confidence": "IMPLEMENTED_AND_TESTED_LOCAL",
       "evidence": [
         {
           "path": "Cargo.toml",
@@ -39,7 +39,7 @@
       "wording": "The shipped Rust crate implements a bounded user-space AERA reference mechanism."
     },
     {
-      "confidence": "REPRODUCED_LOCAL",
+      "confidence": "IMPLEMENTED_AND_TESTED_LOCAL",
       "evidence": [
         {
           "path": "AERA_SPECIFICATION.md",
@@ -59,7 +59,7 @@
       ],
       "id": "CL-003",
       "scope": "Finite user-space reference model.",
-      "wording": "The tested design binds authority to body, epoch, generation, certificate, principal, resource, and action and revalidates it at commit."
+      "wording": "The tested design binds authority to body, epoch, generation, certificate, principal, resource, action and revalidates it at commit."
     },
     {
       "confidence": "VERIFIED_HISTORICAL_AUDIT",
@@ -100,7 +100,7 @@
         },
         {
           "path": "KNOWN_LIMITATIONS.md",
-          "sha256": "f4ddd464c4364559510569cf2dfc74fe30544dd54f25c5ff5333fe6916aa8cdd"
+          "sha256": "56e632c379259894bfae69bcf30eb74a05c19c67acb1c868a7b8c6554bfb3704"
         }
       ],
       "exclusions": [
@@ -141,7 +141,7 @@
       "wording": "G040 is prepared-only technical closure."
     },
     {
-      "confidence": "INTERNALLY_REPRODUCED_METHOD",
+      "confidence": "INTERNAL_METHOD_REEXECUTION",
       "evidence": [
         {
           "path": "public_evidence/G116_METHOD_SUMMARY.json",
@@ -154,6 +154,48 @@
       "id": "CL-009",
       "scope": "Sanitized G116 fixture-only methodological summary.",
       "wording": "A green internal gate catalogue can omit decisive adversarial cases."
+    },
+    {
+      "confidence": "LOCAL_DETERMINISTIC_NEGATIVE",
+      "evidence": [
+        {
+          "path": "public_evidence/S5_SCIENCE_SUMMARY.json",
+          "sha256": "39fae29f6af6388ce1f5c4c556a837c6f0163c052b7383b53007207148e50422"
+        },
+        {
+          "path": "experiments/s5/results/RAW_RUNS.jsonl",
+          "sha256": "9a089564929e989fc1e7e1bab44ff9a2e11633e8e93f53b1904bea523e31a0fd"
+        }
+      ],
+      "exclusions": [
+        "No real fault, population, QEMU/guest, production, or external-replication claim."
+      ],
+      "id": "CL-010",
+      "scope": "1,200 deterministic local fixture records.",
+      "wording": "S5 did not establish an OASI mechanism advantage over a cooperative idempotent receiver."
+    },
+    {
+      "confidence": "BOUNDED_DIAGNOSTIC",
+      "evidence": [
+        {
+          "path": "public_evidence/S6_SCIENCE_SUMMARY.json",
+          "sha256": "e4f72e0af24ba24d40a75cdaaaae0f8305a8d074625e5b6bcd24fb4699c71ab5"
+        },
+        {
+          "path": "experiments/s6/results/RAW_RUNS.jsonl",
+          "sha256": "e21c6c9cd551b599768ef9451e07d7f1b079b95d598ef1068840c8b8fb5503a9"
+        },
+        {
+          "path": "paper/v0.4/INTERNAL_ADVERSARIAL_REVIEW_V0_4.md",
+          "sha256": "29ae65a9156a04752280bf8568e865e1b344977cf7f3b21093564b08b575dd79"
+        }
+      ],
+      "exclusions": [
+        "No OASI-specific attribution, inferential probability, real fault, universal exactly-once, or general-superiority claim."
+      ],
+      "id": "CL-011",
+      "scope": "1,500 deterministic local fixture records and adversarial source audit.",
+      "wording": "S6 observed a duplicate/omission tradeoff between redispatch and no-redispatch policies."
     }
   ],
   "forbidden_claims_reviewed": true,

@@ -1,0 +1,48 @@
+{
+  "schema": "oasi.public.toolchain-provenance.v1",
+  "qualification_environment": {
+    "role": "Historical S5/S6 qualification and full Rust test execution in isolated WSL1",
+    "network_during_tests": false,
+    "operating_system": "Ubuntu 24.04 user space on WSL1",
+    "kernel": "4.4.0-26100-Microsoft",
+    "architecture": "x86_64",
+    "python_implementation": "CPython",
+    "python": "3.12.3",
+    "pyyaml": "6.0.1",
+    "cryptography": "41.0.7",
+    "sqlite": "3.45.1",
+    "rustc": "1.97.1",
+    "rustc_full": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+    "cargo": "1.97.1",
+    "cargo_full": "cargo 1.97.1 (c980f4866 2026-06-30)",
+    "rust_host": "x86_64-unknown-linux-gnu",
+    "rust_distribution_sha256": "88f28fa9af20594179f85d6df67078dfd6fa93e2f6da5e1e9b0ac4997988ca4f",
+    "rust_tests": {
+      "command": "cargo test --offline --locked --all-targets",
+      "passed": 33,
+      "failed": 0
+    }
+  },
+  "publication_environment": {
+    "role": "Metadata, document, and release-asset construction",
+    "operating_system": "Windows",
+    "python_implementation": "CPython",
+    "python": "3.11.9",
+    "pyyaml": "6.0.3",
+    "cryptography": "50.0.1",
+    "sqlite": "3.45.1",
+    "zlib": "1.3.1",
+    "git_for_windows": "2.55.0.windows.5",
+    "miktex_pdftex": "4.23",
+    "biber": "2.21",
+    "poppler_pdfinfo": "26.05.0",
+    "poppler_pdffonts": "24.04.0",
+    "poppler_pdftotext": "24.04.0",
+    "poppler_pdftocairo": "24.04.0"
+  },
+  "limitations": [
+    "Tool versions document the project-controlled qualification and publication environments; they are not external reproduction.",
+    "The S5/S6 repetitions are deterministic implementation-stability traces, not independent statistical samples.",
+    "No production, deployment, performance, universal exactly-once, or institutional-validation claim follows from these environments."
+  ]
+}

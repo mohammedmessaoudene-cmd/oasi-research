@@ -4,84 +4,84 @@
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": ".gitattributes",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "fb427e17dda623ada0dd34d772fca62c147c59c019050b14fd298a19e7d5af12"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": ".github/SECURITY.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "9d8de6fde28b40539da8c92abd70804d19732bdd5b8bb872319d3b68f6981dda"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": ".gitignore",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "56bd614d3a6f4bfbc7eab9a0a538cedc3438a92e384580aec190328e6128ad14"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "AERA_SPECIFICATION.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "1e0aefde7cbfae11b3e305dd5b0861169a973017cb629475a05fe702b38f8f09"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "AFFILIATION_STATEMENT.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "0dbf5cc8a455fb2b6c14e26ba1395e670a18b08195ec73b446bce618c490de0a"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "AI_ASSISTED_DEVELOPMENT.md",
-      "provenance": "publication candidate",
-      "sha256": "5f3452ea723591e2a49c01709bc5bc04087391c034d9d1d21a13013033703a5f"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "6f714401c8e5804d06ee84aa7fedee9b91bba47904ab29892f02e8417c7ea461"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "ARCHITECTURE.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "db5ad41f51754427fd8efdffc480bb873a927da133bec8093a82712e9dd85b19"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "AUTHORS.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "328cb2b1dd3f0c3f753bbfe02a02668ae2935d51ae9523a14fd346d5e1b2e7cd"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "CITATION.cff",
-      "provenance": "publication candidate",
-      "sha256": "362d1d02ca27bebc220447700b8d791d1f3f2bf6b8e9588afd87eb7a416394ea"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "7b2dee0beb2942d12a7ce8a8e7023e9d92e275e639ff75de8409f52813d16cb0"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "CLAIMS_AND_EVIDENCE.md",
-      "provenance": "publication candidate",
-      "sha256": "49ae8154f6c9f2bb2a5960c8df7edad3cfc95aa7f402df326f9aa501698fafb6"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "a19a934f73d2562c5632bb7d8013dd362eb3c0efa1d0fdffa29ff8196f07a39d"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "CONTRIBUTING.md",
-      "provenance": "publication candidate",
-      "sha256": "f5e7ee1c119ee950c1202a6116cb9380beeea3272e575d241cde869f3d16d28f"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "2e65db3829611b6cf2a2e7d4865bacd10fe4f71f7c2af64723b1c9d24d65e931"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "COPYRIGHT.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "a35ec3874220d884c6b59c0a3310d25e476607a9532495e636f3d07ba4533114"
     },
     {
@@ -102,358 +102,806 @@
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "KNOWN_LIMITATIONS.md",
-      "provenance": "publication candidate",
-      "sha256": "f4ddd464c4364559510569cf2dfc74fe30544dd54f25c5ff5333fe6916aa8cdd"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "56e632c379259894bfae69bcf30eb74a05c19c67acb1c868a7b8c6554bfb3704"
     },
     {
       "copyright": "NOASSERTION",
-      "license": "LicenseRef-License-Document",
+      "license": "Apache-2.0",
       "path": "LICENSE",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
     },
     {
       "copyright": "NOASSERTION",
-      "license": "LicenseRef-License-Document",
+      "license": "Apache-2.0",
       "path": "LICENSES/Apache-2.0.txt",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
     },
     {
       "copyright": "NOASSERTION",
-      "license": "LicenseRef-License-Document",
+      "license": "CC-BY-4.0",
       "path": "LICENSES/CC-BY-4.0.txt",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
     },
     {
       "copyright": "NOASSERTION",
-      "license": "LicenseRef-License-Document",
+      "license": "MIT",
       "path": "LICENSES/MIT.txt",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "LICENSING.md",
-      "provenance": "publication candidate",
-      "sha256": "c33801c676cd307e76fc7ca3975ad789605af149a622a4ecf3ce59da85752035"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "390e56d59ca7de910ed4ff8946e57a89d325365b51ae70f9492a8e019ec5561f"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "LICENSING_DECISION.md",
-      "provenance": "publication candidate",
-      "sha256": "d4de974e26301d0764a641c013433a4f17591b20852b560445926cda57127738"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "4ded5b8c29f6154e7aa5cd9254f851ca1e9879af6611bbfb24c8f16acda4a942"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "NEGATIVE_RESULTS.md",
-      "provenance": "publication candidate",
-      "sha256": "c9405ce056bebf24597bfbfd268bcb82e313572611c633fb2ea9071c1d420ed1"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "a16a600f802b014ec13a79dc58415ae92cfa6b5d1563e85f8d91e3edda991976"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "OASI_PHILOSOPHY.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "da83f29cce98f4a51643fd777d1a2cfa7a97d1662de50b5d0d3598b70d3762c3"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "e977bd9bdd71a6d719e8775aee74f2b8b085c7e297ff26a84c5b0619b2809abe"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "PUBLICATION_STATUS.md",
-      "provenance": "publication candidate",
-      "sha256": "7a8097a563086e30a901fbf67e8f4745aee075a0e1de282cded6cd3178a338c6"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "fa17036efb259b1f5b5154bad3d356ca3356d1aee25f4055f509c84dea3b5c1d"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "README.md",
-      "provenance": "publication candidate",
-      "sha256": "e63d9dd087bbea09f1c5313bd324ee10d90197e1e596b0ec98213c2751f74e75"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "6ee066f282a9a4d349b48aa72f51ac9ac162f3ea4ed3bcd984ae5ef1ee56d0d5"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "README_FR.md",
-      "provenance": "publication candidate",
-      "sha256": "ce48ff809941974c60b08c0f1d622fb4d2c9cf7eff95fa3c146a2228b56edbde"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "c94179a757ad9d7bd30fda8fa833124b73981c70c03055ca2bca15e527a4212a"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "RELEASE_NOTES.md",
-      "provenance": "publication candidate",
-      "sha256": "46a783f8b9caaf6b0b07a0de6ad14451ac14c6c571cb47318f799471f8c1a94d"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "cd77f65ec2620ec8348d76eb2e7e02c2262079162593b4528b82c7a6b6908189"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "REPRODUCIBILITY.md",
-      "provenance": "publication candidate",
-      "sha256": "bcbd4c539a22c2b0c9ed32147b14e1a8673457245980c3fdef408678175cc5a2"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "8f6fc56e1cb095c087fffd79eeaafe98343656a3db3c25144a026dde7c7ca6eb"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "ROADMAP.md",
-      "provenance": "publication candidate",
-      "sha256": "e6fa5531aeb839fd42e1b654c57bce3421e06e490bebd22d143f0349159ae0ae"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "77fc93c9f5c087cf71ad82657ec5acb3a7847b6acb4be7dd974e936c293f53c7"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "SBOM.spdx.json",
-      "provenance": "publication candidate",
-      "sha256": "34d24955f1f4d44d4f8f8e4a449cde8998bf521a47518504a351c604da264434"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "285dba488dbfc229662c1ebf9bac3961ae5611da5b46dc5cb5a4a9efb4f27da5"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "SCIENTIFIC_RESULTS_S5_S6.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "b6cd65bb0df4101a6589f618db9e959198e9fa969467115f67ec9acf01f543b7"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "SECURITY.md",
-      "provenance": "publication candidate",
-      "sha256": "3ca9862e037401b724c1a2348ce78cac619b3785eea542954a1ab77f982cf9ee"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "1bb185509a22d4a89dd0909895dd906b01b4f8c136e8943068884b4bd0735d3a"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "THIRD_PARTY_NOTICES.md",
-      "provenance": "publication candidate",
-      "sha256": "785513a7f120666cf09cadf0b9207bd24ba3bf7f7c5a54f746d34c1b31783e9c"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "df607d5e85539d43c911a88020f1358fc5fec4bb97eb430dd0a4933b9abca2d2"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "THREAT_MODEL.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "df443b84fb1846eeaeeb7886ffd31f9305c5cd3fceb4b8f1ea98bd1dc726e8b4"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
+      "path": "TOOLCHAIN_PROVENANCE.json",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "f611e5fbdf1f85e67744ac2f70cb9890318579e1ec21723dd360cda6594ff748"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "V0_2_PROVENANCE_ADDENDUM.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "cab043c635e48ec53df7f81c776c0f4f0ed3f70521b8b0967a16a00647667531"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
       "path": "examples/README.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "2c888d376716967f97ab695e57ff54f2178500d4763dc46992a41c6d9326a1a3"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
+      "path": "experiments/DATA_DICTIONARY.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "dd04ad9cbbc0f3e9803356ac1bfc7dd208a33d932999fb573ccd9d218d78452a"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/ENVIRONMENT.json",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "683f6a3906e462c59828496bdab5e36483457d30b399d778fc99c698a121d15e"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/EXECUTED_SOURCE_PINS.json",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "4a33bb84ea8f88f55d2a35076602825098c8209a126bf4b2387b946b2b07973e"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/INTERPRETATION_NOTICE.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "f1a523e175e19d18d72e448d79bd7ebcd02083ffd5cbe21ad31fe7374bfdc96b"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/LICENSE.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "d280cd8204a178eff1901254fa7cb25fe927aa58e75573510ada8988d568a607"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/MANIFEST.sha256",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "86e03fb8a58e840e2508ca7f0f4b6c5532226d1f246cd14071b688d113fdfba2"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/QUALIFICATION.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "07574a1aa98132470529ea585c3b90b773b956d9cb5f24bdda30211a5e05fdab"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/QUALIFICATION_RECEIPT.json",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "b93144a98451466df5c27ad15cff4019f4c7fd4a176a1182b270ac46eac02538"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/README.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "48f60f7bdb6e1a3082fc30f7937194a1ae69c68fd12697c563da7f3fe8f7a0a0"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "experiments/common/oasi_broker.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "6f1363187de5a9e694cd61aa5a0601d9bddbb2ff6f06c0719f9007da33c791c3"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s5/PROTOCOL.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "6c0b8312fa55bb14cc894ee10e32d0c97d641ec025b724b2609323067148f549"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s5/TEST_EVIDENCE.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "829687ae262eeac9de353a28556eab4ceeecd2e43a76666b0ba6f0886a3889b1"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "experiments/s5/experiment.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "384cef91dc9ed3a51c00f6ffda1a4eec65ba292e67952f3c8c762242a8275de4"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "experiments/s5/red_green_verifier_test.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "5fc3b0a613b4fa86cbc295ba4b169b6217a1c4bc3f52f9fc453ebf6e5e4468cd"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s5/results/CAMPAIGN_CHECKPOINT.json",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "54451cd74f265fac6e85eeeea2e4369aa72c0ace18b4522b41e73e30fd474e03"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s5/results/INDEPENDENT_VERIFY_RESULT.json",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "b7417e799fd47193b6c80cb541187038a3d5e0937d6203010035d32666270b62"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s5/results/PREREGISTRATION_LOCKED.md",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "9d702508592663f8cb57e8920b54a9cdfaa2631a3b98835fd86d904f4d98e2cd"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s5/results/RAW_RUNS.jsonl",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "9a089564929e989fc1e7e1bab44ff9a2e11633e8e93f53b1904bea523e31a0fd"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s5/results/RESULT_MANIFEST.sha256",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "de80a5abf983a23dd7a0ecfb2c6d27c2612d46b5e42e502980791c4aa2b24100"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s5/results/SCIENTIFIC_REPORT.md",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "2458f54f9de2bb82f9fac1781a76daca1070d1a2b9511ae779224dcf8e7a8438"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s5/results/SUMMARY.json",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "d7bbfbc93baa8692af7940aaf8aed6d04dadc83435e39c34fd48ad2a6afceefb"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "experiments/s5/tests/test_experiment.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "bc0478baec93487fd3a019383c7702f17525160c05170243a1d6dbe8fc61c77e"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "experiments/s5/verify_results.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "16e647225725640ed49ed658e589872f3558cc9774de1e0fe631bcf50f86b9a5"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s6/PROTOCOL.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "cd993de7ef878b78f85aa49121de144ad20ce8a001c732d01764d856c44cbbe3"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s6/TEST_EVIDENCE.md",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "98e29187f5222c5b30b79e5c5f823bac5d9888032db23a1dc0f08abf27fbd935"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "experiments/s6/experiment.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "c6d13244f6437b6b7823a25c6ffb9a02b2ec187177cf91e9204709a78a721c6a"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "experiments/s6/red_green_verifier_test.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "12c7c251228880464d5ad5f6974cd2796f67f4d3a25dffd730e4343b7f3ed2a2"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s6/results/CAMPAIGN_CHECKPOINT.json",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "263db57edd0ef1d9647efeef36c821efe498312fa23999da85d08cc7c9b33d69"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s6/results/INDEPENDENT_VERIFY_RESULT.json",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "a7df0f11f2ff4589b276b882a60b56c95bdeb0f5797bbf8a2264428ec2124f45"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s6/results/PREREGISTRATION_LOCKED.md",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "cd993de7ef878b78f85aa49121de144ad20ce8a001c732d01764d856c44cbbe3"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s6/results/RAW_RUNS.jsonl",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "e21c6c9cd551b599768ef9451e07d7f1b079b95d598ef1068840c8b8fb5503a9"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s6/results/RESULT_MANIFEST.sha256",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "cd92e30cf7c9113da9d69a1313ae0308486ca06964aec0841f488dcdc35df303"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s6/results/SCIENTIFIC_REPORT.md",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "aee9cdf2ca385d2b9d1a7b5c0f7098cd386bc5d2157b29c48fed447ff21e54ac"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "experiments/s6/results/SUMMARY.json",
+      "provenance": "sealed S5/S6 result",
+      "sha256": "c81f24834192ebf53d3f3b106b056de90a04510cb3d9258a12a1027724093f31"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "experiments/s6/tests/test_experiment.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "3dae67b4f6d98c12ed988bb0483a65e13e69eb80854e857641e6dc1b08deeefc"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "experiments/s6/verify_results.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "5dd1d2806783ee200b1db613aed4aea2376273861d72b987fe8ace1ce96a0bb5"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
       "path": "paper/v0.3/ABSTRACT_FR.md",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "d899b31a2d3193c010c331323c752a59bbd35c036b69e5af2b56490fa46632bf"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/CLAIMS_AND_EVIDENCE_V0_3.md",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "fe16f56630186e28e35bcc18460684756f13c992ec1a7b77369e274cbd2c3f01"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/LICENSE.md",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "4171f8e0b1b5094c6bc6fb1542f2224c181313bef650781152698eab89e7b711"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_3.pdf",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "d23939b8908d3ac2db9360e610a1af2033b4a98a6b7910aaffff4257ede33192"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/README.md",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "8b7571060312c11739755d4bc32b4b7dfa950414656b5df7f5878561b1d55111"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/RESPONSE_TO_REVIEWER_2_V0_3.md",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "bd6f49f8154a8a28f3bba304c9237457a89aebbd7125dc6088a0fb93e61c668a"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/RESULTS_INSERTION_PROTOCOL_V0_3.md",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "06f4bf0e34e40604efa97c756230e6708c9e4289b651a93fce0d8e3a59eaff49"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/REVIEWER_2_REPORT_V0_3.md",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "8bee2d7b52254ad4aafb0cbf04e8fff84932a4267b887fb84dc11c5ebf6cec49"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig1_layered_vs_organismic.pdf",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "24a690cfceb8f863ef9a59a3ac2672730c5fae42f801ae38fe16b6e6622a6d9e"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig1_layered_vs_organismic.svg",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "a169f4021ee4ffb654d50916503194a9582535cb27a3b96d5b8f4ad2ccb6cedb"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig1_layered_vs_organismic.tex",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "e5c1cd1803343921e825cb6da520f5b8bdd8d466c5898889be0461b26efaae61"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig2_cognition_reflex_aera.pdf",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "a9f87958959f99f9acd3e0841a4979a94be83c09397dbe9fb88cf63ee827f0ff"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig2_cognition_reflex_aera.svg",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "02de63237aef7f7dc49e43ac3bbee7e32bfc9d0778ddb9a1574076e318eb43e3"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig2_cognition_reflex_aera.tex",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "9dcd78cabc7c54e14eb8e1beeacb5d275deab07d4e655b1c6419995862eeb928"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig3_authority_lifecycle.pdf",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "b6ac7deeee07a15eb72e7faf066bced7f221bbec99f050ef0f743e3f50515d1d"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig3_authority_lifecycle.svg",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "d11a015e308e809e6b594f9e089693b4d242b6ae5cd93416559eaf71742bdbdd"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig3_authority_lifecycle.tex",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "30f1ca4000e3602d2f221b36ab646171bfd4cfed04a35ae43a24ab7d964fcb31"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig4_evidence_ladder.pdf",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "e19f9bbdd89e6e180892601c7f12f81f37fc44c3bd60f9275811990aaad403c0"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig4_evidence_ladder.svg",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "5c68b79e7d480e9dcacea1d5d2f49140a074b6562232f9838d5ee278516a0ec3"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/figures/fig4_evidence_ladder.tex",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "a0067c3f1508f4fbcc620ee25c55eb3d5506c95ffa54cb4bb357e374f0832927"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/main.tex",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "77fafcbf12c2a8d4c639cd7001671fe9a95ccd0881520572084fe6ccdbefa6dc"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.3/source/references.bib",
-      "provenance": "v0.3 article input",
+      "provenance": "v0.3 historical article",
       "sha256": "70c13f3e02842d098f2b036922b6fa0d1485fcaa42416d3ac19d0af8ad591686"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
+      "path": "paper/v0.4/ABSTRACT_FR.md",
+      "provenance": "v0.4 article input",
+      "sha256": "bac9985430dc145d3d4a16363d48a24bc301bbd0cb4cb64fd29b3a7354160e80"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/ARTICLE_SOURCE_MANIFEST.sha256",
+      "provenance": "v0.4 article input",
+      "sha256": "9d1190a54aebfa3dbc98433f27c2e4ddd3eef6b1b475c586efe67f55b515bfe2"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/BUILD_RECEIPT.json",
+      "provenance": "v0.4 article input",
+      "sha256": "067674d617a2d1d736f1f49565620af6d73142dece0e5623174acfea5f19a5e0"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/CLAIMS_AND_EVIDENCE_V0_4.md",
+      "provenance": "v0.4 article input",
+      "sha256": "d74cb8e245af4465003b872268d6d0c66af226d4c48fba5335d048799724abde"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/INTERNAL_ADVERSARIAL_REVIEW_V0_4.md",
+      "provenance": "v0.4 article input",
+      "sha256": "29ae65a9156a04752280bf8568e865e1b344977cf7f3b21093564b08b575dd79"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/LICENSE.md",
+      "provenance": "v0.4 article input",
+      "sha256": "a5da6ad316833b8669d64ef11cc3e41656952aa289dae881c0dba879fad01531"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf",
+      "provenance": "v0.4 article input",
+      "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/README.md",
+      "provenance": "v0.4 article input",
+      "sha256": "af88c8ca778995f51b55f63e39cd7c0e4b94d8a474647ec9c8986bde2d79196e"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/RESPONSE_TO_INTERNAL_ADVERSARIAL_REVIEW_V0_4.md",
+      "provenance": "v0.4 article input",
+      "sha256": "80692faafd7aa24d24602b2581802b8aeb3e624288eb7632c41043a877320ed4"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig1_layered_vs_organismic.pdf",
+      "provenance": "v0.4 article input",
+      "sha256": "07ef1af62ec9242c211dd5316d755ad2446453e7ebd9a64b8c1a1f24460b70e8"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig1_layered_vs_organismic.svg",
+      "provenance": "v0.4 article input",
+      "sha256": "0f089e7d81be73a2f2cd7c6ca4547789ed22ab1a459aabeb7f9e41e1e836d81e"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig1_layered_vs_organismic.tex",
+      "provenance": "v0.4 article input",
+      "sha256": "e5c1cd1803343921e825cb6da520f5b8bdd8d466c5898889be0461b26efaae61"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig2_cognition_reflex_aera.pdf",
+      "provenance": "v0.4 article input",
+      "sha256": "c71858d0c9ed9ac26770fb67cd8e863359cd4e1496045faea7c2529b7fdd7e80"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig2_cognition_reflex_aera.svg",
+      "provenance": "v0.4 article input",
+      "sha256": "04fb39dd8844fe0993fde7df149454da5a75d1a2609ccf9df04445779344626f"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig2_cognition_reflex_aera.tex",
+      "provenance": "v0.4 article input",
+      "sha256": "94e1c5db9cd1f1cb5292054018ab91e672b5df0c75a7784b0aa2a7e3256c79b6"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig3_authority_lifecycle.pdf",
+      "provenance": "v0.4 article input",
+      "sha256": "3cad01504057d1df48ef6d1978b819d73863a3e1532f6efb807b8b6e6f10b437"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig3_authority_lifecycle.svg",
+      "provenance": "v0.4 article input",
+      "sha256": "586f7a18d88c62f47934a7ed9f0b0aaf551aa2afb2e4a3e96adbcb13e304e66d"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig3_authority_lifecycle.tex",
+      "provenance": "v0.4 article input",
+      "sha256": "30f1ca4000e3602d2f221b36ab646171bfd4cfed04a35ae43a24ab7d964fcb31"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig4_evidence_ladder.pdf",
+      "provenance": "v0.4 article input",
+      "sha256": "41a6f9c26ffb6ae17e72f87dd678ca7fa6d4546e18b58064bc3c166455d1da08"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig4_evidence_ladder.svg",
+      "provenance": "v0.4 article input",
+      "sha256": "3576dff69688113abbec54057118ad4615799354b1c1d908a31ca5dd29e0024e"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/figures/fig4_evidence_ladder.tex",
+      "provenance": "v0.4 article input",
+      "sha256": "a0067c3f1508f4fbcc620ee25c55eb3d5506c95ffa54cb4bb357e374f0832927"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/main.tex",
+      "provenance": "v0.4 article input",
+      "sha256": "71ab66e9ffbab12845bb693f1faa9abf8a79e65ce396bd1d308d6f5b1c56c6da"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4/source/references.bib",
+      "provenance": "v0.4 article input",
+      "sha256": "3470253d508587fe4e809146300e217068fc6b8079ecd8a8b7b80fbfa08f849d"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
       "path": "public_evidence/CLAIMS_EVIDENCE_LEDGER.json",
-      "provenance": "publication candidate",
-      "sha256": "050a2e8979f226822f8f16498a96cacccdfb0fce2e753b3a8cacef6903ac0d06"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "ffc01c3f9340731262c95fe577edd0dd3eadef56017459c86a87f84545facdb5"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/G039_G040_SUMMARY.json",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "067d96b7bd08ffebfb2f7a7293238a9fcf16d7efef89c273c6eae6750a466631"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/G116_METHOD_SUMMARY.json",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "b14ba6e165eaa8377777e0db5b9f321068caab760a0c3fb505cd2cdd6fd84193"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/PRIVATE_EVIDENCE_OMISSIONS.md",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "cdff970527790de19adec3273acad4b05ddce4fdcf877e5624a0faee6be721e5"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/R3_ENGINEERING_SUMMARY.json",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "c8e7a50271d9db0394180feff51d3ead07cdefa1166fce736cc60b070b79b3f0"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
+      "path": "public_evidence/S5_SCIENCE_SUMMARY.json",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "39fae29f6af6388ce1f5c4c556a837c6f0163c052b7383b53007207148e50422"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "public_evidence/S6_SCIENCE_SUMMARY.json",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "e4f72e0af24ba24d40a75cdaaaae0f8305a8d074625e5b6bcd24fb4699c71ab5"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
       "path": "public_evidence/SOURCE_PROVENANCE.json",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "675f4dc025951878e58e194333bc90281f3b47c1f79df5893ca8af8521d62e1d"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/T4_SCIENCE_SUMMARY.json",
-      "provenance": "publication candidate",
+      "provenance": "v0.2 publication candidate",
       "sha256": "25ec09176c4dedf7f4f04b126cf921656003d80cd7d970796b0a0567bc4e61ab"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "schemas/claim.schema.json",
-      "provenance": "publication candidate",
-      "sha256": "26764e210ddc882e8e2f1eb2d049bb77d614e849c1fe46aa45296287eeab3cb9"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "8a894204aae5f3f88a603573b35798729aaf23bef0e049384d9702e39ff86bc7"
     },
     {
       "copyright": "NOASSERTION",
@@ -571,56 +1019,84 @@
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/build_article.ps1",
-      "provenance": "publication candidate",
-      "sha256": "e699fda26683e8c2e5f0871ce559682a2c37befadfa523eed782194901f7cbd0"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "8af4df570a7628f076388a89b16e84057c02949a059454951afc05d14ce4a433"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/build_article.sh",
-      "provenance": "publication candidate",
-      "sha256": "09c70437503d0935fdf1bc35f119c7aae1d95e7a06f0cb595a92f7460459ff55"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "e645e23384b7497b6a3c0d551a3f89f98af8bad36dae8dafff51985f5bac21cc"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "tools/build_article_verified.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "af7906f27023d1332bfd9ca29a3afad4afc5088ee93364fd306171cf99e40d87"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/build_deterministic_zip.py",
-      "provenance": "publication candidate",
-      "sha256": "743dd0a003116b6922c9c756bf0c8763571a7848ce1f2006995ced083d22e486"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "5ef6184f8cae509de8ea7d5df50879d195e5d3e4f362bbae7006d9842b1592fc"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "tools/compare_experiment_categories.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "555ae76c324b3c9e6e435d92a30b95bdc588a9db98166a64ba808f0454eddc41"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/rebuild_release_metadata.py",
-      "provenance": "publication candidate",
-      "sha256": "3408fa312f53e1bb3bdeca799e15c89447fb1a42f11e09c11e6d7111417b0196"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "137869218a0c2fc63fe94b5f2767451087be28e79a7690fccc6946366aa38ad5"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/run_tests.ps1",
-      "provenance": "publication candidate",
-      "sha256": "2adb47cb98e9df8a5d3073c4582319a3674474bf44d4d9062ff05a460bc8d06c"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "3cc119f84468b1a195934147d9f59835d598a05004f3d917c02696b05cb72853"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/run_tests.sh",
-      "provenance": "publication candidate",
-      "sha256": "bd8942a3251108ca636cb1c6a013f6fe8e3f2e36e318fb6742fb35a69e060d34"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "dcb57558c17fbf3d4ab9dbe9274bfd63b6e0c97353b3450c87f231d85118387e"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "tools/verify_archive.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "0ff93c8356f9841889d035c0790b0b7f992c0efe66d0be6c60ff7bf9458bdab7"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "tools/verify_experiments.py",
+      "provenance": "v0.2 publication candidate",
+      "sha256": "bb8d93474d53d3408b8ed89f691951c3489eaed1153889d8f1c154155daa3905"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/verify_release.py",
-      "provenance": "publication candidate",
-      "sha256": "53756e86ea32a28dcc7e082d39b14f804882a04a118efaf867a4fc23f7725ae1"
+      "provenance": "v0.2 publication candidate",
+      "sha256": "2aa004b149f9d8f404fd0e74062e22210f693d00dc2d5a177cc1f93e8bd5b62a"
     }
   ],
   "git_dependencies": [],
   "preferred_future_code_license": "AGPL-3.0-only optional for a future clean-slate generation after a fresh chain-of-title and compatibility audit",
   "registry_dependencies": [],
   "schema": "oasi.public.license-inventory.v2",
-  "status": "PASS_OWNER_REPRESENTATION_ACCEPTED_FOR_RELEASE",
+  "status": "PASS_OWNER_REPRESENTATION_ACCEPTED_FOR_V0_2_RELEASE",
   "third_party_source_vendored": false
 }

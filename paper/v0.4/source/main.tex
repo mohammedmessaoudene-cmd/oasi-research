@@ -1,0 +1,602 @@
+\documentclass[journal,10pt]{IEEEtran}
+\pdfminorversion=7
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\usepackage{bm}
+\usepackage{booktabs,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{siunitx}
+\usepackage{etoolbox}
+\usepackage{stfloats}
+\usepackage[backend=biber,style=ieee,sorting=none,maxbibnames=99]{biblatex}
+\addbibresource{references.bib}
+
+\interdisplaylinepenalty=2500
+\frenchspacing
+\raggedbottom
+\setlist[itemize]{leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=*,topsep=2pt,itemsep=1pt,parsep=0pt}
+\sisetup{detect-all,group-separator={,},group-minimum-digits=4}
+
+\definecolor{oasiblue}{RGB}{46,86,125}
+\definecolor{oasigreen}{RGB}{72,116,87}
+\definecolor{oasiorange}{RGB}{154,100,55}
+\definecolor{oasired}{RGB}{135,62,62}
+\definecolor{oasigray}{RGB}{92,98,105}
+
+\newcommand{\OASI}{\textsc{OASI}}
+\newcommand{\AERA}{\textsc{AERA}}
+\newcommand{\PolicyIR}{\textsc{PolicyIR}}
+\newcommand{\Code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\NotTested}{\textsc{Not Tested}}
+\newcommand{\Internal}{\textsc{Internal}}
+\newcommand{\Negative}{\textsc{Negative}}
+\newcommand{\Pending}{\textsc{Pending}}
+
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{invariant}{Invariant}
+\newtheorem{assumption}{Assumption}
+\newtheorem{remark}{Remark}
+
+\hypersetup{
+  pdftitle={OASI: An Organismic Computing Architecture for Body-Bound Runtime Assurance and Developmental OS-AI Integration},
+  pdfauthor={Mohammed Messaoudene},
+  pdfsubject={Operational monism, AERA runtime assurance, developmental architecture, negative evidence, and a falsifiable evaluation program},
+  pdfkeywords={OASI, AERA, organismic computing, operating systems, embodied intelligence, runtime assurance, body schema, developmental systems, negative results}
+}
+
+\markboth{OASI TECHNICAL REPORT, PREPRINT V0.4, SEPTEMBER 2026}%
+{Messaoudene: OASI - Organismic Computing and Body-Bound Runtime Assurance}
+
+\title{\OASI: An Organismic Computing Architecture for\\
+Body-Bound Runtime Assurance and Developmental OS--AI Integration}
+
+\author{Mohammed Messaoudene%
+\thanks{M. Messaoudene is with the Department of Electronics and Telecommunications, Faculty of Science and Technology, Belhadj Bouchaib University of Ain Temouchent, Algeria (e-mail: mohammed.messaoudene@univ-temouchent.edu.dz; ORCID: 0009-0007-4665-2548). The affiliation identifies the author's academic appointment only and does not imply sponsorship, collaboration, or endorsement by the university.}%
+\thanks{Preprint v0.4. Version-specific DOI: \href{https://doi.org/10.5281/zenodo.22262138}{10.5281/zenodo.22262138}. The prior version is archived at \href{https://doi.org/10.5281/zenodo.22151556}{10.5281/zenodo.22151556}. The manuscript reports a bounded research architecture and internal evidence. It does not claim a completed operating system, production readiness, consciousness, or validation by DARPA, IEEE, or an independent institution.}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Most systems described as ``AI operating systems'' retain a conventional hierarchy: an agent or model runs above a host operating system and reaches protected resources through tools, APIs, or system calls. \OASI{} investigates a stronger systems hypothesis. It asks whether operation, artificial embodiment, memory, cognition, authority, and development can be treated as coordinated projections of one versioned causal state rather than as services owned by separate OS and AI layers. We formalize this hypothesis as \emph{operational monism}: specialized organs and interfaces may remain, but every protected effect, learned competence, revocation, and body-state transition must be reconciled with one constitutional history.
+
+The architecture combines a computational body model, developmental memory, slow cognition, typed PolicyIR, obligation-checked compilation, bounded reflexes, and Atomic Embodiment Runtime Assurance (\AERA). A learned competence acquires effect authority only through a lease bound to body identity, epoch, generation, certificate, principal, resource, action, policy digest, body-state digest, evidence, and expiration. The complete binding is revalidated immediately before effect. An epistemic firewall prevents observations produced under a reflex from serving as independent proof for expanding that reflex, while immutable generations and one-shot authority prohibit silent replay after crash or evidence loss.
+
+The evidence remains deliberately bounded. Internal differential and mutation campaigns support the tested \AERA{} decision semantics and no-replay discipline. An earlier vertical slice did not improve control outcomes over a comparator with the same effective controller. Two new deterministic trace simulations sharpen the effect-boundary claim: with a cooperative idempotent receiver, the strongest baseline matched OASI safety and recovered more deliveries; with a non-cooperative receiver, consume-before-dispatch with no redispatch avoided modeled duplicates but omitted modeled deliveries. Because the latter comparison lacks a policy-matched at-most-once baseline and uses repeated deterministic traces, it identifies a safety--availability policy tradeoff, not an OASI-specific advantage or a population estimate. The contribution is a falsifiable architecture, a body-bound assurance mechanism, preserved negative and diagnostic results, and a reproducible evidence program---not a completed operating system or a claim of general superiority.
+\end{abstract}
+
+\begin{IEEEkeywords}
+organismic computing, artificial intelligence, operating systems, runtime assurance, embodied intelligence, body schema, autonomic computing, developmental systems, capability security, negative results, reproducibility.
+\end{IEEEkeywords}
+
+\section{Introduction}
+\IEEEPARstart{L}{arge} language models and tool-using agents increasingly perform work that once belonged exclusively to application code: they schedule tasks, maintain persistent memory, invoke local tools, manipulate files, and coordinate services. A growing class of systems uses operating-system terminology for this role. AIOS isolates scheduling, context, memory, storage, tools, and access control behind an agent-facing kernel \cite{mei2024aios}; Cerebrum supplies a development and deployment environment around that kernel \cite{rama2025cerebrum}; AgentOS and broader agent operating-system proposals place an agentic control plane over conventional computing environments \cite{liu2026agentos,sharma2026aos}. These systems address an important engineering problem, but they preserve a familiar ontology: an intelligent component remains a tenant of a pre-existing operating substrate.
+
+\OASI{} starts from a stronger claim. It asks whether operating and intelligence can be understood as two descriptions of the continuous activity of one artificial organism. The claim is not that a language model should execute in ring~0, that every interrupt should be learned, or that a digital computer must reproduce neural tissue. It is a claim about \emph{causal organization}. Resource regulation, interoception, memory, intention, learned competence, authority, action, and recovery should belong to one versioned history. Specialized organs, interfaces, and unequal time scales remain necessary; what changes is that none of them owns an independent authoritative reality.
+
+We call this thesis \emph{operational monism}. It rejects both a naive software stack and a naive neural monolith. A viable organismic system may contain processes, schedulers, message channels, interpreters, and verified fast paths, yet every protected transition must be reconciled with one canonical body identity and one constitutional state. Cognition may propose a new way of operating, but it may not silently convert confidence into privilege. Conversely, low-level regulation is not treated as a dumb service hidden beneath intelligence; body state and operating consequences are native inputs to cognition and development.
+
+Figure~\ref{fig:layered} contrasts the two commitments. In the layered model, observations and commands cross an interface between an agent and a conventional operating system. In the organismic model, the cognitive organ, body model, developmental memory, reflex repertoire, and constitutional authority are projections of a single state $Z_t$. The distinction is not the absence of APIs. It is the absence of competing sources of truth.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=.97\textwidth]{figures/fig1_layered_vs_organismic.pdf}
+  \caption{Architectural thesis. A layered AI system observes and commands a conventional operating substrate through interfaces. An \OASI{} realization may retain interfaces and specialized organs, but authoritative body state, memory, competence, and action are reconciled through one canonical, versioned history.}
+  \label{fig:layered}
+\end{figure*}
+
+The thesis must survive more than metaphor. A shared data structure is not itself an organismic mechanism. If a modular comparator receives the same sufficient information, algorithms, memory, actions, and authority without delay or cost, it may reproduce the same behavior. The earlier T4 experiment exposed precisely this problem: centralizing state reduced coordination traffic but did not improve control outcomes, and the comparator was not causally distinct enough to identify the stronger developmental hypothesis. The appropriate response is not to erase the negative result; it is to state a more discriminating target.
+
+This paper therefore develops two coupled contributions. The first is an architecture for developmental operating behavior: a body model predicts consequences, slow cognition proposes a typed policy, obligation checks admit or reject compilation to a bounded reflex, and a constitution mediates authority at the effect boundary. The second is Atomic Embodiment Runtime Assurance (\AERA), a commit-time predicate that binds a learned competence to the current body identity, epoch, generation, certificate, principal, resource, action, policy digest, body-state digest, and expiration. The resulting system is allowed to learn, but it is not allowed to rewrite the terms under which learning becomes effect.
+
+\subsection{Contributions}
+The work makes six bounded contributions.
+\begin{enumerate}
+  \item \textbf{Operational monism as a systems hypothesis.} The philosophical intuition ``neither OS nor AI, but one OASI'' is translated into a falsifiable requirement: every authoritative transition must be reconstructible from one versioned organismic history.
+  \item \textbf{A typed organismic state model.} Body, developmental memory, goals, learned competences, authority, and constitution are defined explicitly, together with organ-specific projections and a viability envelope.
+  \item \textbf{A developmental cognition-to-reflex path.} Slow proposals are typed, verified, exercised in shadow mode, compiled into bounded reflexes, and monitored for revocation rather than installed as unbounded self-modification.
+  \item \textbf{Atomic Embodiment Runtime Assurance.} \AERA{} revalidates the complete body-bound lease immediately before effect and rejects stale, substituted, expired, revoked, or quarantined authority.
+  \item \textbf{An epistemic firewall and no-replay discipline.} A reflex cannot use its own policy-conditioned consequences as independent proof, and a consumed one-shot authority never returns to the available state.
+  \item \textbf{A falsifiable evidence program.} Negative T4 evidence is preserved, strong monolithic and modular baselines receive the same information and authority, and the scientific target becomes residual organismic value under measured resource and recovery costs.
+\end{enumerate}
+
+\subsection{Contribution boundary}
+The paper does not claim a completed \OASI{} organism, a production kernel, consciousness, hard real-time behavior, universal safety, or general superiority over classical control. The current reference runtime is a user-space research artifact. The QEMU/Buildroot branch is an engineering program and cannot enter the scientific record through narrative progress reports; it must satisfy the evidence insertion gate in Appendix~A. This separation prevents an engineering milestone, a successful test harness, or a visually persuasive demonstration from being promoted into a stronger claim than the evidence supports.
+
+\section{Related Work and Positioning}
+\subsection{Agent operating systems}
+AIOS and Cerebrum organize resources and services for language-model agents \cite{mei2024aios,rama2025cerebrum}. AgentOS proposes a personal agent kernel built around natural-language interaction and modular skills \cite{liu2026agentos}; broader AOS architectures extend the idea toward agentic control planes, governance, deterministic enforcement, and operating-system integration \cite{sharma2026aos}. Their primary object is the management of agents. \OASI{} instead treats the relation between cognition and operation as the research object: the question is whether a learned competence can enter the operating repertoire of the same body and history from which it was learned.
+
+\subsection{Autonomic computing and learned system components}
+Autonomic computing framed self-configuration, self-optimization, self-healing, and self-protection as responses to systems complexity \cite{kephart2003autonomic,white2004architectural}. Control-theoretic formulations supplied feedback models and utility functions for self-management \cite{diao2005control}. This literature is the closest systems precedent for machine ``vital signs,'' policy-driven regulation, and multiple feedback loops. \OASI{} adds a developmental question: under what conditions may a strategy learned by a fallible cognitive organ become a durable part of operating behavior?
+
+Learned mechanisms can already occupy critical system paths. LinnOS uses a small neural predictor in storage scheduling \cite{hao2020linnos}. Theseus and RedLeaf show that operating-system structure, isolation, state management, and recovery can be reconsidered through language-level invariants \cite{boos2020theseus,narayanan2020redleaf}. Such systems demonstrate that learned and evolvable internals are feasible; they do not by themselves establish a shared developmental memory or body-bound authority.
+
+\subsection{Runtime assurance}
+Simplex separates an advanced controller from a high-assurance controller and a decision module \cite{sha1995simplex}. Component-based and black-box variants extend the pattern to compositional or partially modeled systems \cite{phan2017cbsa,mehmood2021blackbox}. \AERA{} is complementary rather than substitutive. Simplex asks which controller may govern the plant. \AERA{} asks whether a competence---regardless of how it was obtained---still possesses authority over this body, at this epoch, under this policy, for this exact effect.
+
+\subsection{Embodiment, body schema, and homeostasis}
+A regulator requires a model adequate to the system it regulates under explicit assumptions \cite{conant1970regulator}. Developmental robotics has long treated cognition as emerging through embodied, sensorimotor, and social development \cite{asada2009cognitive}. Continuous self-modeling can support adaptation after damage \cite{bongard2006selfmodel}; active and multisensory body-schema learning can update kinematic and perceptual models online \cite{martinezcantin2010bodyschema,vicente2016online,pugach2019bodyschema}; recent egocentric visual self-models predict body dynamics without a fixed explicit morphology \cite{hu2025selfmodel}. Hierarchical generative models likewise organize autonomous action across multiple time scales \cite{yuan2023hierarchical}.
+
+Embodiment also changes where computation occurs. Morphology and control can be co-optimized \cite{cheney2017morphology}, and morphological computation can be quantified as a contribution of body-environment dynamics to the sensorimotor loop \cite{zahedi2013morphological,ghazizahedi2015information}. Homeostatic accounts go further by treating maintenance of viable body states as a source of behavioral value \cite{man2019homeostasis}; self-organization and embodied feedback similarly emphasize that useful behavior is distributed across controller, body, and environment \cite{pfeifer2007selforganization}.
+
+\OASI{} does not claim equivalence between a computer and a living organism. It borrows three architectural commitments: a body model that matters to action, a viability boundary that matters to value, and a developmental history that changes future competence. For a computer, the body includes cores, memory regions, storage, processes, accelerators, timing, failure modes, and authority-bearing identities.
+
+\subsection{Positioning matrix}
+Table~\ref{tab:positioning} locates the contribution. The entries identify normative concerns, not overall system quality.
+
+\begin{table*}[t]
+\centering
+\caption{Positioning relative to adjacent systems. ``Partial'' means that a concern appears in selected paths but is not the architecture's primary normative object.}
+\label{tab:positioning}
+\small
+\begin{tabularx}{\textwidth}{@{}p{2.25cm}p{2.05cm}p{2.05cm}p{2.05cm}p{2.05cm}X@{}}
+\toprule
+Approach & Intelligence in operating path & Learned body model & Authority at effect & Developmental memory & Primary contribution boundary \\
+\midrule
+AIOS / AgentOS / AOS & Agent control plane & Usually external or task-specific & Policy- and implementation-specific & Agent memory and skills & Agent scheduling, tools, memory, and interaction \\
+Autonomic computing & Feedback-driven self-management & Explicit or estimated system model & Control-loop dependent & Adaptation history varies & Self-configuration, optimization, healing, protection \\
+LinnOS & Learned predictor in a system path & No organismic body model & Conventional OS authority & No & Fine-grained I/O predictability \\
+Theseus / RedLeaf & No required cognitive organ & No & Language and component boundaries & Structural evolution / recovery & Safe OS structure, isolation, and state management \\
+Simplex family & Advanced controller plus assurance layer & Plant model or safety envelope & Switching and safety monitor & Not generally developmental & Runtime safety of advanced controllers \\
+Embodied self-modeling & Controller learns morphology or dynamics & Native & Task dependent & Often longitudinal & Adaptation to body change \\
+\OASI{} / \AERA{} & Multi-timescale cognition-to-reflex path & Canonical computational body & Body-bound revalidation at commit & Required by the model & Operational monism, authority, development, and falsifiable value \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\section{From Philosophy to a Falsifiable System Model}
+\subsection{Layered baseline}
+A conventional AI-enabled system can be written as
+\begin{align}
+  a_t &= \pi_\theta(o_t,m_t), \label{eq:layered_policy}\\
+  S_{t+1} &= F_{\mathrm{OS}}(S_t,a_t,w_t), \label{eq:layered_os}
+\end{align}
+where the cognitive policy $\pi_\theta$ observes an interface projection $o_t$ and memory $m_t$, while the operating substrate evolves state $S_t$ under disturbance $w_t$. The interface may be a system call, tool protocol, message bus, shared memory region, or command channel. This factorization is neither obsolete nor intrinsically inferior; it is the correct null architecture against which organismic claims must be tested.
+
+\subsection{Operational monism}
+\begin{definition}[Operational monism]
+An architecture is operationally monist over horizon $T$ when its protected effects, body-state changes, learned competences, revocations, and developmental updates are all constitutionally reconciled with one versioned causal history, while no organ maintains an unreconciled authoritative state from which it can widen its own power.
+\end{definition}
+
+The definition is deliberately weaker than physical indivisibility and stronger than colocation. Multiple processes, memories, clocks, message channels, and accelerators are allowed. What is excluded is a hidden split of authority: an ``AI state'' that can authorize effects without the current body state, or an ``OS state'' whose consequences never enter cognition and development.
+
+\subsection{Canonical organismic state}
+The canonical state is
+\begin{equation}
+  Z_t = \bigl(B_t,M_t,G_t,K_t,\Lambda_t,C\bigr), \label{eq:state}
+\end{equation}
+where:
+\begin{itemize}
+  \item $B_t$ is the computational body: topology, resources, health, affordances, identity, epoch, and generation;
+  \item $M_t$ is episodic, semantic, procedural, and provenance memory;
+  \item $G_t$ contains goals, intentions, uncertainty, hypotheses, and active commitments;
+  \item $K_t$ contains learned skills and reflexes together with their validity domains;
+  \item $\Lambda_t$ contains authority, leases, revocation, quarantine, and one-shot execution state;
+  \item $C$ is the non-self-extensible constitution that mediates protected transitions.
+\end{itemize}
+
+An organ $i$ receives a typed view
+\begin{equation}
+  x_t^{(i)} = P_i(Z_t), \qquad i\in\mathcal O, \label{eq:organprojection}
+\end{equation}
+and may propose a transition $\tau_t^{(i)}$. The constitutional update is
+\begin{equation}
+  Z_{t+1}=F_C\!\left(Z_t,\xi_t,h_t,\{\tau_t^{(i)}\}_{i\in\mathcal O}\right), \label{eq:transition}
+\end{equation}
+where $\xi_t$ is an environmental event and $h_t$ is human input or authority. The four terms that motivate the name---operation, artificial embodiment, system organization, and intelligence---are projections
+\begin{equation}
+  \pi_O(Z_t),\quad \pi_A(Z_t),\quad \pi_S(Z_t),\quad \pi_I(Z_t), \label{eq:projections}
+\end{equation}
+rather than independent owners of state.
+
+A practical closure condition is
+\begin{equation}
+  \operatorname{AuthState}_i(t)=Q_i(Z_t), \qquad
+  \operatorname{Effect}(y_t)\Rightarrow C(Z_t,y_t)=1, \label{eq:closure}
+\end{equation}
+for every organ $i$. Equation~\eqref{eq:closure} does not require all computation to pass through one process. It requires every protected effect to be mediated by the same constitutional state that records its body, history, and authority.
+
+\subsection{Viability and homeostatic value}
+Let $v_t=V(B_t)\in\mathbb R^d$ summarize body variables such as free memory, thermal margin, storage headroom, process health, latency reserve, and integrity state. The admissible viability set is
+\begin{equation}
+  \mathcal V=\{b:\underline v\preceq V(b)\preceq\overline v\}. \label{eq:viability}
+\end{equation}
+A developmental controller may optimize task performance only subject to constitutional safety and viability. One generic objective is
+\begin{equation}
+\begin{aligned}
+J(\pi)=\mathbb E_\pi\sum_{t=0}^{T}\gamma^t \big[
+ &L_{\mathrm{task}}(Z_t,u_t)
+ +\lambda_v\,d(V(B_t),\mathcal V)\\
+ &+\lambda_r\,C_{\mathrm{resource}}(Z_t,u_t)
+ +\lambda_u\,U_t \big],
+\end{aligned}
+\label{eq:homeostaticobjective}
+\end{equation}
+where $U_t$ penalizes uncertainty miscalibration. Equation~\eqref{eq:homeostaticobjective} is a research target, not a claim that the current prototype possesses machine feelings or autonomous self-preservation.
+
+\subsection{Causal unity does not imply equal authority}
+A single organism contains functions with unequal latency, reliability, and power. Slow cognition may propose a policy, but it cannot grant itself a capability, rewrite $C$, or convert confidence into permission. \OASI{} is therefore \emph{causally monist and authority-asymmetric}. This asymmetry is not a return to ``OS below, AI above.'' It is the condition under which fallible cognition may participate in operating behavior without becoming the root of trust.
+
+\subsection{Decomposition boundary}
+A shared state is not a scientific mechanism by itself. Equivalence and state-abstraction results in decision processes, together with common-information reformulations of decentralized control, show why representation alone cannot establish a distinct capability \cite{givan2003equivalence,nayyar2013common}. The relevant null hypothesis is formalized below.
+
+\begin{assumption}[Lossless sufficient communication]
+For each $t$, a modular comparator receives a sufficient statistic $s_t=\sigma(Z_t)$ before deciding, with no loss, delay, failure, or resource cost; it uses the same policy, memory update, action space, random seed, and authority predicate as the integrated system.
+\end{assumption}
+
+\begin{proposition}[Finite-horizon behavioral equivalence]
+Under the assumption above, the comparator can reproduce the integrated action and state trajectory over any finite horizon for which the common transition functions terminate.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+At $t=0$, both systems receive the same sufficient statistic and apply the same deterministic or identically seeded policy, hence select the same action. Their common transition and memory-update functions yield the same next sufficient statistic. Induction gives identical trajectories over the finite horizon. The construction says nothing about trust, confidentiality, failure containment, or communication cost.
+\end{proof}
+
+The proposition explains why ``shared state'' was too weak a hypothesis. \OASI{}-specific value must survive comparison with the strongest fair decomposition, including a generic monolith that shares memory without adopting the developmental and authority semantics of the proposed architecture.
+
+\subsection{Threat model}
+The cognitive organ may be wrong, prompt-injected, compromised, overconfident, or outside its training distribution. A reflex may become stale after reset, component replacement, epoch change, certificate rotation, principal substitution, or policy revision. The executor may crash between decision and effect; descendants may survive their parent; a power loss may interrupt receipt publication. An attacker may replay a valid lease against a different body, replace an artifact after validation, exploit path aliases, or present a reflex's own consequences as proof of its correctness.
+
+The constitution, authority broker, evidence ledger, compiler, and trusted host remain in the research trusted computing base. A malicious kernel, firmware, toolchain, or hardware platform is outside the present claims.
+
+\section{Architecture}
+\subsection{Multi-timescale organs}
+Operational monism does not collapse every function into one algorithm. The architecture instead separates time scales while preserving identity. A cognitive organ develops hypotheses and plans over seconds or minutes. A body-model organ estimates resource state, viability, and action consequences. A policy compiler transforms an admitted policy into a bounded reflex only after declared obligations pass their configured checks. Reflexes operate at event-driven or millisecond scales. A constitutional organ evaluates authority at the effect boundary, while developmental memory records causal evidence and the conditions under which competence was acquired.
+
+Figure~\ref{fig:pipeline} shows the conversion path. The main line is deliberately asymmetric: learning may become operating behavior only after typing, verification, bounded leasing, shadow observation, and commit-time mediation. Rejection is not an exceptional crash; it is a first-class constitutional outcome.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=.91\textwidth]{figures/fig2_cognition_reflex_aera.pdf}
+  \caption{Bounded cognition-to-effect pipeline. The main path converts a cognitive proposal into a typed and testable reflex. The red exception lane handles stale authority, canary mismatch, commit rejection, and post-effect anomaly without allowing evidence produced by the reflex to justify an expansion of its own authority.}
+  \label{fig:pipeline}
+\end{figure*}
+
+\subsection{Body model and developmental update}
+Let $b_t=\phi_B(B_t)$ be a measurable body-state vector, $u_t$ a candidate action, and $\chi_t$ contextual variables. A learned body model predicts
+\begin{equation}
+  \widehat b_{t+1}=f_\varphi(b_t,u_t,\chi_t). \label{eq:bodymodel}
+\end{equation}
+A generic objective is
+\begin{equation}
+\mathcal{L}_{\mathrm{body}}(\varphi)=
+\lVert W_b(b_{t+1}-\widehat b_{t+1})\rVert_2^2
++\lambda_{\mathrm{cal}}\,\mathcal U_\varphi
++\lambda_{\mathrm{cost}}\,\mathcal C(u_t), \label{eq:bodyloss}
+\end{equation}
+where $\mathcal U_\varphi$ penalizes uncertainty miscalibration and $\mathcal C$ records resource or safety cost. Body-schema research motivates this predictive loop, but the computational body differs from a robot morphology: it includes identities, resource ownership, timing, process descendants, mutable paths, storage, and authority-bearing objects.
+
+Development is not mere parameter update. A change is developmental only if it alters future competence while preserving its provenance and domain of validity. Let $\Delta K_t$ denote a proposed competence update. It is admitted only through
+\begin{equation}
+  K_{t+1}=K_t\oplus\operatorname{Admit}_C(\Delta K_t,E_t,D_t), \label{eq:development}
+\end{equation}
+where $E_t$ is the evidence set and $D_t$ the declared validity domain. The operator $\oplus$ is versioned: it never overwrites the history required to revoke or compare the new competence.
+
+\subsection{Typed policy representation}
+The cognitive organ does not emit arbitrary executable code. It emits
+\begin{equation}
+  P=\bigl(g,D,\beta,\rho,\mathcal E,\nu,h_P\bigr), \label{eq:policyir}
+\end{equation}
+where $g$ is the intended goal, $D$ the domain of validity, $\beta$ a resource envelope, $\rho$ a rollback or compensation plan, $\mathcal E$ the evidence obligations, $\nu$ the validity and expiry rule, and $h_P$ a canonical digest. A proposed obligation-checking compiler $\Gamma$ returns
+\begin{equation}
+  \Gamma(P,V)\rightarrow (r,\ell) \quad \text{or} \quad \bot, \label{eq:compile}
+\end{equation}
+where $V$ is the obligation-check record, $r$ a bounded reflex, $\ell$ a lease, and $\bot$ rejection. A check may be an explicit test, static analysis, proof, or separately executable predicate. The current artifact implements only a bounded subset of this architecture and does not provide a formally verified compiler or toolchain.
+
+\subsection{Body-bound lease}
+The lease is
+\begin{equation}
+\ell = (u,e,g,c,p,q,a,t_{\mathrm{exp}},h_P,h_B,h_E,\sigma), \label{eq:lease}
+\end{equation}
+where $u$ is body identity, $e$ epoch, $g$ generation, $c$ certificate, $p$ principal, $q$ resource, $a$ action, $t_{\mathrm{exp}}$ expiration, $h_B$ body-state binding, $h_E$ evidence binding, and $\sigma$ the authority record. The redundancy is intentional. A skill authorized for one body, principal, resource, or action must not survive a transition merely because its code is unchanged.
+
+\subsection{Atomic Embodiment Runtime Assurance}
+For proposed effect $y$ at time $t$, \AERA{} accepts only if
+\begin{align}
+\AERA(\ell,Z_t,y)\equiv{}&
+ (u=u_t)\land(e=e_t)\land(g=g_t)\land(c=c_t)\nonumber\\
+&\land(p=p_t)\land(q=q_y)\land(a=a_y)\nonumber\\
+&\land(t<t_{\mathrm{exp}})\land(h_P=h_{P,t})\land(h_B=h_{B,t})\nonumber\\
+&\land(h_E=h_{E,t})\land\neg\operatorname{revoked}(\ell,t)\nonumber\\
+&\land\neg\operatorname{quarantined}(Z_t)\nonumber\\
+&\land\operatorname{effectDigest}(y)=d_y. \label{eq:aera}
+\end{align}
+Every term is re-read or revalidated at the commit boundary from the same snapshots consumed by the effect path. A prior successful check is not sufficient.
+
+\begin{invariant}[Stale-authority exclusion]
+If any body-bound field in \eqref{eq:lease} changes between preparation and commit, \AERA{} rejects the effect.
+\end{invariant}
+
+\begin{proposition}
+Assume the values used in \eqref{eq:aera} are obtained from the immutable snapshots consumed by the effect path, and the effect cannot occur unless the predicate returns true. An authority issued for $(u,e,g,c,p,q,a)$ cannot authorize an effect under a different tuple.
+\end{proposition}
+
+\begin{proof}[Proof sketch]
+At least one equality in \eqref{eq:aera} is false for a different tuple, so the conjunction is false. Snapshot identity is essential: without it, a time-of-check/time-of-use substitution could invalidate the argument.
+\end{proof}
+
+The proposition is conditional by design. The engineering program must establish that the bytes checked are the bytes used; source inspection alone is not sufficient.
+
+\subsection{Epistemic firewall}
+A reflex changes the environment from which its next observations are drawn. Those observations are policy-conditioned and may be self-confirming. Let $E_t^r$ denote evidence produced while reflex $r$ is active. The body or competence model may be updated only when
+\begin{equation}
+\begin{aligned}
+  \operatorname{Admit}(E_t^r)= {}&
+  \operatorname{independent}(E_t^r)\\
+  &\lor\operatorname{counterfactualValid}(E_t^r)\\
+  &\lor\operatorname{humanApproved}(E_t^r).
+\end{aligned}
+\label{eq:firewall}
+\end{equation}
+Otherwise the evidence may trigger warning, quarantine, revocation, or a new experiment, but it cannot directly increase the reflex's authority. The firewall is an intervention discipline, not a general solution to causal inference.
+
+\subsection{Generations, one-shot authority, and no replay}
+The evidence lifecycle is shown in Fig.~\ref{fig:lifecycle}. A prepared generation becomes immutable before an official attempt. One-shot authority is consumed when the attempt begins, not when it succeeds. If terminal proof is lost after consumption, the attempt becomes indeterminate. A successor may inspect preserved bytes but cannot invent the historical exit code or issue a second effect under the consumed authority.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=.98\columnwidth]{figures/fig3_authority_lifecycle.pdf}
+  \caption{Generation and authority lifecycle. Terminal failure and indeterminate execution are preserved. Recovery proceeds through a successor generation with new authority rather than replaying a consumed token.}
+  \label{fig:lifecycle}
+\end{figure}
+
+\begin{invariant}[No-replay monotonicity]
+Once a one-shot authority enters the consumed state, no transition returns it to available. A successor may receive new authority under a new generation, but it cannot reactivate the consumed token.
+\end{invariant}
+
+\section{Prototype and Evidence Program}
+\subsection{User-space reference runtime}
+The reference runtime implements typed decisions, body-bound fields, commit-time checks, fail-closed rejection, and append-only evidence in user space. It is intentionally not a kernel. This restriction keeps the current claims narrow and permits differential implementations, mutation testing, and deterministic packaging before privileged integration is considered.
+
+The runtime separates four evidence classes:
+\begin{enumerate}
+  \item \emph{specification evidence}: types, equations, invariants, and threat assumptions;
+  \item \emph{semantic evidence}: differential implementations and focused mutants of the decision predicate;
+  \item \emph{engineering evidence}: build identities, manifests, receipts, crash handling, and deterministic packages;
+  \item \emph{scientific evidence}: prospectively locked comparisons that can support or reject organismic-value claims.
+\end{enumerate}
+A green engineering gate never automatically promotes a scientific claim.
+
+\subsection{Evidence ladder}
+Figure~\ref{fig:evidence} summarizes the promotion discipline. The mature claim is the tested \AERA{} decision semantics, not a completed organism. Guest and fixture work remains an engineering layer until the scientific comparison is explicitly authorized and prospectively locked; public preregistration must be identified separately when it actually occurs.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=.78\textwidth]{figures/fig4_evidence_ladder.pdf}
+  \caption{Evidence ladder and claim boundary. Each level requires a distinct artifact and review; lower-level integrity cannot be relabeled as proof of a higher-level hypothesis.}
+  \label{fig:evidence}
+\end{figure*}
+
+\subsection{Power loss and post-consumption adjudication}
+A power loss or client disconnection is treated as a change in evidence state, not as an invitation to retry. The supervisor records preparation, authority consumption, begin state, heartbeat, streamed logs, terminal status, and copyback separately. Completed attempts, partial attempts, and never-started identities remain distinct. If output bytes exist but terminal process evidence is missing, they may be classified as opaque outputs whose integrity is verifiable; they are not retroactively promoted to a canonical successful run.
+
+This discipline has exposed practical failure modes: pipe deadlocks, unbounded output capture, stale path bindings, reparse-point substitution, cache namespace mismatches, incomplete terminal receipts, and descendants retaining handles after their parent exits. These findings improve the assurance mechanism but do not constitute evidence of intelligence.
+
+\subsection{Guest substrate boundary}
+A QEMU/Buildroot branch is constructing a disposable Linux guest and carrier for synthetic fixtures. Its purpose is to test causal resource limits, parent-death behavior, no-replay execution, and opaque-output adjudication without modifying the host or reading scientific performance data. Results from this branch remain \NotTested{} in the paper until an immutable report supplies all fields required by Appendix~A.
+
+\section{Evaluation Methodology}
+\subsection{Research questions}
+The program is organized around five questions.
+\begin{itemize}
+  \item \textbf{RQ1 - Commit-time assurance:} Does \AERA{} reject stale, expired, substituted, revoked, and quarantined authority using the exact state consumed by the effect?
+  \item \textbf{RQ2 - Developmental compilation:} Can a policy learned by slow cognition be compiled into a faster reflex without widening its domain, resource envelope, or authority?
+  \item \textbf{RQ3 - Body-model value:} Does longitudinal body knowledge reduce prediction error, recovery time, or adaptation cost after resource change or impairment?
+  \item \textbf{RQ4 - Architectural specificity:} Does any benefit remain after strong monolithic and modular baselines receive the same information, algorithms, actions, and authority?
+  \item \textbf{RQ5 - External reproducibility:} Can another team reproduce the result using an independently developed verifier or runtime rather than the originating harness alone?
+\end{itemize}
+
+\subsection{Baseline family}
+The minimum fair comparison includes:
+\begin{itemize}
+  \item $I_{\mathrm{OASI}}$: canonical state, body model, developmental memory, typed reflexes, and \AERA;
+  \item $G_{\mathrm{mono}}$: one-process monolith with the same algorithms, information, actions, authority, and provenance;
+  \item $D_{\mathrm{msg}}$: private processes communicating through explicit messages;
+  \item $D_{\mathrm{shm}}$: private processes communicating through shared memory;
+  \item $D_{\mathrm{stat}}$: a modular system receiving the strongest admitted sufficient statistic;
+  \item $D_{\mathrm{act}}$: a modular system receiving direct actions or compiled policies;
+  \item $D_{\mathrm{local}}$: equivalent local guards and fast reflexes;
+  \item a strong classical adaptive controller whenever the task admits one.
+\end{itemize}
+No baseline is denied a sensor, action, learned policy, or authority available to \OASI{}. Differences must arise from architecture and measured cost, not from asymmetric information.
+
+\subsection{Cost, safety, and organismic value}
+For architecture $k$, define
+\begin{equation}
+\mathbf c_k=
+(L_{50},L_{99},T_{\mathrm{cpu}},M_{\mathrm{rss}},B_{\mathrm{tx}},
+N_{\mathrm{cs}},T_{\mathrm{rec}},E_{\mathrm{prov}},H_{\mathrm{vio}},Q),
+\label{eq:costvector}
+\end{equation}
+where the terms denote latency, CPU time, memory, transferred bytes, context switches, recovery time, provenance cost, viability-boundary violations, and task loss. A preregistered scalarization may be
+\begin{equation}
+J_k=\mathbf w^\top\widetilde{\mathbf c}_k
++\lambda_s\,\operatorname{SafetyViolations}_k,
+\label{eq:objective}
+\end{equation}
+where normalization and weights are frozen before outcome inspection. Residual organismic value is
+\begin{equation}
+V_{\mathrm{org}}=\min_{b\in\mathcal B}J_b-J_{I_{\mathrm{OASI}}},
+\label{eq:value}
+\end{equation}
+subject to identical information, action, authority, and safety constraints. A positive value against a weak message baseline is insufficient if $G_{\mathrm{mono}}$ or $D_{\mathrm{local}}$ matches it.
+
+The primary analysis should remain vector-valued. Equation~\eqref{eq:objective} supports a preregistered decision rule; it must not conceal a trade-off in which lower communication cost is purchased by worse task loss or weaker safety.
+
+\subsection{Pre-registration and stopping rules}
+An official comparison freezes source, toolchain, seeds, scenarios, budgets, metrics, statistical tests, and claim thresholds before outcome inspection. A negative primary endpoint is terminal for that hypothesis. A successor experiment must identify a new causal mechanism and pass an independent mechanism gate; it may not add favorable tasks after observing a failed result.
+
+Power loss, client disconnection, or incomplete terminal evidence changes the status of an attempt. Completed, failed, indeterminate, and never-started identities remain distinct. A consumed authority is never replayed merely to obtain a cleaner result.
+
+\subsection{Current claim-evidence matrix}
+\begin{table*}[t]
+\centering
+\caption{Current claim boundary. ``Internal'' denotes project-controlled evidence, not independent institutional validation.}
+\label{tab:claims}
+\small
+\begin{tabularx}{\textwidth}{@{}p{3.15cm}p{1.55cm}X X@{}}
+\toprule
+Claim & Status & Evidence available & Missing evidence / boundary \\
+\midrule
+Operational-monist architecture is precisely specified & Supported & Canonical state, organ projections, authority asymmetry, viability model, threat model & Specification does not establish utility or implementation completeness \\
+\AERA{} body-bound decision semantics & \Internal{} & Differential implementations, focused mutants, commit predicate, no-replay state machine & No independently developed implementation; no production effect executor \\
+Crash and evidence discipline & \Internal{} & Immutable generations, one-shot authority, preserved failures, post-consumption adjudication & Host and toolchain remain in the trusted computing base \\
+Shared canonical state improves decisions & \Negative{} & T4 produced equivalent decision metrics and mainly reduced messages & Comparator did not instantiate a causally distinct developmental architecture \\
+T4 reflex improves safety or value & \Negative{} & Ablations and a classical adaptive baseline were stronger on key outcomes & Does not refute later mechanisms with better domain identification \\
+Absolute digital non-separability & Withdrawn & Proposition~1 gives an equivalence construction under cost-free sufficient communication & Replaced by resource-bounded value \\
+Resource-bounded organismic value & Open & Baselines, cost vector, pre-registration rules, and promotion gate specified & Requires sealed, independently reviewed evidence \\
+Cooperative-sink mechanism advantage & \Negative{} & S5: 1,200 deterministic local traces; B3 matched observed safety and recovered more deliveries & Fixture-only; no real crash, transport, guest, hardware, or external replication \\
+Non-cooperative-sink duplicate/omission tradeoff & Diagnostic & S6: 1,500 deterministic local traces; no-redispatch avoided modeled duplicates but omitted modeled deliveries & No policy-matched at-most-once baseline; no probabilistic inference or OASI-specific attribution \\
+Complete \OASI{} organism & Not demonstrated & No longitudinal body model, organogenesis, or complete cognition-operation closure & Requires developmental experiments and external replication \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\section{Results to Date}
+\subsection{AERA semantic evidence}
+The internal reference program has exercised the tested decision predicate through project-controlled C and Python implementations. A differential campaign evaluated \num{100000} cases spanning 11 decision outcomes and reported no mismatch. A focused mutant that removed the epoch check produced retained divergences, showing that the corresponding field was causally active rather than decorative. A later project-controlled Rust implementation exercised the same decision semantics while exposing evidence and transport defects, including a pipe deadlock and a ledger that was not self-describing. Those defects were retained as failures instead of being reclassified as semantic success. None of these internal cross-implementation checks is an external reproduction.
+
+The narrow conclusion is that body-bound equality checks and commit-time revalidation matter to the implemented decision function. It is not evidence of a secure kernel, hard real-time operation, or universal correctness.
+
+\subsection{T4 negative result}
+The T4 vertical slice compared a canonical shared-state condition with a nominal dual-API condition and classical control baselines. The primary hypothesis was not supported. The shared-state and dual-API conditions produced the same control outcomes in paired analyses, while the shared-state condition primarily reduced coordination messages. A strong classical adaptive controller performed better on the tested task.
+
+A later code audit identified a construct-validity defect: the API exchange occurred after action selection, and both conditions shared much of the same controller and learning state. The experiment therefore supports a precise negative claim---shared state alone did not create better decisions---but cannot identify or refute the developmental mechanism defined in Sections~III and IV. The correct response is to narrow the claim, not to discard the negative result or reinterpret it as success.
+
+\subsection{Mechanism search}
+A subsequent mechanism-discovery phase considered path-dependent memory, body-controller co-adaptation, organogenesis, multi-timescale coupling, morphological computation, and knowledge-authority coupling. None passed every preregistered mechanism criterion. The terminal result was \Code{MECHANISM_NOT_IDENTIFIED}. This outcome removed absolute non-separability as the primary claim and motivated the resource-bounded formulation in \eqref{eq:value}.
+
+\subsection{S5 and S6 deterministic effect-boundary simulations}
+S5 compared direct, authenticated-stateless, at-least-once, cooperative-idempotent, and OASI ledger policies over eight scripted cases. The campaign retained 30 deterministic repetitions in each of 40 cells, or 1,200 records. OASI showed no duplicate, replay, cross-generation, or altered-signature acceptance in the generated records. The cooperative B3 receiver matched the observed safety result while recovering more deliveries. The mechanism-advantage criterion, locked locally before measurement but not registered in a public registry, therefore failed.
+
+S6 replaced the cooperative receiver with an append-only fixture exposing no transaction, result query, rollback, or deduplication key. Over 1,500 generated records, the redispatch policy produced 60 duplicate effects in the two post-effect ambiguity labels; consume-before-dispatch with refusal to redispatch produced none. Conversely, the latter omitted 90 deliveries in three pre-effect labels: 30 clean aborts from \Code{PREPARED}, where a fresh attempt was not modeled, and 60 blocks after \Code{CONSUMED} but before the modeled effect. This is the classical safety--availability tension at an opaque effect boundary: retry can duplicate, while at-most-once refusal can omit \cite{kafkaDelivery,flinkGuarantees,liu2023unum}.
+
+The campaign does not establish an OASI-specific advantage. B2 and the S6 B3-unavailable label exercise the same redispatch implementation, and no policy-matched durable at-most-once baseline was included. The crash and disconnect labels are deterministic control-flow simulations rather than killed processes or severed transports; the torn-write case appends corrupt bytes after a clean close. All categorical outcomes were invariant within each cell. The repeated rows therefore test implementation stability under fixture seeds but are not independent Bernoulli samples; confidence intervals computed from the row count are not used for scientific inference. The published detached checker recomputes aggregate consistency from the rows, but it cannot inspect discarded per-run databases. The combined result is diagnostic: receiver cooperation and retry policy determine the observed duplicate/omission tradeoff. A corrective campaign needs a policy-matched baseline, real process/transport fault injection, preserved per-run evidence, and an externally developed replication before a stronger claim.
+
+\subsection{Engineering status}
+The project-controlled engineering record reports a user-space appliance and a progressively hardened guest/fixture substrate. These remain engineering artifacts under the stated laboratory scope, not independently validated guest results or scientific promotion evidence. Retained failures have included toolchain dependencies, download namespace mismatches, process-trace ambiguity, terminal receipt races, Windows path and reparse behavior, static-PIE linkage, descendant-handle retention, storage-capacity errors, and crashes after one-shot authority consumption. The history documents repeated fail-closed handling within that record. It does not demonstrate organismic intelligence.
+
+No current guest result changes the scientific tables in this manuscript. A sealed report must pass Appendix~A before any sentence is promoted from \NotTested{}.
+
+\section{Security Analysis}
+\subsection{Untrusted cognition}
+A cognitive proposal is untrusted input. It may be malformed, overbroad, stale, or derived from poisoned context. The compiler and constitution may narrow or reject it, but no text, confidence score, or planner instruction can create a capability absent from the host policy. This follows the least-privilege and complete-mediation principles of classical protection systems \cite{saltzer1975protection}.
+
+\subsection{Body replacement and stale competence}
+A reflex valid for one body may be unsafe after reset, resource replacement, certificate rotation, or principal change. The lease in \eqref{eq:lease} turns those events into explicit revocation boundaries. The guarantee is only as strong as the snapshot binding used at commit; path aliases, stale handles, or mutable inputs must therefore be treated as part of the security proof.
+
+\subsection{Crash, replay, and evidence loss}
+Exactly-once effects cannot be inferred from a successful output file \cite{kafkaDelivery,flinkGuarantees,lee2015rifl,liu2023unum}. The authority, begin transition, terminal process state, receipt, and external commit are distinct evidence objects. If authority is consumed and terminal proof is missing, the state is indeterminate and automatic replay is prohibited. A recovery process may verify byte integrity but must not manufacture the missing history. Stronger exactly-once RPC semantics are achievable under additional receiver-side assumptions such as durable request identity and result retention, as RIFL demonstrates; those assumptions are absent from the S6 fixture.
+
+\subsection{Learning under intervention}
+The epistemic firewall in \eqref{eq:firewall} addresses self-confirming loops, not general causality. Production use would require explicit intervention models, calibration, out-of-distribution monitoring, and independent probes. A reflex may be stable and reproducible while still optimizing the wrong objective.
+
+\subsection{Residual risk}
+The current artifact does not defend against a compromised kernel, malicious compiler, hostile firmware, microarchitectural leakage, or physical tampering. Hashes and deterministic packages improve traceability but do not provide trusted time, hardware-rooted attestation, independent signatures, or an external penetration test.
+
+\section{Discussion}
+\subsection{What the philosophy means technically}
+The phrase ``neither OS nor AI'' is easy to misread. It does not mean that every function is implemented by one neural network, that interfaces disappear, or that protection boundaries are abolished. It means that the machine has one authoritative body and one causal biography. What appears externally as operating behavior and what appears externally as intelligence are projections of the same evolving state. The body constrains cognition; cognition can alter the future operating repertoire; the constitution determines when that alteration is allowed to become effect.
+
+This interpretation avoids two opposite errors. The first is dualism by implementation: an agent produces intentions while a separate OS owns the only state that can actually matter. The second is monism by slogan: a shared memory region or a single process is declared organismic without a developmental mechanism. Operational monism requires causal reconciliation, developmental consequence, and constitutional mediation, not merely physical colocation.
+
+\subsection{The role of cryptographic evidence}
+Hashes, manifests, leases, and receipts are not the essence of \OASI{}. They are constitutional and immunological mechanisms. They preserve identity, provenance, revocation, and causal memory so that a fallible cognitive organ cannot rewrite its own history or claim authority through narration. An architecture consisting only of these mechanisms would be a rigorous assurance system, not an organismic computer.
+
+The stronger thesis is developmental: what the system learns should gradually change how it operates. Removing the cognitive organ from a mature \OASI{} should impair its ability to adapt, recompile competence, or reconstruct a changed body, not merely remove a conversational front end. The present artifact has not yet established that closure.
+
+\subsection{Biology as an architectural constraint, not a proof}
+Biological organisms integrate interoception, regulation, action, memory, and cognition across multiple scales. They also distribute control through the material properties of bodies and environments. \OASI{} uses these facts to formulate architectural questions, not to assert biological equivalence. Neural tissue, analog computation, subjective feeling, or consciousness are not prerequisites of the definition.
+
+Homeostasis is used in the narrow engineering sense of maintaining state within a viability region. ``Body'' denotes the computational substrate and its authority-bearing identities. ``Organ'' denotes a functionally specialized projection of the canonical state. These terms earn their place only when they lead to testable differences in prediction, adaptation, recovery, safety, or cost.
+
+\subsection{What would count as decisive progress}
+Three results would materially strengthen the thesis:
+\begin{enumerate}
+  \item a longitudinal body model that predicts consequences and adapts after resource replacement, failure, or impairment;
+  \item a competence that is compiled into a reflex, later revoked or revised from independent evidence, and transferred or rejected across body generations;
+  \item a preregistered advantage over both a generic monolith and the best fair modular comparator under measured resource, recovery, and provenance constraints.
+\end{enumerate}
+The first two establish developmental closure. The third establishes value rather than vocabulary. A successful guest build, a large number of passing engineering gates, or a visually convincing demonstration is not by itself sufficient.
+
+\subsection{Publication and standardization}
+The vision, executable mechanism, and evidence should be published as separate layers. A public preprint may report the architecture, \AERA{}, negative T4 result, threat model, and evaluation protocol without exposing operational nonces, private paths, or raw laboratory roots. The public artifact should include a claim-evidence matrix and preserve unfavorable evidence. Independent implementations should precede any attempt to standardize the full model.
+
+The publication strategy is intentionally incremental: a bounded research preview is preferable to waiting for a hypothetical completed organism, but the laboratory tree itself is not a release.
+
+\section{Threats to Validity}
+\textbf{Construct validity:} The user-space runtime and T4 environment may not instantiate the developmental mechanism described by the formal model. Shared state is not a sufficient proxy for organismic unity. S5/S6 model faults as deterministic Python/SQLite traces; they do not enact physical power loss, a killed process, a severed transport, or a storage tear.
+
+\textbf{Internal validity:} The author, prompts, implementation, tests, and most audits belong to one program and may share assumptions. Focused mutants, separately implemented aggregate checkers, and contradictory review roles reduce but do not remove common-mode bias.
+
+\textbf{External validity:} Current evidence is dominated by a Windows/WSL laboratory, project-controlled fixtures, and an evolving QEMU/Buildroot branch. It does not establish behavior on independently administered Linux systems, macOS, bare metal, production workloads, or different hardware.
+
+\textbf{Conclusion validity:} Exact counts describe sealed artifacts, not population estimates. The 30 S5/S6 repetitions per cell follow the same categorical branch and are not independent samples from a fault population; their row count cannot justify a binomial confidence claim. Negative results apply to the frozen tasks and comparators. The absence of a counterexample in a finite domain is not an unbounded proof.
+
+\textbf{Artifact validity:} Hashes, manifests, and deterministic packages cannot show that the development host was uncompromised. Some heavy traces may be represented by size and digest rather than included bytes, limiting byte-for-byte external replay.
+
+\section{Reproducibility and AI-Assisted Development}
+A public artifact should include the manuscript source, bibliography, vector figures, claim-evidence matrix, public reference runtime, schemas, tests, negative-result report, deterministic packaging script, and a public evidence manifest. Operational authorities, nonces, personal paths, private conversations, and raw laboratory roots should remain excluded.
+
+This article, its figures, and its source are released under CC BY 4.0. The accompanying historical Rust source and tests retain \Code{Apache-2.0 OR MIT}; new original standalone tools and schemas use Apache-2.0. The author's university affiliation is identification only and does not imply institutional sponsorship, collaboration, validation, ownership clearance, or endorsement.
+
+OpenAI ChatGPT and Codex, and during some phases other language models, assisted with literature discovery, drafting, code and test generation, debugging, evidence organization, and artifact automation. Their outputs were treated as candidate material rather than evidence. The human author selected the research questions, approved or rejected changes, supplied authority where required, and remains solely responsible for the manuscript, code, references, and claims.
+
+\section{Conclusion}
+\OASI{} proposes a change in the unit of analysis. Instead of treating intelligence as an application hosted by an operating system, it treats operation, body model, memory, cognition, authority, and development as coordinated projections of one artificial-organismic history. The claim is neither that interfaces vanish nor that cognition receives unlimited control. On the contrary, causal unity is paired with authority asymmetry: cognition may propose and learn, while a constitution mediates capability, commitment, revocation, and recovery.
+
+The most mature technical mechanism is \AERA{}. A learned competence receives authority only for a particular body, epoch, generation, certificate, principal, resource, action, policy, evidence set, and time window, and the complete binding is checked again immediately before effect. The scientific evidence remains negative or diagnostic: shared state alone did not create better decisions; a cooperative idempotent receiver matched OASI's observed fixture safety while recovering more deliveries; and a non-cooperative receiver exposed a retry-versus-omission tradeoff without isolating an OASI-specific advantage.
+
+The next decisive evidence must therefore be developmental and resource-bounded. A system must learn a model of its own computational body, convert verified competence into revocable operating behavior, adapt after body change, and retain an advantage over strong monolithic and modular baselines that receive the same information and authority. Until those results exist, \OASI{} should be read as a precise and falsifiable research program with a body-bound assurance core---not as a completed operating system.
+
+\section{Evidence Insertion Gate for the Guest Branch}
+A pending engineering report may change this manuscript only if it supplies all of the following:
+\begin{enumerate}
+  \item exact ZIP name, size, and SHA-256;
+  \item immutable generation, source-manifest digest, build IDs, and authority boundary;
+  \item terminal A/B receipts and a deterministic artifact comparison;
+  \item QEMU and guest identities with an explicit fixture-only boundary;
+  \item complete gate catalog, status totals, and per-gate evidence hashes;
+  \item Review~A, Review~B, and red-team results on the same immutable generation;
+  \item explicit statements regarding Stage6R real execution, Stage7, performance interpretation, and scientific authority;
+  \item a claim delta naming the exact sentences, equations, tables, or figures that the evidence may change.
+\end{enumerate}
+If any field is absent, the corresponding result remains \NotTested{}.
+
+\section{Notation Summary}
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}ll@{}}
+\toprule
+Symbol & Meaning \\
+\midrule
+$Z_t$ & canonical organismic state \\
+$B_t$ & computational body and body identity \\
+$M_t$ & developmental and provenance memory \\
+$G_t$ & goals, hypotheses, uncertainty, commitments \\
+$K_t$ & learned skills and bounded reflexes \\
+$\Lambda_t$ & authority and revocation state \\
+$C$ & non-self-extensible constitution \\
+$P$ & typed cognitive policy (\PolicyIR{}) \\
+$\ell$ & body-bound authority lease \\
+$V_{\mathrm{org}}$ & residual organismic value \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\renewcommand*{\bibfont}{\footnotesize}
+\printbibliography
+\end{document}

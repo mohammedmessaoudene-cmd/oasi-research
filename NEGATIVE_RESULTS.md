@@ -20,3 +20,19 @@ G039 is terminal `HOLD/NO-REPLAY`. Its finalizer and consumer expected incompati
 ## G040
 
 G040 closed a prepared-only technical generation with a corrected manifest codec and test-only evidence. It did not establish execution authority and did not start a materialization, native build, QEMU, Stage 7, performance/science reading, production, or publication.
+
+## S5 cooperative receiver
+
+S5 retained 1,200 deterministic records. The cooperative B3 receiver matched
+OASI's observed safety outcomes while recovering more deliveries. The planned
+mechanism-advantage criterion was not satisfied.
+
+## S6 attribution limit
+
+S6 retained 1,500 deterministic records and exposed a duplicate/omission
+tradeoff at a non-cooperative fixture. Adversarial source review found that its
+B2 and B3-unavailable labels share the same redispatch path and that it lacks a
+policy-matched at-most-once baseline. The sealed internal positive verdict is
+therefore not promoted. The public conclusion is diagnostic: a no-redispatch
+policy avoided modeled duplicates at the cost of modeled omissions; an
+OASI-specific advantage remains unestablished.

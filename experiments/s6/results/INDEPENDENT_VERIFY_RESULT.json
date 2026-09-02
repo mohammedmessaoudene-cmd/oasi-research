@@ -1,0 +1,10 @@
+{
+  "cells": 50,
+  "conclusion": "BOUNDED_SAFETY_ADVANTAGE_ESTABLISHED_NON_COOPERATIVE_FIXTURE_WITH_AVAILABILITY_TRADEOFF",
+  "network_calls": 0,
+  "oasi_safety_violations": 0,
+  "raw_sha256": "e21c6c9cd551b599768ef9451e07d7f1b079b95d598ef1068840c8b8fb5503a9",
+  "runs": 1500,
+  "schema": "oasi.s6.independent-verification.v1",
+  "status": "PASS"
+}
