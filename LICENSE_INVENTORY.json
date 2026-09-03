@@ -4,84 +4,91 @@
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": ".gitattributes",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "fb427e17dda623ada0dd34d772fca62c147c59c019050b14fd298a19e7d5af12"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": ".github/SECURITY.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "9d8de6fde28b40539da8c92abd70804d19732bdd5b8bb872319d3b68f6981dda"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": ".gitignore",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "56bd614d3a6f4bfbc7eab9a0a538cedc3438a92e384580aec190328e6128ad14"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "AERA_SPECIFICATION.md",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "1e0aefde7cbfae11b3e305dd5b0861169a973017cb629475a05fe702b38f8f09"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "83f0ce0d52e05f2c2014a911cbef30964d5f6e29aa4ea45a74f6d90aee130ba4"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "AERA_TERMINOLOGY_ERRATUM.md",
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "54e40fd1760ed8389c9d6d5c873eeb978e085796cda524ed305951698bb321e9"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "AFFILIATION_STATEMENT.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "0dbf5cc8a455fb2b6c14e26ba1395e670a18b08195ec73b446bce618c490de0a"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "AI_ASSISTED_DEVELOPMENT.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "6f714401c8e5804d06ee84aa7fedee9b91bba47904ab29892f02e8417c7ea461"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "ARCHITECTURE.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "db5ad41f51754427fd8efdffc480bb873a927da133bec8093a82712e9dd85b19"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "AUTHORS.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "328cb2b1dd3f0c3f753bbfe02a02668ae2935d51ae9523a14fd346d5e1b2e7cd"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "CITATION.cff",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "47985864d9231acbe89829c0c3e4ef58bfccb928526d2c28b88fd9182dac0180"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "610259d4eb5fbc9c60ae39e8f63735161f22c9aeac74471456d5850391871727"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "CLAIMS_AND_EVIDENCE.md",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "74e408ce57a26c82ea599de2395431f0746d83cb7d8aebb4dd11c9e29f580941"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "6248a1816fb1bbac4c34fc61166460a782d8add7c112b8401a7ab8c8f8c50c8b"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "CONTRIBUTING.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "ce7eef3d1cbc98a6f991e58a91f8476c52333ce6874b33edfa913e4a1f5d09e7"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "COPYRIGHT.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "a35ec3874220d884c6b59c0a3310d25e476607a9532495e636f3d07ba4533114"
     },
     {
@@ -101,267 +108,274 @@
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
+      "path": "INDEPENDENT_REPRODUCTION.md",
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "ee566bdc8424eeeba7ebb77393427e95babd2ed82f0ec4b76aedba387b165f5c"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
       "path": "KNOWN_LIMITATIONS.md",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "56e632c379259894bfae69bcf30eb74a05c19c67acb1c868a7b8c6554bfb3704"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "10662fb81622cda58e3db970415f85db49aa31450168061aab156f3a96720656"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "LICENSE",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "LICENSES/Apache-2.0.txt",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "LICENSES/CC-BY-4.0.txt",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
     },
     {
       "copyright": "NOASSERTION",
       "license": "MIT",
       "path": "LICENSES/MIT.txt",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "LICENSING.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "390e56d59ca7de910ed4ff8946e57a89d325365b51ae70f9492a8e019ec5561f"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "LICENSING_DECISION.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "4ded5b8c29f6154e7aa5cd9254f851ca1e9879af6611bbfb24c8f16acda4a942"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "NEGATIVE_RESULTS.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "a16a600f802b014ec13a79dc58415ae92cfa6b5d1563e85f8d91e3edda991976"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "OASI_PHILOSOPHY.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "fa1adb4950cc21d1eb44a261a2f582520d5cf8d3886e91d96a89c9da24d4296c"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "e977bd9bdd71a6d719e8775aee74f2b8b085c7e297ff26a84c5b0619b2809abe"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "PUBLICATION_STATUS.md",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "faedd861f082715952c4c2438c1977459107ae2ac5915ff90d057d454b462c72"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "3502ed19287151d976e4a509ed9b0bed1d59f125e9b313478e8f71d2fdf51dfd"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "README.md",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "b259a6611317c3e0874bb63bc1f271fb6ce5d654dc687efb5b5fee4193262df4"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "40593636922f696306bd509b01ab635fd990eccf016bfa5f407b57e3e045849f"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "README_FR.md",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "171c13011fd9316dae891f40d045c0bcfed40b8e5a5288f315a275577ded3021"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "2226166a7969c5321aa95ed00055f8b0b50f14c5863691c5d360b0e776b41e59"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "RELEASE_NOTES.md",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "2213250217423b07ee1ebdfe6b951d55cdfad5ce2c7816c6ee7cd0071f8b66f2"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "192158ca5b780b44b73830250e54edc5cab2dbb5f606e7acac2b8bc4891198b9"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "REPRODUCIBILITY.md",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "f7228604b308636428dc70da6d664706c1c69ac95bfac3888b0e8de25e4e4434"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "4cf4d94f94128a3c727d40d54049f28d6c2a5cadd700f0d86f8d47fa284f18ff"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "ROADMAP.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "77fc93c9f5c087cf71ad82657ec5acb3a7847b6acb4be7dd974e936c293f53c7"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "SBOM.spdx.json",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "40402dc8880e7b4b5bf4e233482e65a70e1679b5ad74fd8c1a1e485ed9c42ecc"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "14aa3c698a8fde586841bbc685a360136c2eb683dbc3e2c41501ec52a2cd2b34"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "SCIENTIFIC_RESULTS_S5_S6.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "b6cd65bb0df4101a6589f618db9e959198e9fa969467115f67ec9acf01f543b7"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "SECURITY.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "1bb185509a22d4a89dd0909895dd906b01b4f8c136e8943068884b4bd0735d3a"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "THIRD_PARTY_NOTICES.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "df607d5e85539d43c911a88020f1358fc5fec4bb97eb430dd0a4933b9abca2d2"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "THREAT_MODEL.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "df443b84fb1846eeaeeb7886ffd31f9305c5cd3fceb4b8f1ea98bd1dc726e8b4"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "TOOLCHAIN_PROVENANCE.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "f611e5fbdf1f85e67744ac2f70cb9890318579e1ec21723dd360cda6594ff748"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "V0_2_PROVENANCE_ADDENDUM.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "314ed2554ae32627ae68cba9a817930a5020e2ee658e746807e29bb32add392e"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "examples/README.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "2c888d376716967f97ab695e57ff54f2178500d4763dc46992a41c6d9326a1a3"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/DATA_DICTIONARY.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "dd04ad9cbbc0f3e9803356ac1bfc7dd208a33d932999fb573ccd9d218d78452a"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/ENVIRONMENT.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "683f6a3906e462c59828496bdab5e36483457d30b399d778fc99c698a121d15e"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/EXECUTED_SOURCE_PINS.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "4a33bb84ea8f88f55d2a35076602825098c8209a126bf4b2387b946b2b07973e"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/INTERPRETATION_NOTICE.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "f1a523e175e19d18d72e448d79bd7ebcd02083ffd5cbe21ad31fe7374bfdc96b"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/LICENSE.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "d280cd8204a178eff1901254fa7cb25fe927aa58e75573510ada8988d568a607"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/MANIFEST.sha256",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "86e03fb8a58e840e2508ca7f0f4b6c5532226d1f246cd14071b688d113fdfba2"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/QUALIFICATION.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "07574a1aa98132470529ea585c3b90b773b956d9cb5f24bdda30211a5e05fdab"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/QUALIFICATION_RECEIPT.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "b93144a98451466df5c27ad15cff4019f4c7fd4a176a1182b270ac46eac02538"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/README.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "48f60f7bdb6e1a3082fc30f7937194a1ae69c68fd12697c563da7f3fe8f7a0a0"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "experiments/common/oasi_broker.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "6f1363187de5a9e694cd61aa5a0601d9bddbb2ff6f06c0719f9007da33c791c3"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/s5/PROTOCOL.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "6c0b8312fa55bb14cc894ee10e32d0c97d641ec025b724b2609323067148f549"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/s5/TEST_EVIDENCE.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "829687ae262eeac9de353a28556eab4ceeecd2e43a76666b0ba6f0886a3889b1"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "experiments/s5/experiment.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "384cef91dc9ed3a51c00f6ffda1a4eec65ba292e67952f3c8c762242a8275de4"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "experiments/s5/red_green_verifier_test.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "5fc3b0a613b4fa86cbc295ba4b169b6217a1c4bc3f52f9fc453ebf6e5e4468cd"
     },
     {
@@ -417,42 +431,42 @@
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "experiments/s5/tests/test_experiment.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "bc0478baec93487fd3a019383c7702f17525160c05170243a1d6dbe8fc61c77e"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "experiments/s5/verify_results.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "16e647225725640ed49ed658e589872f3558cc9774de1e0fe631bcf50f86b9a5"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/s6/PROTOCOL.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "cd993de7ef878b78f85aa49121de144ad20ce8a001c732d01764d856c44cbbe3"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "experiments/s6/TEST_EVIDENCE.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "98e29187f5222c5b30b79e5c5f823bac5d9888032db23a1dc0f08abf27fbd935"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "experiments/s6/experiment.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "c6d13244f6437b6b7823a25c6ffb9a02b2ec187177cf91e9204709a78a721c6a"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "experiments/s6/red_green_verifier_test.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "12c7c251228880464d5ad5f6974cd2796f67f4d3a25dffd730e4343b7f3ed2a2"
     },
     {
@@ -508,14 +522,14 @@
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "experiments/s6/tests/test_experiment.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "3dae67b4f6d98c12ed988bb0483a65e13e69eb80854e857641e6dc1b08deeefc"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "experiments/s6/verify_results.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "5dd1d2806783ee200b1db613aed4aea2376273861d72b987fe8ace1ce96a0bb5"
     },
     {
@@ -675,232 +689,386 @@
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/ABSTRACT_FR.md",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "8a9cf9b16538d4acb048137d7de7f977140f2b889794fb19e8ab66f511b93478"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/ARTICLE_SOURCE_MANIFEST.sha256",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "0f40468c67e3d89980970b72dee7590fcffba1835ba830747a9861b77845c0c0"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/BUILD_RECEIPT.json",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "4a4a326417a6c97feb85002bcb727ceda6c22eb44a7a87e4df957918ff94b195"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/CLAIMS_AND_EVIDENCE_V0_4_1.md",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "0412d49755274929ad139a47ce7518eaf3342529fe87a1c8f767cb85f97067aa"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/CORRIGENDUM_V0_4_1.md",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "3d53db488460b7f059a21ed8b011c130ef5b85345c792f1c2f322ccdbf923976"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/LICENSE.md",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "b9ee9be20a47b50c135193ec689bae5dfbb3088f37a67daf9089c975e0d516dd"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4_1.pdf",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "1a816f431825d1d2614c26c97e80400f1f29fe4a1cdc313c4ff3d55e20cc9efd"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/README.md",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "cfa5a000ac120a36c71c3a3cf6cf3592a1a140106885b9c45a5439b58c7ea51f"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig1_layered_vs_organismic.pdf",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "07938024b4095f35748c2c9935bf94391eaece8901d7404810e860aa818e23ef"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig1_layered_vs_organismic.svg",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "0f089e7d81be73a2f2cd7c6ca4547789ed22ab1a459aabeb7f9e41e1e836d81e"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig1_layered_vs_organismic.tex",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "e5c1cd1803343921e825cb6da520f5b8bdd8d466c5898889be0461b26efaae61"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig2_cognition_reflex_aera.pdf",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "5dda49b217e16dc4967b0f1335fc4cb19c23a3fe34dc554da8581f9ac93fb8a2"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig2_cognition_reflex_aera.svg",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "04fb39dd8844fe0993fde7df149454da5a75d1a2609ccf9df04445779344626f"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig2_cognition_reflex_aera.tex",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "94e1c5db9cd1f1cb5292054018ab91e672b5df0c75a7784b0aa2a7e3256c79b6"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig3_authority_lifecycle.pdf",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "f0a6d616d73560198fa5f83b06b4366a228b75c26457a6ce1a3e562eb4af9690"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig3_authority_lifecycle.svg",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "586f7a18d88c62f47934a7ed9f0b0aaf551aa2afb2e4a3e96adbcb13e304e66d"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig3_authority_lifecycle.tex",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "30f1ca4000e3602d2f221b36ab646171bfd4cfed04a35ae43a24ab7d964fcb31"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig4_evidence_ladder.pdf",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "a2d6378c2bc3fc3d161633b4bf574e2297310f681467b93c94c4f9d255d977ef"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig4_evidence_ladder.svg",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "3576dff69688113abbec54057118ad4615799354b1c1d908a31ca5dd29e0024e"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/figures/fig4_evidence_ladder.tex",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "a0067c3f1508f4fbcc620ee25c55eb3d5506c95ffa54cb4bb357e374f0832927"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/main.tex",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "4be022379325a4299f81d999dc24aef211c6e11aed142f71b1489a0e01851ae2"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
+      "path": "paper/v0.4.1/source/references.bib",
+      "provenance": "v0.4.1 terminology-corrected article input",
+      "sha256": "3470253d508587fe4e809146300e217068fc6b8079ecd8a8b7b80fbfa08f849d"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "CC-BY-4.0",
       "path": "paper/v0.4/ABSTRACT_FR.md",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "eef33da0025c940394d29929942ddd515bb2e4d5f0fd85ce2757a13c2e7bee7d"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/ARTICLE_SOURCE_MANIFEST.sha256",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "a8d119d1bb1f1f21269af9a119b78ce63624abd70820aeae0527c992cd3cd680"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/BUILD_RECEIPT.json",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "f0c53eb9fc7bac3de7cedebca3a11c6cdd5cb11a522c8d231695581864ee0c41"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/CLAIMS_AND_EVIDENCE_V0_4.md",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "d74cb8e245af4465003b872268d6d0c66af226d4c48fba5335d048799724abde"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/INTERNAL_ADVERSARIAL_REVIEW_V0_4.md",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "29ae65a9156a04752280bf8568e865e1b344977cf7f3b21093564b08b575dd79"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/LICENSE.md",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "a5da6ad316833b8669d64ef11cc3e41656952aa289dae881c0dba879fad01531"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "ac4d13380c5d2e433a28e689b15d61c655637dc752dbb12dce0c39b55d901fc4"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/README.md",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "bf9b9d0dc715e8a504e810be2cfa6b1bf3249dbe7bd6dd8c92d587a2981b64f1"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/RESPONSE_TO_INTERNAL_ADVERSARIAL_REVIEW_V0_4.md",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "80692faafd7aa24d24602b2581802b8aeb3e624288eb7632c41043a877320ed4"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig1_layered_vs_organismic.pdf",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "07ef1af62ec9242c211dd5316d755ad2446453e7ebd9a64b8c1a1f24460b70e8"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig1_layered_vs_organismic.svg",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "0f089e7d81be73a2f2cd7c6ca4547789ed22ab1a459aabeb7f9e41e1e836d81e"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig1_layered_vs_organismic.tex",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "e5c1cd1803343921e825cb6da520f5b8bdd8d466c5898889be0461b26efaae61"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig2_cognition_reflex_aera.pdf",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "c71858d0c9ed9ac26770fb67cd8e863359cd4e1496045faea7c2529b7fdd7e80"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig2_cognition_reflex_aera.svg",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "04fb39dd8844fe0993fde7df149454da5a75d1a2609ccf9df04445779344626f"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig2_cognition_reflex_aera.tex",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "94e1c5db9cd1f1cb5292054018ab91e672b5df0c75a7784b0aa2a7e3256c79b6"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig3_authority_lifecycle.pdf",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "3cad01504057d1df48ef6d1978b819d73863a3e1532f6efb807b8b6e6f10b437"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig3_authority_lifecycle.svg",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "586f7a18d88c62f47934a7ed9f0b0aaf551aa2afb2e4a3e96adbcb13e304e66d"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig3_authority_lifecycle.tex",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "30f1ca4000e3602d2f221b36ab646171bfd4cfed04a35ae43a24ab7d964fcb31"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig4_evidence_ladder.pdf",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "41a6f9c26ffb6ae17e72f87dd678ca7fa6d4546e18b58064bc3c166455d1da08"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig4_evidence_ladder.svg",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "3576dff69688113abbec54057118ad4615799354b1c1d908a31ca5dd29e0024e"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/figures/fig4_evidence_ladder.tex",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "a0067c3f1508f4fbcc620ee25c55eb3d5506c95ffa54cb4bb357e374f0832927"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/main.tex",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "9a66238c066a4880228033a260821f7573f46211abf6b0649ac09b38d7376c9e"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/references.bib",
-      "provenance": "v0.4 article input",
+      "provenance": "v0.4 historical article",
       "sha256": "3470253d508587fe4e809146300e217068fc6b8079ecd8a8b7b80fbfa08f849d"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/CLAIMS_EVIDENCE_LEDGER.json",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "e4e042e8db189ee5588cf8333b31abb8f065c28e21272cdae7588635b9b7921f"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "35c33dbbd5f8db2869e4b83e1292db53f94204350c9394e9e983c0451a3df819"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/G039_G040_SUMMARY.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "067d96b7bd08ffebfb2f7a7293238a9fcf16d7efef89c273c6eae6750a466631"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/G116_METHOD_SUMMARY.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "b14ba6e165eaa8377777e0db5b9f321068caab760a0c3fb505cd2cdd6fd84193"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/PRIVATE_EVIDENCE_OMISSIONS.md",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "cdff970527790de19adec3273acad4b05ddce4fdcf877e5624a0faee6be721e5"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/R3_ENGINEERING_SUMMARY.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "c8e7a50271d9db0394180feff51d3ead07cdefa1166fce736cc60b070b79b3f0"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/S5_SCIENCE_SUMMARY.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "39fae29f6af6388ce1f5c4c556a837c6f0163c052b7383b53007207148e50422"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/S6_SCIENCE_SUMMARY.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "e4f72e0af24ba24d40a75cdaaaae0f8305a8d074625e5b6bcd24fb4699c71ab5"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/SOURCE_PROVENANCE.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "675f4dc025951878e58e194333bc90281f3b47c1f79df5893ca8af8521d62e1d"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "public_evidence/T4_SCIENCE_SUMMARY.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "25ec09176c4dedf7f4f04b126cf921656003d80cd7d970796b0a0567bc4e61ab"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "schemas/claim.schema.json",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "8a894204aae5f3f88a603573b35798729aaf23bef0e049384d9702e39ff86bc7"
     },
     {
@@ -1019,78 +1187,106 @@
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/build_article.ps1",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "8af4df570a7628f076388a89b16e84057c02949a059454951afc05d14ce4a433"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/build_article.sh",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "e645e23384b7497b6a3c0d551a3f89f98af8bad36dae8dafff51985f5bac21cc"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
+      "path": "tools/build_article_v0_4_1.ps1",
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "068ac850ac3fde82e631749bb7d8582aec7f2ff976767dc06f322704b11ace6f"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "tools/build_article_v0_4_1.sh",
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "580034190ac6643405f9127a8459761496f5d830aed1e2146ca5387c836e6091"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "tools/build_article_v0_4_1_verified.py",
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "d2bdce367bf1006cad82be82c599b66274dffe941e9cf8f9fa49bed814da31d0"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
       "path": "tools/build_article_verified.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "e8508e9c892b8b44b1d257cdc1a1e9d5f52fa2d85e5f70be8098fb5668375e08"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/build_deterministic_zip.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "5ef6184f8cae509de8ea7d5df50879d195e5d3e4f362bbae7006d9842b1592fc"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/compare_experiment_categories.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "555ae76c324b3c9e6e435d92a30b95bdc588a9db98166a64ba808f0454eddc41"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/rebuild_release_metadata.py",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "720c859d066292f370ca895bd3b92f541638c38723b2182b7235e9c3b1eff7a1"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "cbbf9faa7e51c4607092e9199cc0d9ada61249032bca84b26dc587bc69f29e57"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/run_tests.ps1",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "3cc119f84468b1a195934147d9f59835d598a05004f3d917c02696b05cb72853"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "01503d21f28cb9b72868a31f4f3d003ccdb87433e6a0c468f8bd4a71161bc911"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/run_tests.sh",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "dcb57558c17fbf3d4ab9dbe9274bfd63b6e0c97353b3450c87f231d85118387e"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "bafdac1fc4cb2e637d2f8263afdc23063c6238e59a794040c0c6581d50316b85"
+    },
+    {
+      "copyright": "NOASSERTION",
+      "license": "Apache-2.0",
+      "path": "tools/verify_aera_terminology.py",
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "eb2e2a757850dd7680c5483970a9da95af4fbf1af156fae42acee443894542a4"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/verify_archive.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "7a45711f2deb7467f78c1b9493b8aaed27e4dcfcc4f7b99cb43dfe28fa3568ea"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/verify_experiments.py",
-      "provenance": "v0.2 publication candidate",
+      "provenance": "v0.2.2 publication candidate",
       "sha256": "bb8d93474d53d3408b8ed89f691951c3489eaed1153889d8f1c154155daa3905"
     },
     {
       "copyright": "NOASSERTION",
       "license": "Apache-2.0",
       "path": "tools/verify_release.py",
-      "provenance": "v0.2 publication candidate",
-      "sha256": "7f7fa0ac9b7686a397cad0a1551ff534659141bb17fbcdfcb0ba9b48d8d1ae2a"
+      "provenance": "v0.2.2 publication candidate",
+      "sha256": "39233b1c80d5ed02629a7d7b2a80aedfe1db7cf160e26210730d9b0ab2da9eb0"
     }
   ],
   "git_dependencies": [],

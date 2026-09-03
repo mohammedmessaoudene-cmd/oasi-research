@@ -1,0 +1,40 @@
+
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit}
+\definecolor{oasiblue}{RGB}{45,82,122}
+\definecolor{oasigreen}{RGB}{63,108,79}
+\definecolor{oasiorange}{RGB}{150,92,40}
+\definecolor{oasired}{RGB}{132,54,54}
+\begin{document}
+\begin{tikzpicture}[font=\scriptsize,>=Latex,
+ st/.style={draw,rounded corners=2pt,minimum width=1.95cm,text width=1.72cm,
+ minimum height=.66cm,align=center,fill=white},
+ arr/.style={->,line width=.72pt}]
+\node[st,draw=oasiblue,fill=oasiblue!5] (prepared) {Prepared\\source complete};
+\node[st,draw=oasiblue,fill=oasiblue!5,right=.55cm of prepared] (frozen) {Frozen\\immutable identity};
+\node[st,draw=oasiorange,fill=oasiorange!6,right=.55cm of frozen] (authorized) {Authorized\\one shot};
+\node[st,draw=oasigreen,fill=oasigreen!6,right=.55cm of authorized] (running) {Running\\BEGIN durable};
+\draw[arr] (prepared)--(frozen);
+\draw[arr] (frozen)--(authorized);
+\draw[arr] (authorized)--(running);
+
+\node[st,draw=oasigreen,fill=oasigreen!6,below=1.05cm of running] (valid) {Terminal valid\\receipt + commit};
+\node[st,draw=oasired,fill=oasired!5,left=.55cm of valid] (failure) {Terminal failure\\evidence preserved};
+\node[st,draw=oasired,fill=oasired!5,left=.55cm of failure] (indet) {Indeterminate\\no replay};
+\draw[arr] (running)--(valid);
+\draw[arr,draw=oasired] (running.south west) -- (failure.north east);
+\draw[arr,draw=oasired] (running.west) -| (indet.north);
+
+\node[st,draw=oasiblue,fill=oasiblue!5,below=1.0cm of failure] (successor)
+ {Successor\\new generation};
+\draw[arr] (failure)--(successor);
+\draw[arr] (indet.south) |- (successor.west);
+\draw[arr] (successor.west) -| node[pos=.25,left,align=right]{new source,\\new authority} (prepared.south);
+
+\node[draw=oasired,dashed,rounded corners=2pt,fit=(authorized)(running)(valid)(failure)(indet),
+      inner sep=5pt,label={[font=\scriptsize,text=oasired]above:consumed authority never returns to available}] {};
+\end{tikzpicture}
+\end{document}

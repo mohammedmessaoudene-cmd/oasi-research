@@ -1,10 +1,23 @@
 param(
     [Parameter(Mandatory = $true, Position = 0)]
     [ValidateSet('pre-doi', 'post-doi')]
-    [string]$ReleasePhase
+    [string]$ReleasePhase,
+
+    [Parameter(Position = 1)]
+    [string]$ExpectedSoftwareDoi,
+
+    [Parameter(Position = 2)]
+    [string]$ExpectedArticleDoi
 )
 
 $ErrorActionPreference = 'Stop'
+if ($ReleasePhase -eq 'pre-doi') {
+    if ($ExpectedSoftwareDoi -or $ExpectedArticleDoi) {
+        throw 'DOI pins are forbidden in pre-doi mode'
+    }
+} elseif (-not $ExpectedSoftwareDoi -or -not $ExpectedArticleDoi) {
+    throw 'post-doi mode requires ExpectedSoftwareDoi and ExpectedArticleDoi'
+}
 $root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 Push-Location $root
 $previousTarget = $env:CARGO_TARGET_DIR
@@ -61,8 +74,16 @@ try {
     }
     & $python.Source -I -B tools\verify_experiments.py .
     if ($LASTEXITCODE -ne 0) { throw "experiment verification failed with exit code $LASTEXITCODE" }
+    & $python.Source -I -B tools\verify_aera_terminology.py --self-test
+    if ($LASTEXITCODE -ne 0) { throw "AERA terminology self-test failed with exit code $LASTEXITCODE" }
+    & $python.Source -I -B tools\verify_aera_terminology.py .
+    if ($LASTEXITCODE -ne 0) { throw "AERA terminology verification failed with exit code $LASTEXITCODE" }
     $phaseArgument = if ($ReleasePhase -eq 'pre-doi') { '--pre-doi' } else { '--post-doi' }
-    & $python.Source -I -B tools\verify_release.py . $phaseArgument
+    $verifyArguments = @('tools\verify_release.py', '.', $phaseArgument)
+    if ($ReleasePhase -eq 'post-doi') {
+        $verifyArguments += @('--expected-software-doi', $ExpectedSoftwareDoi, '--expected-article-doi', $ExpectedArticleDoi)
+    }
+    & $python.Source -I -B @verifyArguments
     if ($LASTEXITCODE -ne 0) { throw "release verification failed with exit code $LASTEXITCODE" }
     Write-Output 'WINDOWS BOUNDED SUBSET + SEALED S5/S6 DATA CHECKS: PASS (PARTIAL; Linux S5/S6 execution tests and full Rust Linux suite not executed)'
 } finally {

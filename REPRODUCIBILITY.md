@@ -12,22 +12,24 @@
 
 The Rust crate has no external Cargo dependencies. `Cargo.lock` is shipped and `--locked` is required.
 
-The current article source is under `paper/v0.4/source/`. Its clean build uses
-`pdflatex`, `biber`, and `SOURCE_DATE_EPOCH=1788307200`, corresponding to
-2026-09-02T00:00:00Z. The release process compares two clean PDF builds before
+The current article source is under `paper/v0.4.1/source/`. Its clean build uses
+`pdflatex`, `biber`, and `SOURCE_DATE_EPOCH=1788393600`, corresponding to
+2026-09-03T00:00:00Z. The release process compares two clean PDF builds before
 accepting the PDF.
 
 ## Test
 
 ```text
-sh tools/run_tests.sh post-doi
+sh tools/run_tests.sh pre-doi
 ```
 
 PowerShell and Linux-shell helper scripts are provided in `tools/`. Tests create only temporary user-space files and child processes.
 
 The phase argument is mandatory: use `pre-doi` before DOI reservation and
-`post-doi` only after inserting the distinct final software and article DOI
-records. The Linux-shell helper requires Linux with Rust/Cargo 1.97.1 available. The PowerShell
+`post-doi SOFTWARE_DOI ARTICLE_DOI` only after inserting the distinct final
+software and article DOI records. Both post-DOI values are external expected
+pins and must match every active record exactly. The Linux-shell helper requires
+Linux with Rust/Cargo 1.97.1 available. The PowerShell
 helper runs only the bounded Rust subset using the Windows GNU
 toolchain plus read-only validation of the sealed S5/S6 data, and labels that
 result `PARTIAL`. It does not execute the S5/S6 unit or mutant tests. Those
@@ -44,7 +46,7 @@ export the exact reviewed commit or tag into an empty directory outside the
 clone, then build from that clean export. One POSIX procedure is:
 
 ```text
-release_ref=v0.2.1-research-preview
+release_ref=v0.2.2-research-preview
 export_root=$(mktemp -d)
 mkdir "$export_root/source"
 git archive --format=tar "$release_ref" | tar -xf - -C "$export_root/source"
@@ -62,7 +64,8 @@ python3 -I -B "$export_root/source/tools/verify_archive.py" \
 
 The two archives must have the same SHA-256. Extract one into another empty
 directory and run `verify_experiments.py` plus `verify_release.py
---archive-mode` there with the explicit DOI phase.
+--archive-mode` there with the explicit DOI phase and, after reservation, both
+external expected DOI pins.
 
 The builder requires an out-of-tree, project-reviewed allowlist containing the
 lowercase SHA-256, byte size, and NFC POSIX path of every source member. It
@@ -73,7 +76,10 @@ allowlist used. Build twice to distinct external output paths and compare
 SHA-256. This prevents an earlier archive or a non-reviewed source file from
 contaminating a later build.
 
-The legacy ReportLab paper builder is not used for the v0.4 preprint. Build the v0.4 source with the documented LaTeX toolchain and verify its fonts, metadata, references, and rendered pages before replacing the packaged PDF.
+The legacy ReportLab paper builder is not used for the v0.4.1 preprint. Build
+the v0.4.1 source with `tools/build_article_v0_4_1.sh` (or the PowerShell
+wrapper) and verify its fonts, metadata, references, and rendered pages before
+accepting the packaged PDF. Historical v0.4 files remain immutable.
 
 ## S5/S6 campaigns
 
@@ -111,3 +117,6 @@ python3 -I -B tools/compare_experiment_categories.py experiments/s6/results/RAW_
 ## Evidence boundary
 
 The public package can reproduce the shipped Rust test suite and public verifier. It cannot independently reconstruct the full historical 1 GB campaign or the omitted T4 traces. Those omissions are explicit and linked by content hashes in `public_evidence/`.
+
+For a bounded 4–8 hour independent replication task, required report fields,
+and rules for preserving failures, see `INDEPENDENT_REPRODUCTION.md`.

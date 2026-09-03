@@ -20,6 +20,8 @@ except ImportError as exc:
 parser = argparse.ArgumentParser(description="Verify the bounded OASI public release tree.")
 parser.add_argument("root", nargs="?", default=".")
 parser.add_argument("--archive-mode", action="store_true")
+parser.add_argument("--expected-software-doi")
+parser.add_argument("--expected-article-doi")
 phase = parser.add_mutually_exclusive_group(required=True)
 phase.add_argument(
     "--pre-doi",
@@ -39,14 +41,35 @@ EXCLUDED = {".git", "target", "__pycache__", ".pytest_cache", ".mypy_cache", ".r
 GENERATED_INDEXES = {"PUBLIC_MANIFEST.sha256", "PUBLIC_ALLOWLIST.txt"}
 SBOM_EXCLUDED = GENERATED_INDEXES | {"SBOM.spdx.json", "LICENSE_INVENTORY.json"}
 ERRORS: list[str] = []
+HISTORICAL_DOIS = {
+    "10.5281/zenodo.22151556",
+    "10.5281/zenodo.22151560",
+    "10.5281/zenodo.22262138",
+    "10.5281/zenodo.22262143",
+}
+DOI_RE = re.compile(r"10\.5281/zenodo\.[0-9]+")
+if PRE_DOI:
+    if args.expected_software_doi is not None or args.expected_article_doi is not None:
+        parser.error("DOI pins are forbidden in --pre-doi mode")
+else:
+    if args.expected_software_doi is None or args.expected_article_doi is None:
+        parser.error("--post-doi requires both external expected DOI pins")
+    for label, value in (
+        ("software", args.expected_software_doi),
+        ("article", args.expected_article_doi),
+    ):
+        if DOI_RE.fullmatch(value) is None or value in HISTORICAL_DOIS:
+            parser.error(f"invalid or historical expected {label} DOI pin")
+    if args.expected_software_doi == args.expected_article_doi:
+        parser.error("expected software and article DOI pins must be distinct")
 
-ARTICLE_PDF_REL = "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf"
-ARTICLE_SOURCE_MANIFEST_REL = "paper/v0.4/ARTICLE_SOURCE_MANIFEST.sha256"
-ARTICLE_BUILD_RECEIPT_REL = "paper/v0.4/BUILD_RECEIPT.json"
+ARTICLE_PDF_REL = "paper/v0.4.1/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4_1.pdf"
+ARTICLE_SOURCE_MANIFEST_REL = "paper/v0.4.1/ARTICLE_SOURCE_MANIFEST.sha256"
+ARTICLE_BUILD_RECEIPT_REL = "paper/v0.4.1/BUILD_RECEIPT.json"
 ARTICLE_BUILD_DEFINITION_RELS = (
-    "tools/build_article.ps1",
-    "tools/build_article.sh",
-    "tools/build_article_verified.py",
+    "tools/build_article_v0_4_1.ps1",
+    "tools/build_article_v0_4_1.sh",
+    "tools/build_article_v0_4_1_verified.py",
 )
 ARTICLE_FIGURE_NAMES = (
     "fig1_layered_vs_organismic",
@@ -55,14 +78,14 @@ ARTICLE_FIGURE_NAMES = (
     "fig4_evidence_ladder",
 )
 ARTICLE_SOURCE_RELS = tuple(sorted((
-    "paper/v0.4/source/main.tex",
-    "paper/v0.4/source/references.bib",
-    *(f"paper/v0.4/source/figures/{name}.tex" for name in ARTICLE_FIGURE_NAMES),
+    "paper/v0.4.1/source/main.tex",
+    "paper/v0.4.1/source/references.bib",
+    *(f"paper/v0.4.1/source/figures/{name}.tex" for name in ARTICLE_FIGURE_NAMES),
 )))
 ARTICLE_PROMOTED_RELS = tuple(sorted((
     ARTICLE_PDF_REL,
     *(
-        f"paper/v0.4/source/figures/{name}.{suffix}"
+        f"paper/v0.4.1/source/figures/{name}.{suffix}"
         for name in ARTICLE_FIGURE_NAMES
         for suffix in ("pdf", "svg")
     ),
@@ -81,8 +104,10 @@ FIGURE_PACKAGE_WARNING = "Package shellesc Warning: Shell escape disabled on inp
 
 REQUIRED_PUBLIC_ARTIFACTS = {
     "README.md", "README_FR.md", "OASI_PHILOSOPHY.md", "ARCHITECTURE.md",
-    "AERA_SPECIFICATION.md", "CLAIMS_AND_EVIDENCE.md", "KNOWN_LIMITATIONS.md",
+    "AERA_SPECIFICATION.md", "AERA_TERMINOLOGY_ERRATUM.md",
+    "CLAIMS_AND_EVIDENCE.md", "KNOWN_LIMITATIONS.md",
     "NEGATIVE_RESULTS.md", "SECURITY.md", "THREAT_MODEL.md", "REPRODUCIBILITY.md",
+    "INDEPENDENT_REPRODUCTION.md",
     "CONTRIBUTING.md", "AUTHORS.md", "AI_ASSISTED_DEVELOPMENT.md",
     "OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md", "AFFILIATION_STATEMENT.md",
     "LICENSING_DECISION.md", "V0_2_PROVENANCE_ADDENDUM.md",
@@ -101,6 +126,13 @@ REQUIRED_PUBLIC_ARTIFACTS = {
     "paper/v0.4/INTERNAL_ADVERSARIAL_REVIEW_V0_4.md",
     "paper/v0.4/RESPONSE_TO_INTERNAL_ADVERSARIAL_REVIEW_V0_4.md",
     "paper/v0.4/source/main.tex", "paper/v0.4/source/references.bib",
+    "paper/v0.4.1/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4_1.pdf",
+    "paper/v0.4.1/ARTICLE_SOURCE_MANIFEST.sha256",
+    "paper/v0.4.1/BUILD_RECEIPT.json",
+    "paper/v0.4.1/ABSTRACT_FR.md", "paper/v0.4.1/README.md",
+    "paper/v0.4.1/CLAIMS_AND_EVIDENCE_V0_4_1.md",
+    "paper/v0.4.1/CORRIGENDUM_V0_4_1.md", "paper/v0.4.1/LICENSE.md",
+    "paper/v0.4.1/source/main.tex", "paper/v0.4.1/source/references.bib",
     "SCIENTIFIC_RESULTS_S5_S6.md",
     "experiments/README.md", "experiments/LICENSE.md",
     "experiments/ENVIRONMENT.json", "experiments/DATA_DICTIONARY.md",
@@ -136,6 +168,8 @@ REQUIRED_PUBLIC_ARTIFACTS = {
     "public_evidence/SOURCE_PROVENANCE.json",
     "schemas/claim.schema.json",
     "tools/build_article.ps1", "tools/build_article.sh", "tools/build_article_verified.py",
+    "tools/build_article_v0_4_1.ps1", "tools/build_article_v0_4_1.sh",
+    "tools/build_article_v0_4_1_verified.py", "tools/verify_aera_terminology.py",
     "tools/build_deterministic_zip.py", "tools/compare_experiment_categories.py",
     "tools/rebuild_release_metadata.py", "tools/run_tests.ps1", "tools/run_tests.sh",
     "tools/verify_archive.py", "tools/verify_experiments.py", "tools/verify_release.py",
@@ -182,8 +216,10 @@ def provenance_for(rel: str) -> str:
     if rel.startswith("paper/v0.3/"):
         return "v0.3 historical article"
     if rel.startswith("paper/v0.4/"):
-        return "v0.4 article input"
-    return "v0.2 publication candidate"
+        return "v0.4 historical article"
+    if rel.startswith("paper/v0.4.1/"):
+        return "v0.4.1 terminology-corrected article input"
+    return "v0.2.2 publication candidate"
 
 
 def strict_json(path: Path):
@@ -436,8 +472,14 @@ if not manifest_path.is_file() or not allowlist_path.is_file():
     ERRORS.append("manifest or allowlist missing")
 else:
     observed = {path.relative_to(ROOT).as_posix(): digest(path) for path in files}
+    manifest_raw = manifest_path.read_bytes()
+    expected_manifest_raw = "".join(
+        f"{observed[relative]}  {relative}\n" for relative in sorted(observed)
+    ).encode("ascii")
+    if manifest_raw != expected_manifest_raw:
+        ERRORS.append("manifest is not the exact ordinal canonical byte representation")
     manifest: dict[str, str] = {}
-    for line in manifest_path.read_text(encoding="ascii").splitlines():
+    for line in manifest_raw.decode("ascii").splitlines():
         parts = line.split("  ", 1)
         if len(parts) != 2 or not re.fullmatch(r"[0-9a-f]{64}", parts[0]):
             ERRORS.append("invalid manifest grammar")
@@ -450,6 +492,9 @@ else:
     allowlist = allowlist_path.read_text(encoding="utf-8").splitlines()
     if allowlist != sorted(observed) or len(allowlist) != len(set(allowlist)):
         ERRORS.append("allowlist does not equal sorted unique public files")
+    expected_allowlist_raw = ("\n".join(sorted(observed)) + "\n").encode("utf-8")
+    if allowlist_path.read_bytes() != expected_allowlist_raw:
+        ERRORS.append("allowlist is not the exact ordinal canonical byte representation")
 
 portable_paths: list[str] = []
 for path in files + [manifest_path, allowlist_path]:
@@ -681,6 +726,17 @@ if experiment_verifier.is_file():
     if checked.returncode != 0:
         ERRORS.append("S5/S6 experiment verifier failed: " + checked.stdout.strip().replace("\n", " ")[:500])
 
+terminology_verifier = ROOT / "tools" / "verify_aera_terminology.py"
+if terminology_verifier.is_file():
+    checked = subprocess.run(
+        [sys.executable, "-I", "-B", str(terminology_verifier), str(ROOT)],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if checked.returncode != 0:
+        ERRORS.append("AERA terminology verifier failed: " + checked.stdout.strip().replace("\n", " ")[:500])
+
 inventory_path = ROOT / "LICENSE_INVENTORY.json"
 inventory = strict_json(inventory_path)
 expected_inventory_metadata = {
@@ -759,14 +815,14 @@ if set(sbom) != expected_document_keys:
 for field, expected in {
     "SPDXID": "SPDXRef-DOCUMENT",
     "dataLicense": "CC0-1.0",
-    "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.1-research-preview",
-    "name": "OASI-AERA-v0.2.1-research-preview-SBOM",
+    "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.2-research-preview",
+    "name": "OASI-AERA-v0.2.2-research-preview-SBOM",
     "spdxVersion": "SPDX-2.3",
 }.items():
     if sbom.get(field) != expected:
         ERRORS.append(f"SBOM document field mismatch: {field}")
 if sbom.get("creationInfo") != {
-    "created": "2026-09-02T00:00:00Z",
+    "created": "2026-09-03T00:00:00Z",
     "creators": ["Tool: OASI deterministic metadata builder"],
 }:
     ERRORS.append("SBOM creationInfo mismatch")
@@ -912,7 +968,7 @@ if project_package and {
     "licenseConcluded": "NOASSERTION",
     "licenseDeclared": "NOASSERTION",
     "name": "OASI/AERA: Operational Artificial System Intelligence Research Preview",
-    "versionInfo": "0.2.1-research-preview",
+    "versionInfo": "0.2.2-research-preview",
 }:
     ERRORS.append("SBOM project package fields mismatch")
 if set(project_package.get("packageVerificationCode", {})) != {"packageVerificationCodeValue"}:
@@ -1149,7 +1205,7 @@ expected_top = {
     "message": "If you use this research preview, please cite the aggregate release and the accompanying article.",
     "title": "OASI/AERA: Operational Artificial System Intelligence Research Preview",
     "type": "software",
-    "version": "0.2.1-research-preview",
+    "version": "0.2.2-research-preview",
     "repository-code": "https://github.com/mohammedmessaoudene-cmd/oasi-research",
     "abstract": (
         "Operational Artificial System Intelligence (OASI) is a research program investigating a "
@@ -1209,7 +1265,7 @@ expected_preferred = {
         "orcid": "https://orcid.org/0009-0007-4665-2548",
     }],
     "year": 2026,
-    "version": "0.4-preprint",
+    "version": "0.4.1-preprint",
 }
 for field, expected in expected_preferred.items():
     if not isinstance(preferred_document, dict) or preferred_document.get(field) != expected:
@@ -1231,15 +1287,19 @@ if PRE_DOI:
         ERRORS.append("CITATION.cff current software DOI must be absent in pre-DOI mode")
     if isinstance(preferred_document, dict) and "doi" in preferred_document or preprint_doi:
         ERRORS.append("CITATION.cff current preprint DOI must be absent in pre-DOI mode")
-    if "10.5281/zenodo.22151560" in cff or "10.5281/zenodo.22151556" in cff:
+    if any(doi in cff for doi in HISTORICAL_DOIS):
         ERRORS.append("CITATION.cff historical version DOI presented in current citation metadata")
 else:
-    if not software_doi or software_doi == "10.5281/zenodo.22151560":
+    if not software_doi or software_doi in HISTORICAL_DOIS:
         ERRORS.append("CITATION.cff current software DOI is missing or historical")
-    if not preprint_doi or preprint_doi == "10.5281/zenodo.22151556":
+    if not preprint_doi or preprint_doi in HISTORICAL_DOIS:
         ERRORS.append("CITATION.cff current preprint DOI is missing or historical")
     if software_doi and preprint_doi and software_doi == preprint_doi:
         ERRORS.append("CITATION.cff software and article DOI values must be distinct")
+    if software_doi != args.expected_software_doi:
+        ERRORS.append("CITATION.cff software DOI does not match the external expected pin")
+    if preprint_doi != args.expected_article_doi:
+        ERRORS.append("CITATION.cff article DOI does not match the external expected pin")
     identifiers = cff_document.get("identifiers", [])
     identifier_pairs: list[tuple[str, str]] = []
     if not isinstance(identifiers, list) or len(identifiers) != 1:
@@ -1256,6 +1316,35 @@ else:
     expected_identifiers = {("doi", software_doi)}
     if len(identifier_pairs) != len(set(identifier_pairs)) or set(identifier_pairs) != expected_identifiers:
         ERRORS.append("CITATION.cff identifiers do not exactly identify the software DOI")
+
+phase_documents = {
+    "README.md": "DOI will be inserted only after Zenodo assigns it.",
+    "README_FR.md": "DOI sera inséré seulement après son attribution par Zenodo.",
+    "PUBLICATION_STATUS.md": "V0_2_2_PRE_DOI_TERMINOLOGY_CORRECTION_CANDIDATE",
+    "RELEASE_NOTES.md": "final DOI values are intentionally absent",
+}
+phase_texts = {
+    relative: (ROOT / relative).read_text(encoding="utf-8")
+    for relative in phase_documents
+    if (ROOT / relative).is_file()
+}
+if set(phase_texts) != set(phase_documents):
+    ERRORS.append("active DOI-phase document missing")
+elif PRE_DOI:
+    for relative, marker in phase_documents.items():
+        if marker not in phase_texts[relative]:
+            ERRORS.append(f"active document pre-DOI marker missing: {relative}")
+else:
+    for relative, marker in phase_documents.items():
+        text = phase_texts[relative]
+        if marker in text:
+            ERRORS.append(f"active document retains pre-DOI wording: {relative}")
+        if not software_doi or software_doi not in text:
+            ERRORS.append(f"active document lacks current software DOI: {relative}")
+        if not preprint_doi or preprint_doi not in text:
+            ERRORS.append(f"active document lacks current article DOI: {relative}")
+    if "V0_2_2_POST_DOI_RELEASE_CANDIDATE" not in phase_texts["PUBLICATION_STATUS.md"]:
+        ERRORS.append("post-DOI publication-state marker missing")
 
 # The article PDF and generated figures are release artifacts only when their
 # deterministic A/B build receipt is internally complete and matches the tree.
@@ -1315,9 +1404,9 @@ if article_receipt.get("schema") != "oasi.article-build-receipt.v1":
     ERRORS.append("article build receipt schema mismatch")
 if article_receipt.get("status") != "PASS_REPRODUCIBLE_ARTICLE_BUILD":
     ERRORS.append("article build receipt status mismatch")
-if article_receipt.get("fixed_build_time_utc") != "2026-09-02T00:00:00Z":
+if article_receipt.get("fixed_build_time_utc") != "2026-09-03T00:00:00Z":
     ERRORS.append("article build receipt fixed time mismatch")
-if article_receipt.get("source_date_epoch") != 1788307200:
+if article_receipt.get("source_date_epoch") != 1788393600:
     ERRORS.append("article build receipt SOURCE_DATE_EPOCH mismatch")
 if article_receipt.get("toolchain") != EXPECTED_ARTICLE_TOOLCHAIN:
     ERRORS.append("article build receipt toolchain mismatch")
@@ -1430,7 +1519,7 @@ for build_label in ("A", "B"):
             ERRORS.append(f"article figure PDF property set mismatch: {build_label}/{figure}")
         validate_article_pdf_receipt(figure_pdf, 1, "1.5", f"{build_label}/{figure}")
         expected_svg_metric = promoted_metrics.get(
-            f"paper/v0.4/source/figures/{figure}.svg"
+            f"paper/v0.4.1/source/figures/{figure}.svg"
         )
         expected_svg = (
             {**expected_svg_metric, "xml_root": "svg"}
@@ -1442,7 +1531,7 @@ for build_label in ("A", "B"):
 if validations.get("A") != validations.get("B"):
     ERRORS.append("article build A/B validation records differ")
 
-main_source_path = ROOT / "paper/v0.4/source/main.tex"
+main_source_path = ROOT / "paper/v0.4.1/source/main.tex"
 main_source = main_source_path.read_text(encoding="utf-8") if main_source_path.is_file() else ""
 reproducibility_path = ROOT / "REPRODUCIBILITY.md"
 reproducibility = (

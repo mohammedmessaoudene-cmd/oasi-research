@@ -2,6 +2,10 @@
 
 Current state: `PASS_OWNER_REPRESENTATION_ACCEPTED_FOR_V0_2_RELEASE`.
 
+Corrective-release state: `V0_2_2_PRE_DOI_TERMINOLOGY_CORRECTION_CANDIDATE`.
+No v0.2.2 tag, GitHub release, Zenodo version, external reproduction request,
+or expert message is implied by this source-tree state.
+
 Mohammed Messaoudene has supplied the explicit representation in
 `OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md`. It states that the sanitized
 candidate is a personal research initiative, identifies no other human
@@ -23,6 +27,13 @@ The v0.2 addendum covers the sanitized S5/S6 code, sealed local fixture data,
 revised interpretation, and preprint v0.4. It does not reclassify internal
 adversarial review as external peer review or authorize claims beyond the
 published evidence boundary.
+
+The v0.2.2 candidate preserves v0.2.1 and its DOI records byte-for-byte as
+historical provenance. It corrects an inconsistency between two historical
+long forms of AERA by treating AERA as an unexpanded identifier and adding
+article v0.4.1 plus an explicit corrigendum. This correction changes no code,
+sealed experiment result, scientific verdict, authorship, license, or owner
+representation.
 
 Version v0.2 also records `Operational Artificial System Intelligence (OASI)`
 as the author's canonical project terminology. The versioned commit, article,

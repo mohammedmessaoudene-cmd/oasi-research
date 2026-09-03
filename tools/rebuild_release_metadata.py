@@ -218,8 +218,8 @@ atomic_write(
 
 claim_specs = [
     ("CL-001", "Operational Artificial System Intelligence (OASI) is the canonical name of a research program for developmental OS-AI integration under one versioned causal history.", "Program definition and terminology.", "DEFINITION", ["OASI_PHILOSOPHY.md"], ["Operational does not mean production-ready; no achieved general or superintelligence, consciousness, deployment, external-validation, superiority, or legal-priority claim."]),
-    ("CL-002", "The shipped Rust crate implements a bounded user-space AERA reference mechanism.", "Shipped source and finite public tests.", "IMPLEMENTED_AND_TESTED_LOCAL", ["Cargo.toml", "src/runtime.rs", "tests/authority_transaction.rs"], ["No kernel, hypervisor, hardware, production, or universal security claim."]),
-    ("CL-003", "The tested design binds authority to body, epoch, generation, certificate, principal, resource, action and revalidates it at commit.", "Finite user-space reference model.", "IMPLEMENTED_AND_TESTED_LOCAL", ["AERA_SPECIFICATION.md", "src/model.rs", "tests/authority_transaction.rs"], ["Not a formal proof for all environments."]),
+    ("CL-002", "The shipped Rust crate implements a bounded user-space AERA reference runtime.", "Shipped source and finite public tests.", "IMPLEMENTED_AND_TESTED_LOCAL", ["AERA_SPECIFICATION.md", "AERA_TERMINOLOGY_ERRATUM.md", "Cargo.toml", "src/runtime.rs", "tests/authority_transaction.rs"], ["AERA is an unexpanded identifier; no kernel, hypervisor, hardware, production, or universal security claim."]),
+    ("CL-003", "The AERA core predicate revalidates at commit an authority envelope bound to body identity, epoch, generation, certificate, principal, resource, action and expiration.", "Finite user-space reference model.", "IMPLEMENTED_AND_TESTED_LOCAL", ["AERA_SPECIFICATION.md", "src/model.rs", "tests/authority_transaction.rs"], ["No cryptographic or hardware attestation, cross-system transaction atomicity, or formal proof for all environments."]),
     ("CL-004", "T4 produced a negative result: shared state alone did not establish decision superiority in the frozen task.", "Historical frozen T4 domain.", "VERIFIED_HISTORICAL_AUDIT", ["public_evidence/T4_SCIENCE_SUMMARY.json"], ["No general theorem about all organismic architectures."]),
     ("CL-005", "T4 had construct-validity limits and did not operationalize broad organismic non-separability.", "Historical causal/source audit.", "VERIFIED_HISTORICAL_AUDIT", ["public_evidence/T4_SCIENCE_SUMMARY.json"], ["Does not convert a negative result into positive OASI evidence."]),
     ("CL-006", "The broad OASI thesis remains neither demonstrated nor refuted.", "Inference from the bounded experimental design.", "BOUNDED_INFERENCE", ["public_evidence/T4_SCIENCE_SUMMARY.json", "KNOWN_LIMITATIONS.md"], ["No feasibility or superiority claim."]),
@@ -227,7 +227,7 @@ claim_specs = [
     ("CL-008", "G040 is prepared-only technical closure.", "Pinned G040 report summary.", "PINNED_EVIDENCE", ["public_evidence/G039_G040_SUMMARY.json"], ["No build, QEMU, Stage 7, performance, science, production, or publication."]),
     ("CL-009", "A green internal gate catalogue can omit decisive adversarial cases.", "Sanitized G116 fixture-only methodological summary.", "INTERNAL_METHOD_REEXECUTION", ["public_evidence/G116_METHOD_SUMMARY.json"], ["No carrier validation, real build, QEMU, production, or scientific-success claim."]),
     ("CL-010", "S5 did not establish an OASI mechanism advantage over a cooperative idempotent receiver.", "1,200 deterministic local fixture records.", "LOCAL_DETERMINISTIC_NEGATIVE", ["public_evidence/S5_SCIENCE_SUMMARY.json", "experiments/s5/results/RAW_RUNS.jsonl"], ["No real fault, population, QEMU/guest, production, or external-replication claim."]),
-    ("CL-011", "S6 observed a duplicate/omission tradeoff between redispatch and no-redispatch policies.", "1,500 deterministic local fixture records and adversarial source audit.", "BOUNDED_DIAGNOSTIC", ["public_evidence/S6_SCIENCE_SUMMARY.json", "experiments/s6/results/RAW_RUNS.jsonl", "paper/v0.4/INTERNAL_ADVERSARIAL_REVIEW_V0_4.md"], ["No OASI-specific attribution, inferential probability, real fault, universal exactly-once, or general-superiority claim."]),
+    ("CL-011", "S6 observed a duplicate/omission tradeoff between redispatch and no-redispatch policies.", "1,500 deterministic local fixture records and adversarial source audit.", "BOUNDED_DIAGNOSTIC", ["public_evidence/S6_SCIENCE_SUMMARY.json", "experiments/s6/results/RAW_RUNS.jsonl", "paper/v0.4/INTERNAL_ADVERSARIAL_REVIEW_V0_4.md", "paper/v0.4.1/CORRIGENDUM_V0_4_1.md"], ["No OASI-specific attribution, inferential probability, real fault, universal exactly-once, or general-superiority claim."]),
 ]
 claims = []
 for claim_id, wording, scope, confidence, evidence_paths, exclusions in claim_specs:
@@ -276,7 +276,7 @@ packages = [
                 "".join(sorted(sha1(path) for path in sbom_files)).encode("ascii")
             ).hexdigest()
         },
-        "versionInfo": "0.2.1-research-preview",
+        "versionInfo": "0.2.2-research-preview",
     },
 ]
 for index, (name, version) in enumerate([
@@ -303,11 +303,11 @@ for index, (name, version) in enumerate([
 
 write_json(ROOT / "SBOM.spdx.json", {
     "SPDXID": "SPDXRef-DOCUMENT",
-    "creationInfo": {"created": "2026-09-02T00:00:00Z", "creators": ["Tool: OASI deterministic metadata builder"]},
+    "creationInfo": {"created": "2026-09-03T00:00:00Z", "creators": ["Tool: OASI deterministic metadata builder"]},
     "dataLicense": "CC0-1.0",
-    "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.1-research-preview",
+    "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.2-research-preview",
     "files": spdx_rows,
-    "name": "OASI-AERA-v0.2.1-research-preview-SBOM",
+    "name": "OASI-AERA-v0.2.2-research-preview-SBOM",
     "packages": packages,
     "relationships": relationships,
     "spdxVersion": "SPDX-2.3",
@@ -317,7 +317,7 @@ inventory_files = all_files({"LICENSE_INVENTORY.json"})
 inventory = []
 for path in inventory_files:
     rel = path.relative_to(ROOT).as_posix()
-    provenance = "verified historical source" if rel == "Cargo.lock" or rel == "Cargo.toml" or rel.startswith("src/") or rel.startswith("tests/") else "sealed S5/S6 result" if rel.startswith("experiments/") and "/results/" in rel else "v0.3 historical article" if rel.startswith("paper/v0.3/") else "v0.4 article input" if rel.startswith("paper/v0.4/") else "v0.2 publication candidate"
+    provenance = "verified historical source" if rel == "Cargo.lock" or rel == "Cargo.toml" or rel.startswith("src/") or rel.startswith("tests/") else "sealed S5/S6 result" if rel.startswith("experiments/") and "/results/" in rel else "v0.3 historical article" if rel.startswith("paper/v0.3/") else "v0.4 historical article" if rel.startswith("paper/v0.4/") else "v0.4.1 terminology-corrected article input" if rel.startswith("paper/v0.4.1/") else "v0.2.2 publication candidate"
     inventory.append({"copyright": "NOASSERTION", "license": license_for(rel), "path": rel, "provenance": provenance, "sha256": sha(path)})
 write_json(ROOT / "LICENSE_INVENTORY.json", {
     "files": inventory,

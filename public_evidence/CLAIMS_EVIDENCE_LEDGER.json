@@ -19,6 +19,14 @@
       "confidence": "IMPLEMENTED_AND_TESTED_LOCAL",
       "evidence": [
         {
+          "path": "AERA_SPECIFICATION.md",
+          "sha256": "83f0ce0d52e05f2c2014a911cbef30964d5f6e29aa4ea45a74f6d90aee130ba4"
+        },
+        {
+          "path": "AERA_TERMINOLOGY_ERRATUM.md",
+          "sha256": "54e40fd1760ed8389c9d6d5c873eeb978e085796cda524ed305951698bb321e9"
+        },
+        {
           "path": "Cargo.toml",
           "sha256": "6a16f63ff0643ecbd905b05275a92ad718b02356e04b0aa7946a0dbcea4ff344"
         },
@@ -32,18 +40,18 @@
         }
       ],
       "exclusions": [
-        "No kernel, hypervisor, hardware, production, or universal security claim."
+        "AERA is an unexpanded identifier; no kernel, hypervisor, hardware, production, or universal security claim."
       ],
       "id": "CL-002",
       "scope": "Shipped source and finite public tests.",
-      "wording": "The shipped Rust crate implements a bounded user-space AERA reference mechanism."
+      "wording": "The shipped Rust crate implements a bounded user-space AERA reference runtime."
     },
     {
       "confidence": "IMPLEMENTED_AND_TESTED_LOCAL",
       "evidence": [
         {
           "path": "AERA_SPECIFICATION.md",
-          "sha256": "1e0aefde7cbfae11b3e305dd5b0861169a973017cb629475a05fe702b38f8f09"
+          "sha256": "83f0ce0d52e05f2c2014a911cbef30964d5f6e29aa4ea45a74f6d90aee130ba4"
         },
         {
           "path": "src/model.rs",
@@ -55,11 +63,11 @@
         }
       ],
       "exclusions": [
-        "Not a formal proof for all environments."
+        "No cryptographic or hardware attestation, cross-system transaction atomicity, or formal proof for all environments."
       ],
       "id": "CL-003",
       "scope": "Finite user-space reference model.",
-      "wording": "The tested design binds authority to body, epoch, generation, certificate, principal, resource, action and revalidates it at commit."
+      "wording": "The AERA core predicate revalidates at commit an authority envelope bound to body identity, epoch, generation, certificate, principal, resource, action and expiration."
     },
     {
       "confidence": "VERIFIED_HISTORICAL_AUDIT",
@@ -100,7 +108,7 @@
         },
         {
           "path": "KNOWN_LIMITATIONS.md",
-          "sha256": "56e632c379259894bfae69bcf30eb74a05c19c67acb1c868a7b8c6554bfb3704"
+          "sha256": "10662fb81622cda58e3db970415f85db49aa31450168061aab156f3a96720656"
         }
       ],
       "exclusions": [
@@ -188,6 +196,10 @@
         {
           "path": "paper/v0.4/INTERNAL_ADVERSARIAL_REVIEW_V0_4.md",
           "sha256": "29ae65a9156a04752280bf8568e865e1b344977cf7f3b21093564b08b575dd79"
+        },
+        {
+          "path": "paper/v0.4.1/CORRIGENDUM_V0_4_1.md",
+          "sha256": "3d53db488460b7f059a21ed8b011c130ef5b85345c792f1c2f322ccdbf923976"
         }
       ],
       "exclusions": [

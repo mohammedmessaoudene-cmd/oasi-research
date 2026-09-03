@@ -20,13 +20,22 @@ readiness. **System intelligence** names a research target; it does not claim
 achieved general or superintelligence, consciousness, organismic unity,
 deployment, external validation, or superiority.
 
-This `v0.2.1-research-preview` does **not** demonstrate that complete vision. It publishes the bounded AERA reference contribution and adds two local deterministic effect-boundary simulations. Their combined conclusion is negative or diagnostic: S5 does not establish an advantage over a cooperative idempotent receiver, and S6 exposes a retry-versus-omission tradeoff without isolating an OASI-specific advantage.
+This `v0.2.2-research-preview` does **not** demonstrate that complete vision. It preserves the bounded v0.2.1 implementation and S5/S6 records while correcting AERA terminology transparently. Their combined conclusion remains negative or diagnostic: S5 does not establish an advantage over a cooperative idempotent receiver, and S6 exposes a retry-versus-omission tradeoff without isolating an OASI-specific advantage.
+
+**AERA is an unexpanded project identifier.** Its core predicate revalidates,
+immediately before a protected effect, an authority envelope bound to body
+identity, epoch, generation, certificate, principal, resource, action, and
+expiration. The two long forms present in v0.2.1 are historical wording and
+are deprecated; neither cryptographic/hardware attestation nor cross-system
+transaction atomicity was demonstrated. See
+[the terminology erratum](AERA_TERMINOLOGY_ERRATUM.md).
 
 ## What is included
 
 - a bounded Rust reference runtime and its public tests;
 - the AERA specification and threat model;
-- the v0.4 preprint, source, bibliography, and vector figures;
+- the historical v0.4 preprint and the terminology-corrected v0.4.1 preprint,
+  source, bibliography, and vector figures;
 - the sealed S5/S6 raw records, runners relocatable on Linux/WSL and qualified
   on WSL1 x86_64, detached aggregate checkers,
   tests, protocols, environment record, and data dictionary;
@@ -36,21 +45,28 @@ This `v0.2.1-research-preview` does **not** demonstrate that complete vision. It
 - public evidence summaries and hashes for larger private evidence.
 
 The Rust crate retains the historical package name `osia-core-r1` and crate
-version `0.1.0-research-preview` because its code is unchanged. Version `v0.2`
-identifies the aggregate research release that adds the S5/S6 evidence and
-article v0.4. OASI names the Operational Artificial System Intelligence research
-paradigm; organismic computing describes its architectural hypothesis; AERA is
-the bounded assurance mechanism implemented by this preview.
+version `0.1.0-research-preview` because its code is unchanged. Version v0.2.1
+added the S5/S6 evidence and article v0.4; v0.2.2 preserves them and adds the
+terminology correction plus article v0.4.1. OASI names the Operational
+Artificial System Intelligence research paradigm; organismic computing
+describes its architectural hypothesis; AERA is the bounded assurance
+mechanism implemented by this preview.
 
-## Current persistent identifiers (v0.2/v0.4)
+## Corrective version identifiers (v0.2.2/v0.4.1)
+
+- Scientific preprint v0.4.1: DOI will be inserted only after Zenodo assigns it.
+- Aggregate software/data preview v0.2.2: DOI will be inserted only after Zenodo assigns it.
+
+The final build is intentionally performed only after Zenodo reserves two
+distinct version-specific DOI values. The software and article records remain
+separate because their licensing scopes differ.
+
+## Previous persistent identifiers (v0.2.1/v0.4)
 
 - Scientific preprint v0.4: [doi:10.5281/zenodo.22262138](https://doi.org/10.5281/zenodo.22262138)
-- Aggregate software/data preview v0.2: [doi:10.5281/zenodo.22262143](https://doi.org/10.5281/zenodo.22262143)
+- Aggregate software/data preview v0.2.1: [doi:10.5281/zenodo.22262143](https://doi.org/10.5281/zenodo.22262143)
 
-These distinct version-specific DOI values were reserved before the final
-artifact build. Each resolves through Zenodo once its corresponding record is
-public; the software and article records remain separate because their
-licensing scopes differ.
+Those records remain immutable provenance for the wording corrected here.
 
 ## Historical persistent identifiers (v0.1)
 
@@ -59,7 +75,7 @@ licensing scopes differ.
 - Source repository: <https://github.com/mohammedmessaoudene-cmd/oasi-research>
 
 These two historical Zenodo records remain identifiers for v0.1 materials and
-do not identify this v0.2/v0.4 release.
+do not identify this v0.2.2/v0.4.1 release.
 
 ## Quick verification
 
@@ -72,12 +88,12 @@ behavior. Other Python 3.11+ environments may be useful for exploratory manual
 reproduction, but they are outside the qualified wrapper surface.
 
 ```text
-sh tools/run_tests.sh post-doi
+sh tools/run_tests.sh pre-doi
 ```
 
-The `post-doi` phase requires the final, distinct software and article DOI
-records above. On Windows, run
-`powershell -File tools/run_tests.ps1 post-doi` for the bounded Rust subset and
+The `pre-doi` phase is the only valid phase before Zenodo reserves the final,
+distinct software and article DOI records. On Windows, run
+`powershell -File tools/run_tests.ps1 pre-doi` for the bounded Rust subset and
 read-only S5/S6 data checks; that result must not be reported as the full Linux
 suite or as S5/S6 execution qualification. The verifier checks the manifest,
 claim schema, allowlist, license inventory, SBOM coverage, article files, and

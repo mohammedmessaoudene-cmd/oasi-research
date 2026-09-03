@@ -23,13 +23,22 @@ cible de recherche ; ce nom ne revendique ni intelligence générale ou
 superintelligence accomplie, ni conscience, unité organismique démontrée,
 déploiement, validation externe ou supériorité.
 
-Cette version `v0.2.1-research-preview` ne démontre pas l’OASI complet. Elle publie la contribution AERA bornée et deux simulations locales déterministes de la frontière d’effet. Leur conclusion est négative ou diagnostique : S5 n’établit pas d’avantage face à un récepteur idempotent coopératif et S6 révèle un compromis rediffusion/omission sans isoler un avantage propre à OASI.
+Cette version `v0.2.2-research-preview` ne démontre pas l’OASI complet. Elle préserve l’implémentation et les résultats S5/S6 de v0.2.1 tout en corrigeant explicitement la terminologie AERA. Leur conclusion reste négative ou diagnostique : S5 n’établit pas d’avantage face à un récepteur idempotent coopératif et S6 révèle un compromis rediffusion/omission sans isoler un avantage propre à OASI.
+
+**AERA est un identifiant de projet non développé.** Son prédicat central
+revalide, immédiatement avant un effet protégé, une enveloppe d’autorité liée à
+l’identité du corps, l’époque, la génération, le certificat, le principal, la
+ressource, l’action et l’expiration. Les deux développements présents dans
+v0.2.1 sont des formulations historiques dépréciées ; aucune attestation
+cryptographique/matérielle ni atomicité transactionnelle inter-systèmes n’a été
+démontrée. Voir [l’erratum terminologique](AERA_TERMINOLOGY_ERRATUM.md).
 
 ## Contenu
 
 - runtime Rust borné et tests publics ;
 - spécification AERA et modèle de menaces ;
-- prépublication v0.4 et analyse contradictoire S5/S6 ;
+- prépublication historique v0.4, prépublication corrigée v0.4.1 et analyse
+  contradictoire S5/S6 ;
 - 2 700 traces déterministes, données brutes, scripts relocalisables sous
   Linux/WSL et qualifiés sous WSL1 x86_64, tests,
   vérificateurs d’agrégats, protocoles et dictionnaire de données ;
@@ -39,20 +48,27 @@ Cette version `v0.2.1-research-preview` ne démontre pas l’OASI complet. Elle 
 - résumés publics et empreintes des preuves privées lourdes.
 
 Le paquet Rust conserve son nom historique `osia-core-r1` et sa version
-`0.1.0-research-preview`, car son code est inchangé. `v0.2` désigne l'ensemble
-de publication ajoutant S5/S6 et l'article v0.4 ; le programme de recherche
-public associe OASI, nom du paradigme Operational Artificial System
-Intelligence, à l’hypothèse d’architecture organismique et au mécanisme AERA.
+`0.1.0-research-preview`, car son code est inchangé. La version v0.2.1 a ajouté
+S5/S6 et l’article v0.4 ; v0.2.2 les préserve et ajoute la correction
+terminologique ainsi que l’article v0.4.1. Le programme de recherche public
+associe OASI, nom du paradigme Operational Artificial System Intelligence, à
+l’hypothèse d’architecture organismique et au mécanisme AERA.
 
-## Identifiants pérennes actuels (v0.2/v0.4)
+## Identifiants de la version corrective (v0.2.2/v0.4.1)
+
+- Prépublication scientifique v0.4.1 : le DOI sera inséré seulement après son attribution par Zenodo.
+- Aperçu logiciel/données agrégé v0.2.2 : le DOI sera inséré seulement après son attribution par Zenodo.
+
+La construction finale n’a lieu qu’après la réservation de deux DOI de version
+distincts. Les notices article et logiciel restent séparées à cause de leurs
+périmètres de licence différents.
+
+## Identifiants pérennes précédents (v0.2.1/v0.4)
 
 - Prépublication scientifique v0.4 : [doi:10.5281/zenodo.22262138](https://doi.org/10.5281/zenodo.22262138)
-- Aperçu logiciel/données agrégé v0.2 : [doi:10.5281/zenodo.22262143](https://doi.org/10.5281/zenodo.22262143)
+- Aperçu logiciel/données agrégé v0.2.1 : [doi:10.5281/zenodo.22262143](https://doi.org/10.5281/zenodo.22262143)
 
-Ces deux DOI de version distincts ont été réservés avant la construction finale
-des livrables. Chacun est résolu par Zenodo lorsque la notice correspondante
-est publique ; les notices article et logiciel restent séparées à cause de
-leurs périmètres de licence différents.
+Ces notices restent la provenance immuable des formulations corrigées ici.
 
 ## Identifiants pérennes historiques (v0.1)
 
@@ -61,7 +77,7 @@ leurs périmètres de licence différents.
 - Dépôt source : <https://github.com/mohammedmessaoudene-cmd/oasi-research>
 
 Ces deux notices Zenodo historiques restent les identifiants des livrables
-v0.1 et n'identifient pas cette version v0.2/v0.4.
+v0.1 et n'identifient pas cette version v0.2.2/v0.4.1.
 
 ## Vérification
 
@@ -75,7 +91,7 @@ reproduction manuelle exploratoire, mais ils ne font pas partie de la surface
 qualifiée du lanceur.
 
 ```text
-sh tools/run_tests.sh post-doi
+sh tools/run_tests.sh pre-doi
 ```
 
 ## Limites

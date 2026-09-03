@@ -1,10 +1,16 @@
 #!/usr/bin/env sh
 set -eu
-if [ "$#" -ne 1 ] || { [ "$1" != "pre-doi" ] && [ "$1" != "post-doi" ]; }; then
-  echo "usage: sh tools/run_tests.sh pre-doi|post-doi" >&2
+if { [ "$#" -eq 1 ] && [ "$1" = "pre-doi" ]; }; then
+  OASI_RELEASE_PHASE="--pre-doi"
+  OASI_DOI_ARGS=""
+elif { [ "$#" -eq 3 ] && [ "$1" = "post-doi" ]; }; then
+  OASI_RELEASE_PHASE="--post-doi"
+  OASI_EXPECTED_SOFTWARE_DOI="$2"
+  OASI_EXPECTED_ARTICLE_DOI="$3"
+else
+  echo "usage: sh tools/run_tests.sh pre-doi | post-doi SOFTWARE_DOI ARTICLE_DOI" >&2
   exit 2
 fi
-OASI_RELEASE_PHASE="--$1"
 cd "$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
 export PYTHONDONTWRITEBYTECODE=1
 if [ "${CARGO_TARGET_DIR+x}" != x ]; then
@@ -38,5 +44,13 @@ python3 -I -B -m unittest discover -s experiments/s5/tests -v
 python3 -I -B -m unittest discover -s experiments/s6/tests -v
 python3 -I -B experiments/s5/red_green_verifier_test.py
 python3 -I -B experiments/s6/red_green_verifier_test.py
+python3 -I -B tools/verify_aera_terminology.py --self-test
+python3 -I -B tools/verify_aera_terminology.py .
 python3 -I -B tools/verify_experiments.py .
-python3 -I -B tools/verify_release.py . "$OASI_RELEASE_PHASE"
+if [ "$OASI_RELEASE_PHASE" = "--pre-doi" ]; then
+  python3 -I -B tools/verify_release.py . --pre-doi
+else
+  python3 -I -B tools/verify_release.py . --post-doi \
+    --expected-software-doi "$OASI_EXPECTED_SOFTWARE_DOI" \
+    --expected-article-doi "$OASI_EXPECTED_ARTICLE_DOI"
+fi

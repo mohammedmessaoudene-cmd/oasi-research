@@ -1,4 +1,32 @@
-# v0.2.1-research-preview
+# v0.2.2-research-preview
+
+Status: corrective release candidate; final DOI values are intentionally absent
+until Zenodo reserves two distinct version DOI records.
+
+## Terminology correction
+
+- Defines AERA as an unexpanded project identifier for the bounded commit-time
+  authority-revalidation predicate.
+- Separates the AERA core predicate from the broader AERA reference runtime.
+- Deprecates, without deleting history, the incompatible long forms published
+  in v0.2.1.
+- Adds `AERA_TERMINOLOGY_ERRATUM.md`, article v0.4.1, and a fail-closed
+  terminology verifier.
+- Makes no new runtime, performance, production, exactly-once, attestation, or
+  mechanism-superiority claim. The Rust implementation and all 2,700 sealed
+  S5/S6 records are unchanged.
+
+## Reproduction preparation
+
+- Adds a version-pinned independent-reproduction target for Linux x86_64.
+- Preserves failed, partial, negative, and conflicting results as admissible
+  reproduction outcomes.
+- Keeps outreach and media amplification outside the release artifact and
+  conditional on a real external result.
+
+---
+
+# v0.2.1-research-preview (historical)
 
 Persistent identifiers: scientific preprint
 `10.5281/zenodo.22262138`; aggregate software/data research preview
