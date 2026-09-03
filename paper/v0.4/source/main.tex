@@ -49,17 +49,18 @@
 \newtheorem{remark}{Remark}
 
 \hypersetup{
-  pdftitle={OASI: An Organismic Computing Architecture for Body-Bound Runtime Assurance and Developmental OS-AI Integration},
+  pdftitle={OASI: Operational Artificial System Intelligence --- An Organismic Computing Architecture for Body-Bound Runtime Assurance and Developmental OS--AI Integration},
   pdfauthor={Mohammed Messaoudene},
-  pdfsubject={Operational monism, AERA runtime assurance, developmental architecture, negative evidence, and a falsifiable evaluation program},
-  pdfkeywords={OASI, AERA, organismic computing, operating systems, embodied intelligence, runtime assurance, body schema, developmental systems, negative results}
+  pdfsubject={Operational Artificial System Intelligence, operational monism, AERA runtime assurance, developmental architecture, negative evidence, and a falsifiable evaluation program},
+  pdfkeywords={OASI, Operational Artificial System Intelligence, AERA, organismic computing, operating systems, embodied intelligence, runtime assurance, body schema, developmental systems, negative results}
 }
 
 \markboth{OASI TECHNICAL REPORT, PREPRINT V0.4, SEPTEMBER 2026}%
-{Messaoudene: OASI - Organismic Computing and Body-Bound Runtime Assurance}
+{Messaoudene: Operational Artificial System Intelligence and AERA}
 
-\title{\OASI: An Organismic Computing Architecture for\\
-Body-Bound Runtime Assurance and Developmental OS--AI Integration}
+\title{\OASI{}: Operational Artificial System Intelligence\\
+{\large --- An Organismic Computing Architecture for Body-Bound Runtime Assurance\\
+and Developmental OS--AI Integration}}
 
 \author{Mohammed Messaoudene%
 \thanks{M. Messaoudene is with the Department of Electronics and Telecommunications, Faculty of Science and Technology, Belhadj Bouchaib University of Ain Temouchent, Algeria (e-mail: mohammed.messaoudene@univ-temouchent.edu.dz; ORCID: 0009-0007-4665-2548). The affiliation identifies the author's academic appointment only and does not imply sponsorship, collaboration, or endorsement by the university.}%
@@ -69,7 +70,7 @@ Body-Bound Runtime Assurance and Developmental OS--AI Integration}
 \maketitle
 
 \begin{abstract}
-Most systems described as ``AI operating systems'' retain a conventional hierarchy: an agent or model runs above a host operating system and reaches protected resources through tools, APIs, or system calls. \OASI{} investigates a stronger systems hypothesis. It asks whether operation, artificial embodiment, memory, cognition, authority, and development can be treated as coordinated projections of one versioned causal state rather than as services owned by separate OS and AI layers. We formalize this hypothesis as \emph{operational monism}: specialized organs and interfaces may remain, but every protected effect, learned competence, revocation, and body-state transition must be reconciled with one constitutional history.
+Most systems described as ``AI operating systems'' retain a conventional hierarchy: an agent or model runs above a host operating system and reaches protected resources through tools, APIs, or system calls. \emph{Operational Artificial System Intelligence} (\OASI{}) is the canonical name of the research paradigm proposed here. In this name, operational denotes system operation rather than production maturity, and system intelligence denotes a research target rather than achieved general or superintelligence, consciousness, deployment, external validation, or superiority. \OASI{} investigates a stronger systems hypothesis. It asks whether operation, artificial embodiment, memory, cognition, authority, and development can be treated as coordinated projections of one versioned causal state rather than as services owned by separate OS and AI layers. We formalize this hypothesis as \emph{operational monism}: specialized organs and interfaces may remain, but every protected effect, learned competence, revocation, and body-state transition must be reconciled with one constitutional history.
 
 The architecture combines a computational body model, developmental memory, slow cognition, typed PolicyIR, obligation-checked compilation, bounded reflexes, and Atomic Embodiment Runtime Assurance (\AERA). A learned competence acquires effect authority only through a lease bound to body identity, epoch, generation, certificate, principal, resource, action, policy digest, body-state digest, evidence, and expiration. The complete binding is revalidated immediately before effect. An epistemic firewall prevents observations produced under a reflex from serving as independent proof for expanding that reflex, while immutable generations and one-shot authority prohibit silent replay after crash or evidence loss.
 
@@ -77,13 +78,13 @@ The evidence remains deliberately bounded. Internal differential and mutation ca
 \end{abstract}
 
 \begin{IEEEkeywords}
-organismic computing, artificial intelligence, operating systems, runtime assurance, embodied intelligence, body schema, autonomic computing, developmental systems, capability security, negative results, reproducibility.
+Operational Artificial System Intelligence, organismic computing, artificial intelligence, operating systems, runtime assurance, embodied intelligence, body schema, autonomic computing, developmental systems, capability security, negative results, reproducibility.
 \end{IEEEkeywords}
 
 \section{Introduction}
 \IEEEPARstart{L}{arge} language models and tool-using agents increasingly perform work that once belonged exclusively to application code: they schedule tasks, maintain persistent memory, invoke local tools, manipulate files, and coordinate services. A growing class of systems uses operating-system terminology for this role. AIOS isolates scheduling, context, memory, storage, tools, and access control behind an agent-facing kernel \cite{mei2024aios}; Cerebrum supplies a development and deployment environment around that kernel \cite{rama2025cerebrum}; AgentOS and broader agent operating-system proposals place an agentic control plane over conventional computing environments \cite{liu2026agentos,sharma2026aos}. These systems address an important engineering problem, but they preserve a familiar ontology: an intelligent component remains a tenant of a pre-existing operating substrate.
 
-\OASI{} starts from a stronger claim. It asks whether operating and intelligence can be understood as two descriptions of the continuous activity of one artificial organism. The claim is not that a language model should execute in ring~0, that every interrupt should be learned, or that a digital computer must reproduce neural tissue. It is a claim about \emph{causal organization}. Resource regulation, interoception, memory, intention, learned competence, authority, action, and recovery should belong to one versioned history. Specialized organs, interfaces, and unequal time scales remain necessary; what changes is that none of them owns an independent authoritative reality.
+\OASI{} starts from a stronger claim. Its canonical expansion, \emph{Operational Artificial System Intelligence}, names the intended change in the relation between system operation and intelligence; it does not assert that the present artifact is operationally deployed or complete. It asks whether operating and intelligence can be understood as two descriptions of the continuous activity of one artificial organism. The claim is not that a language model should execute in ring~0, that every interrupt should be learned, or that a digital computer must reproduce neural tissue. It is a claim about \emph{causal organization}. Resource regulation, interoception, memory, intention, learned competence, authority, action, and recovery should belong to one versioned history. Specialized organs, interfaces, and unequal time scales remain necessary; what changes is that none of them owns an independent authoritative reality.
 
 We call this thesis \emph{operational monism}. It rejects both a naive software stack and a naive neural monolith. A viable organismic system may contain processes, schedulers, message channels, interpreters, and verified fast paths, yet every protected transition must be reconciled with one canonical body identity and one constitutional state. Cognition may propose a new way of operating, but it may not silently convert confidence into privilege. Conversely, low-level regulation is not treated as a dumb service hidden beneath intelligence; body state and operating consequences are native inputs to cognition and development.
 
@@ -508,7 +509,7 @@ The current artifact does not defend against a compromised kernel, malicious com
 
 \section{Discussion}
 \subsection{What the philosophy means technically}
-The phrase ``neither OS nor AI'' is easy to misread. It does not mean that every function is implemented by one neural network, that interfaces disappear, or that protection boundaries are abolished. It means that the machine has one authoritative body and one causal biography. What appears externally as operating behavior and what appears externally as intelligence are projections of the same evolving state. The body constrains cognition; cognition can alter the future operating repertoire; the constitution determines when that alteration is allowed to become effect.
+The phrase ``neither OS nor AI'' is easy to misread. \emph{Operational Artificial System Intelligence} labels this technical thesis, not a product-readiness level. It does not mean that every function is implemented by one neural network, that interfaces disappear, or that protection boundaries are abolished. It means that the machine has one authoritative body and one causal biography. What appears externally as operating behavior and what appears externally as intelligence are projections of the same evolving state. The body constrains cognition; cognition can alter the future operating repertoire; the constitution determines when that alteration is allowed to become effect.
 
 This interpretation avoids two opposite errors. The first is dualism by implementation: an agent produces intentions while a separate OS owns the only state that can actually matter. The second is monism by slogan: a shared memory region or a single process is declared organismic without a developmental mechanism. Operational monism requires causal reconciliation, developmental consequence, and constitutional mediation, not merely physical colocation.
 
@@ -555,7 +556,7 @@ This article, its figures, and its source are released under CC BY 4.0. The acco
 OpenAI ChatGPT and Codex, and during some phases other language models, assisted with literature discovery, drafting, code and test generation, debugging, evidence organization, and artifact automation. Their outputs were treated as candidate material rather than evidence. The human author selected the research questions, approved or rejected changes, supplied authority where required, and remains solely responsible for the manuscript, code, references, and claims.
 
 \section{Conclusion}
-\OASI{} proposes a change in the unit of analysis. Instead of treating intelligence as an application hosted by an operating system, it treats operation, body model, memory, cognition, authority, and development as coordinated projections of one artificial-organismic history. The claim is neither that interfaces vanish nor that cognition receives unlimited control. On the contrary, causal unity is paired with authority asymmetry: cognition may propose and learn, while a constitution mediates capability, commitment, revocation, and recovery.
+\emph{Operational Artificial System Intelligence} (\OASI{}) names a proposed change in the unit of analysis. Instead of treating intelligence as an application hosted by an operating system, it treats operation, body model, memory, cognition, authority, and development as coordinated projections of one artificial-organismic history. Here, operational refers to the operation of that system, not to production readiness, and the name remains a research target rather than a claim of achieved general or superintelligence. The claim is neither that interfaces vanish nor that cognition receives unlimited control. On the contrary, causal unity is paired with authority asymmetry: cognition may propose and learn, while a constitution mediates capability, commitment, revocation, and recovery.
 
 The most mature technical mechanism is \AERA{}. A learned competence receives authority only for a particular body, epoch, generation, certificate, principal, resource, action, policy, evidence set, and time window, and the complete binding is checked again immediately before effect. The scientific evidence remains negative or diagnostic: shared state alone did not create better decisions; a cooperative idempotent receiver matched OASI's observed fixture safety while recovering more deliveries; and a non-cooperative receiver exposed a retry-versus-omission tradeoff without isolating an OASI-specific advantage.
 

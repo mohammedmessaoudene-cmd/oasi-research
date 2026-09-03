@@ -17,7 +17,7 @@ from pathlib import Path, PurePosixPath
 
 
 EXPECTED_TIMESTAMP = (2026, 9, 2, 0, 0, 0)
-ALLOWED_PERMISSIONS = {0o644, 0o755}
+EXECUTABLE_SUFFIXES = frozenset({".py", ".sh"})
 WINDOWS_FORBIDDEN_CHARS = frozenset('<>:"|?*')
 WINDOWS_RESERVED_STEMS = frozenset(
     {"CON", "PRN", "AUX", "NUL"}
@@ -40,6 +40,27 @@ class BoundaryError(RuntimeError):
 class ExpectedFile:
     sha256: str
     size: int
+
+
+def canonical_mode(name: str) -> int:
+    """Return the one canonical archive mode for a portable member path."""
+    return 0o755 if PurePosixPath(name).suffix.lower() in EXECUTABLE_SUFFIXES else 0o644
+
+
+def permission_policy_self_test() -> list[str]:
+    cases = {
+        "tools/run.py": 0o755,
+        "tools/run.sh": 0o755,
+        "tools/RUN.PY": 0o755,
+        "README.md": 0o644,
+        "record.json": 0o644,
+        "notes/x.py.txt": 0o644,
+    }
+    return [
+        f"canonical mode self-test failed: {name}"
+        for name, expected in cases.items()
+        if canonical_mode(name) != expected
+    ]
 
 
 def absolute(path: Path) -> Path:
@@ -378,8 +399,13 @@ def verify_archive(path: Path, expected: dict[str, ExpectedFile]) -> dict[str, o
                     raw_mode = (info.external_attr >> 16) & 0xFFFF
                     if stat.S_IFMT(raw_mode) != stat.S_IFREG:
                         errors.append(f"entry is not marked as a regular file: {name}: {oct(raw_mode)}")
-                    if stat.S_IMODE(raw_mode) not in ALLOWED_PERMISSIONS:
-                        errors.append(f"permission drift: {name}: {oct(stat.S_IMODE(raw_mode))}")
+                    observed_mode = stat.S_IMODE(raw_mode)
+                    expected_mode = canonical_mode(name)
+                    if observed_mode != expected_mode:
+                        errors.append(
+                            f"permission drift: {name}: observed {oct(observed_mode)} "
+                            f"expected {oct(expected_mode)}"
+                        )
                     if info.external_attr & 0xFFFF:
                         errors.append(f"unexpected DOS attributes: {name}")
                     if info.internal_attr != 0:
@@ -475,7 +501,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     allowlist = absolute(args.allowlist)
-    global_errors: list[str] = []
+    global_errors: list[str] = permission_policy_self_test()
     try:
         expected = parse_allowlist(allowlist)
     except BoundaryError as exc:

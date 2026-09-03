@@ -1,5 +1,20 @@
 # OASI philosophy
 
+## Canonical name
+
+**Operational Artificial System Intelligence (OASI)** is the canonical name of
+this research paradigm. It denotes a system-level hypothesis in which operation,
+artificial embodiment, memory, cognition, authority, and development are
+coordinated through one versioned causal history and constitutionally mediated
+effects.
+
+Here, **operational** means pertaining to the operation of the system; it does
+not assert production readiness. **System intelligence** is the research target,
+not a claim of achieved general or superintelligence, consciousness, organismic
+unity, deployment, external validation, or superiority. **Organismic computing**
+names the architectural hypothesis developed below; it is not a competing
+expansion of OASI.
+
 ## Canonical thesis
 
 `OS = AI = continuous activity of one artificial organism.`

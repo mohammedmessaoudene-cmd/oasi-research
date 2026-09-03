@@ -217,7 +217,7 @@ atomic_write(
 
 
 claim_specs = [
-    ("CL-001", "OASI is a research program for developmental OS-AI integration.", "Program definition.", "DEFINITION", ["OASI_PHILOSOPHY.md"], ["Not a completed system or scientific validation."]),
+    ("CL-001", "Operational Artificial System Intelligence (OASI) is the canonical name of a research program for developmental OS-AI integration under one versioned causal history.", "Program definition and terminology.", "DEFINITION", ["OASI_PHILOSOPHY.md"], ["Operational does not mean production-ready; no achieved general or superintelligence, consciousness, deployment, external-validation, superiority, or legal-priority claim."]),
     ("CL-002", "The shipped Rust crate implements a bounded user-space AERA reference mechanism.", "Shipped source and finite public tests.", "IMPLEMENTED_AND_TESTED_LOCAL", ["Cargo.toml", "src/runtime.rs", "tests/authority_transaction.rs"], ["No kernel, hypervisor, hardware, production, or universal security claim."]),
     ("CL-003", "The tested design binds authority to body, epoch, generation, certificate, principal, resource, action and revalidates it at commit.", "Finite user-space reference model.", "IMPLEMENTED_AND_TESTED_LOCAL", ["AERA_SPECIFICATION.md", "src/model.rs", "tests/authority_transaction.rs"], ["Not a formal proof for all environments."]),
     ("CL-004", "T4 produced a negative result: shared state alone did not establish decision superiority in the frozen task.", "Historical frozen T4 domain.", "VERIFIED_HISTORICAL_AUDIT", ["public_evidence/T4_SCIENCE_SUMMARY.json"], ["No general theorem about all organismic architectures."]),
@@ -270,13 +270,13 @@ packages = [
         "filesAnalyzed": True,
         "licenseConcluded": "NOASSERTION",
         "licenseDeclared": "NOASSERTION",
-        "name": "OASI-AERA research preview",
+        "name": "OASI/AERA: Operational Artificial System Intelligence Research Preview",
         "packageVerificationCode": {
             "packageVerificationCodeValue": hashlib.sha1(
                 "".join(sorted(sha1(path) for path in sbom_files)).encode("ascii")
             ).hexdigest()
         },
-        "versionInfo": "0.2.0-research-preview",
+        "versionInfo": "0.2.1-research-preview",
     },
 ]
 for index, (name, version) in enumerate([
@@ -305,9 +305,9 @@ write_json(ROOT / "SBOM.spdx.json", {
     "SPDXID": "SPDXRef-DOCUMENT",
     "creationInfo": {"created": "2026-09-02T00:00:00Z", "creators": ["Tool: OASI deterministic metadata builder"]},
     "dataLicense": "CC0-1.0",
-    "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.0-research-preview",
+    "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.1-research-preview",
     "files": spdx_rows,
-    "name": "OASI-AERA-v0.2.0-research-preview-SBOM",
+    "name": "OASI-AERA-v0.2.1-research-preview-SBOM",
     "packages": packages,
     "relationships": relationships,
     "spdxVersion": "SPDX-2.3",

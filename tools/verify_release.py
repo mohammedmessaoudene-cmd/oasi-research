@@ -759,8 +759,8 @@ if set(sbom) != expected_document_keys:
 for field, expected in {
     "SPDXID": "SPDXRef-DOCUMENT",
     "dataLicense": "CC0-1.0",
-    "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.0-research-preview",
-    "name": "OASI-AERA-v0.2.0-research-preview-SBOM",
+    "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.1-research-preview",
+    "name": "OASI-AERA-v0.2.1-research-preview-SBOM",
     "spdxVersion": "SPDX-2.3",
 }.items():
     if sbom.get(field) != expected:
@@ -854,7 +854,7 @@ if len(package_names) != len(set(package_names)):
     ERRORS.append("SBOM duplicate package name")
 project_matches = [
     row for row in raw_packages
-    if isinstance(row, dict) and row.get("name") == "OASI-AERA research preview"
+    if isinstance(row, dict) and row.get("name") == "OASI/AERA: Operational Artificial System Intelligence Research Preview"
 ]
 if len(project_matches) != 1:
     ERRORS.append("SBOM must contain exactly one OASI project package")
@@ -911,8 +911,8 @@ if project_package and {
     "filesAnalyzed": True,
     "licenseConcluded": "NOASSERTION",
     "licenseDeclared": "NOASSERTION",
-    "name": "OASI-AERA research preview",
-    "versionInfo": "0.2.0-research-preview",
+    "name": "OASI/AERA: Operational Artificial System Intelligence Research Preview",
+    "versionInfo": "0.2.1-research-preview",
 }:
     ERRORS.append("SBOM project package fields mismatch")
 if set(project_package.get("packageVerificationCode", {})) != {"packageVerificationCodeValue"}:
@@ -1147,21 +1147,26 @@ if not isinstance(cff_document, dict):
 expected_top = {
     "cff-version": "1.2.0",
     "message": "If you use this research preview, please cite the aggregate release and the accompanying article.",
-    "title": "OASI/AERA: Bounded User-Space Research Preview",
+    "title": "OASI/AERA: Operational Artificial System Intelligence Research Preview",
     "type": "software",
-    "version": "0.2.0-research-preview",
+    "version": "0.2.1-research-preview",
     "repository-code": "https://github.com/mohammedmessaoudene-cmd/oasi-research",
     "abstract": (
-        "Bounded user-space AERA reference runtime and specification for the OASI research program, "
-        "with negative T4 and S5 results, a diagnostic S6 safety-availability tradeoff, path-specific "
-        "licensing, and explicit claim limitations."
+        "Operational Artificial System Intelligence (OASI) is a research program investigating a "
+        "system-level architecture in which operation, artificial embodiment, memory, cognition, "
+        "authority, and development are coordinated through one versioned causal history and "
+        "constitutionally mediated effects. This aggregate research preview contains a bounded "
+        "user-space AERA reference runtime, negative T4 and S5 results, and a diagnostic S6 "
+        "safety-availability tradeoff. Operational denotes system operation, not production readiness, "
+        "and the name does not claim achieved general or superintelligence, consciousness, deployment, "
+        "external validation, or superiority."
     ),
 }
 for field, expected in expected_top.items():
     if cff_document.get(field) != expected:
         ERRORS.append(f"CITATION.cff top-level mismatch: {field}")
 if cff_document.get("keywords") != [
-    "OASI", "AERA", "runtime assurance", "operating systems",
+    "OASI", "Operational Artificial System Intelligence", "AERA", "runtime assurance", "operating systems",
     "developmental systems", "negative results",
 ]:
     ERRORS.append("CITATION.cff keyword set/order mismatch")
@@ -1176,7 +1181,7 @@ else:
     expected_cff_keys.update({"date-released", "url", "identifiers"})
     if set(cff_document) != expected_cff_keys:
         ERRORS.append("CITATION.cff post-DOI top-level property set mismatch")
-    if cff_document.get("date-released") != "2026-09-02":
+    if cff_document.get("date-released") != "2026-09-03":
         ERRORS.append("CITATION.cff post-DOI release date mismatch")
 authors = cff_document.get("authors", [])
 if not isinstance(authors, list) or len(authors) != 1:
@@ -1197,7 +1202,7 @@ if not isinstance(preferred_document, dict) or set(preferred_document) != expect
     ERRORS.append("CITATION.cff preferred-citation property set mismatch")
 expected_preferred = {
     "type": "article",
-    "title": "OASI: An Organismic Computing Architecture for Body-Bound Runtime Assurance and Developmental OS-AI Integration",
+    "title": "OASI: Operational Artificial System Intelligence — An Organismic Computing Architecture for Body-Bound Runtime Assurance and Developmental OS–AI Integration",
     "authors": [{
         "family-names": "Messaoudene",
         "given-names": "Mohammed",
@@ -1439,6 +1444,15 @@ if validations.get("A") != validations.get("B"):
 
 main_source_path = ROOT / "paper/v0.4/source/main.tex"
 main_source = main_source_path.read_text(encoding="utf-8") if main_source_path.is_file() else ""
+reproducibility_path = ROOT / "REPRODUCIBILITY.md"
+reproducibility = (
+    reproducibility_path.read_text(encoding="utf-8")
+    if reproducibility_path.is_file() else ""
+)
+primary_test_phase = "pre-doi" if PRE_DOI else "post-doi"
+primary_test_block = f"```text\nsh tools/run_tests.sh {primary_test_phase}\n```"
+if primary_test_block not in reproducibility:
+    ERRORS.append("REPRODUCIBILITY primary test command does not match selected DOI phase")
 pre_doi_boundary = "will be inserted only after Zenodo assigns it"
 if PRE_DOI:
     if pre_doi_boundary not in main_source:

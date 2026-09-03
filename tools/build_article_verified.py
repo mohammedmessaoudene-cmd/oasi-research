@@ -28,8 +28,8 @@ from pathlib import Path, PurePosixPath
 SOURCE_DATE_EPOCH = "1788307200"
 FIXED_BUILD_TIME_UTC = "2026-09-02T00:00:00Z"
 ARTICLE_TITLE = (
-    "OASI: An Organismic Computing Architecture for Body-Bound Runtime "
-    "Assurance and Developmental OS-AI Integration"
+    "OASI: Operational Artificial System Intelligence — An Organismic Computing "
+    "Architecture for Body-Bound Runtime Assurance and Developmental OS–AI Integration"
 )
 ARTICLE_AUTHOR = "Mohammed Messaoudene"
 ARTICLE_REL = "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf"

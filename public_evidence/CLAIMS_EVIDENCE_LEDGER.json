@@ -5,22 +5,22 @@
       "evidence": [
         {
           "path": "OASI_PHILOSOPHY.md",
-          "sha256": "da83f29cce98f4a51643fd777d1a2cfa7a97d1662de50b5d0d3598b70d3762c3"
+          "sha256": "fa1adb4950cc21d1eb44a261a2f582520d5cf8d3886e91d96a89c9da24d4296c"
         }
       ],
       "exclusions": [
-        "Not a completed system or scientific validation."
+        "Operational does not mean production-ready; no achieved general or superintelligence, consciousness, deployment, external-validation, superiority, or legal-priority claim."
       ],
       "id": "CL-001",
-      "scope": "Program definition.",
-      "wording": "OASI is a research program for developmental OS-AI integration."
+      "scope": "Program definition and terminology.",
+      "wording": "Operational Artificial System Intelligence (OASI) is the canonical name of a research program for developmental OS-AI integration under one versioned causal history."
     },
     {
       "confidence": "IMPLEMENTED_AND_TESTED_LOCAL",
       "evidence": [
         {
           "path": "Cargo.toml",
-          "sha256": "4e33980b42aeb06164ff0a22e660a6ef20a96f71eb10f92e5a6b34306113efe0"
+          "sha256": "6a16f63ff0643ecbd905b05275a92ad718b02356e04b0aa7946a0dbcea4ff344"
         },
         {
           "path": "src/runtime.rs",

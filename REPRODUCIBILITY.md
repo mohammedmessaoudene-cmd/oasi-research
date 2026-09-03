@@ -20,7 +20,7 @@ accepting the PDF.
 ## Test
 
 ```text
-sh tools/run_tests.sh pre-doi
+sh tools/run_tests.sh post-doi
 ```
 
 PowerShell and Linux-shell helper scripts are provided in `tools/`. Tests create only temporary user-space files and child processes.
@@ -44,7 +44,7 @@ export the exact reviewed commit or tag into an empty directory outside the
 clone, then build from that clean export. One POSIX procedure is:
 
 ```text
-release_ref=v0.2.0-research-preview
+release_ref=v0.2.1-research-preview
 export_root=$(mktemp -d)
 mkdir "$export_root/source"
 git archive --format=tar "$release_ref" | tar -xf - -C "$export_root/source"

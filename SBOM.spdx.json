@@ -7,7 +7,7 @@
     ]
   },
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.0-research-preview",
+  "documentNamespace": "https://spdx.org/spdxdocs/oasi-aera-v0.2.1-research-preview",
   "files": [
     {
       "SPDXID": "SPDXRef-File-0001",
@@ -190,11 +190,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "ed48dfb32dd7efa5c34b3182b9da388fabfaa9d4"
+          "checksumValue": "66d43ba3e6a02e6954ef0bb42c47723eab63dc37"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "7b2dee0beb2942d12a7ce8a8e7023e9d92e275e639ff75de8409f52813d16cb0"
+          "checksumValue": "47985864d9231acbe89829c0c3e4ef58bfccb928526d2c28b88fd9182dac0180"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -212,11 +212,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "ff3049bd6bad4671c9f5c00289bd999952bb4332"
+          "checksumValue": "e97dfb41ff14afcbb630d13afc28893c777def9b"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "a19a934f73d2562c5632bb7d8013dd362eb3c0efa1d0fdffa29ff8196f07a39d"
+          "checksumValue": "74e408ce57a26c82ea599de2395431f0746d83cb7d8aebb4dd11c9e29f580941"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -234,11 +234,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "317c29ea439d9e64f78ec5f7d7b282e1bf12d7d6"
+          "checksumValue": "7c3dd4e7f387027ca8a073f00d1a8a3c7ff04569"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "2e65db3829611b6cf2a2e7d4865bacd10fe4f71f7c2af64723b1c9d24d65e931"
+          "checksumValue": "ce7eef3d1cbc98a6f991e58a91f8476c52333ce6874b33edfa913e4a1f5d09e7"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -300,11 +300,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "ad6094191e2d8b967c93860c3a2d5e24cf6885bb"
+          "checksumValue": "a26b0b7c9ab61092caacf555921d54760e8a4b38"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "4e33980b42aeb06164ff0a22e660a6ef20a96f71eb10f92e5a6b34306113efe0"
+          "checksumValue": "6a16f63ff0643ecbd905b05275a92ad718b02356e04b0aa7946a0dbcea4ff344"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -498,11 +498,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "942d76e42130824fea8623cbe3e7cb6ed29878c2"
+          "checksumValue": "c6c129826251dec7b58cf8bce54066caa281e148"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "da83f29cce98f4a51643fd777d1a2cfa7a97d1662de50b5d0d3598b70d3762c3"
+          "checksumValue": "fa1adb4950cc21d1eb44a261a2f582520d5cf8d3886e91d96a89c9da24d4296c"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -542,11 +542,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "b8c37bfcbafc2ddbb71809912dbe5c0dd28aea5d"
+          "checksumValue": "7c5757e99b89f428bd7280abae8bd82ebe0bde40"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "fa17036efb259b1f5b5154bad3d356ca3356d1aee25f4055f509c84dea3b5c1d"
+          "checksumValue": "faedd861f082715952c4c2438c1977459107ae2ac5915ff90d057d454b462c72"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -564,11 +564,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "2f2b2decbd19f58c9a6841c28641daf40a855709"
+          "checksumValue": "831a9f7b399edc3a08e84fab407f419e052b3b09"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "6ee066f282a9a4d349b48aa72f51ac9ac162f3ea4ed3bcd984ae5ef1ee56d0d5"
+          "checksumValue": "b259a6611317c3e0874bb63bc1f271fb6ce5d654dc687efb5b5fee4193262df4"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -586,11 +586,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "4162fb07c14d04d02ffbaa9b4e5a89681901640f"
+          "checksumValue": "edbccf8baf037d042cea9a5fe38aba51c999eeca"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "c94179a757ad9d7bd30fda8fa833124b73981c70c03055ca2bca15e527a4212a"
+          "checksumValue": "171c13011fd9316dae891f40d045c0bcfed40b8e5a5288f315a275577ded3021"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -608,11 +608,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "4a031ba15c10cd2c33699a58969ebe3c733c60c4"
+          "checksumValue": "2ff0a20d362e044a758a3b01227650cf170ad2a4"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "cd77f65ec2620ec8348d76eb2e7e02c2262079162593b4528b82c7a6b6908189"
+          "checksumValue": "2213250217423b07ee1ebdfe6b951d55cdfad5ce2c7816c6ee7cd0071f8b66f2"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -630,11 +630,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "96e6c548f5f0c4c50a79010766d7329340704a7f"
+          "checksumValue": "2daac9f91b7329a3c0240d41a67c6ecfd896dc7e"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "8f6fc56e1cb095c087fffd79eeaafe98343656a3db3c25144a026dde7c7ca6eb"
+          "checksumValue": "f7228604b308636428dc70da6d664706c1c69ac95bfac3888b0e8de25e4e4434"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -784,11 +784,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "33c6868ecc3815ca2f9955138480979ae1be2330"
+          "checksumValue": "16c0fd01af74a29d1e6c0268ec59d65bd45b5b5d"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "cab043c635e48ec53df7f81c776c0f4f0ed3f70521b8b0967a16a00647667531"
+          "checksumValue": "314ed2554ae32627ae68cba9a817930a5020e2ee658e746807e29bb32add392e"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -2104,11 +2104,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "1e14a2cb81f27a430e70e3720174483a2dd40060"
+          "checksumValue": "f7de9982b63fac1980e2f6fc2e166a2c0d835c30"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "bac9985430dc145d3d4a16363d48a24bc301bbd0cb4cb64fd29b3a7354160e80"
+          "checksumValue": "eef33da0025c940394d29929942ddd515bb2e4d5f0fd85ce2757a13c2e7bee7d"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -2126,11 +2126,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "d1e542dfb7c3dfffeedf739ac25d6dacb68581fb"
+          "checksumValue": "1f6ab5658f71d2b277449e432f27acf6d5c013e3"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "9d1190a54aebfa3dbc98433f27c2e4ddd3eef6b1b475c586efe67f55b515bfe2"
+          "checksumValue": "a8d119d1bb1f1f21269af9a119b78ce63624abd70820aeae0527c992cd3cd680"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -2148,11 +2148,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "b98e41dff6a408f789bda72ad5a6c946dc034043"
+          "checksumValue": "eff823c8916dc771a9df737b7b6f3c10585083ea"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "067674d617a2d1d736f1f49565620af6d73142dece0e5623174acfea5f19a5e0"
+          "checksumValue": "f0c53eb9fc7bac3de7cedebca3a11c6cdd5cb11a522c8d231695581864ee0c41"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -2236,11 +2236,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "9505e968896f3c5dbe73fba6ed700b27c700306c"
+          "checksumValue": "35670072045a9cb98eb379a500e7004ae15d7ef9"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a"
+          "checksumValue": "ac4d13380c5d2e433a28e689b15d61c655637dc752dbb12dce0c39b55d901fc4"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -2258,11 +2258,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "0956fb6e26e6fc99f7afe38c60b0c62cfd448a72"
+          "checksumValue": "8b44f6ed04cc22b57998a6570e1cc65887d750ad"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "af88c8ca778995f51b55f63e39cd7c0e4b94d8a474647ec9c8986bde2d79196e"
+          "checksumValue": "bf9b9d0dc715e8a504e810be2cfa6b1bf3249dbe7bd6dd8c92d587a2981b64f1"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -2566,11 +2566,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "cdef198d6423104914a329614f9835f4408ed2ba"
+          "checksumValue": "6cd88765e89a52ee74ab15d17cf00acb53403858"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "71ab66e9ffbab12845bb693f1faa9abf8a79e65ce396bd1d308d6f5b1c56c6da"
+          "checksumValue": "9a66238c066a4880228033a260821f7573f46211abf6b0649ac09b38d7376c9e"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -2610,11 +2610,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "a0cd7f35034f02b3db20975059f958d81069b3c1"
+          "checksumValue": "ae27c53915e4f179571d98e4d026f33eeed171e1"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "ffc01c3f9340731262c95fe577edd0dd3eadef56017459c86a87f84545facdb5"
+          "checksumValue": "e4e042e8db189ee5588cf8333b31abb8f065c28e21272cdae7588635b9b7921f"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -3226,11 +3226,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "34ce0c046649500e9607d420aa332df11de775dd"
+          "checksumValue": "dc728bb6b265ab6e2649f6ef547c1ecd205baa74"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "af7906f27023d1332bfd9ca29a3afad4afc5088ee93364fd306171cf99e40d87"
+          "checksumValue": "e8508e9c892b8b44b1d257cdc1a1e9d5f52fa2d85e5f70be8098fb5668375e08"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -3292,11 +3292,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "a53bf38c1dff1036e08c64449a76d797bcc390fc"
+          "checksumValue": "b96df1dc9e75385d20865b2519a873eea43ea859"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "137869218a0c2fc63fe94b5f2767451087be28e79a7690fccc6946366aa38ad5"
+          "checksumValue": "720c859d066292f370ca895bd3b92f541638c38723b2182b7235e9c3b1eff7a1"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -3358,11 +3358,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "82f83bd7446677784d3f6a15232a733b47d088b8"
+          "checksumValue": "8cfa9722837296e25227fe6814689ceef788db65"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "0ff93c8356f9841889d035c0790b0b7f992c0efe66d0be6c60ff7bf9458bdab7"
+          "checksumValue": "7a45711f2deb7467f78c1b9493b8aaed27e4dcfcc4f7b99cb43dfe28fa3568ea"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -3402,11 +3402,11 @@
       "checksums": [
         {
           "algorithm": "SHA1",
-          "checksumValue": "6de5884fd678c4d768eaed63d281b380082ec410"
+          "checksumValue": "3278ec3c4a3202af563f319a265952ab0f279918"
         },
         {
           "algorithm": "SHA256",
-          "checksumValue": "2aa004b149f9d8f404fd0e74062e22210f693d00dc2d5a177cc1f93e8bd5b62a"
+          "checksumValue": "7f7fa0ac9b7686a397cad0a1551ff534659141bb17fbcdfcb0ba9b48d8d1ae2a"
         }
       ],
       "copyrightText": "NOASSERTION",
@@ -3420,7 +3420,7 @@
       ]
     }
   ],
-  "name": "OASI-AERA-v0.2.0-research-preview-SBOM",
+  "name": "OASI-AERA-v0.2.1-research-preview-SBOM",
   "packages": [
     {
       "SPDXID": "SPDXRef-Package-OASI",
@@ -3429,11 +3429,11 @@
       "filesAnalyzed": true,
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
-      "name": "OASI-AERA research preview",
+      "name": "OASI/AERA: Operational Artificial System Intelligence Research Preview",
       "packageVerificationCode": {
-        "packageVerificationCodeValue": "b405ef434b0e9b48c04fec131081ced3afaa28c3"
+        "packageVerificationCodeValue": "8654c4c24abf65c4492abb481036348940cd6621"
       },
-      "versionInfo": "0.2.0-research-preview"
+      "versionInfo": "0.2.1-research-preview"
     },
     {
       "SPDXID": "SPDXRef-Tool-01",

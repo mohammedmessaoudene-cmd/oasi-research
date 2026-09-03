@@ -61,21 +61,21 @@
       "license": "CC-BY-4.0",
       "path": "CITATION.cff",
       "provenance": "v0.2 publication candidate",
-      "sha256": "7b2dee0beb2942d12a7ce8a8e7023e9d92e275e639ff75de8409f52813d16cb0"
+      "sha256": "47985864d9231acbe89829c0c3e4ef58bfccb928526d2c28b88fd9182dac0180"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "CLAIMS_AND_EVIDENCE.md",
       "provenance": "v0.2 publication candidate",
-      "sha256": "a19a934f73d2562c5632bb7d8013dd362eb3c0efa1d0fdffa29ff8196f07a39d"
+      "sha256": "74e408ce57a26c82ea599de2395431f0746d83cb7d8aebb4dd11c9e29f580941"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "CONTRIBUTING.md",
       "provenance": "v0.2 publication candidate",
-      "sha256": "2e65db3829611b6cf2a2e7d4865bacd10fe4f71f7c2af64723b1c9d24d65e931"
+      "sha256": "ce7eef3d1cbc98a6f991e58a91f8476c52333ce6874b33edfa913e4a1f5d09e7"
     },
     {
       "copyright": "NOASSERTION",
@@ -96,7 +96,7 @@
       "license": "Apache-2.0 OR MIT",
       "path": "Cargo.toml",
       "provenance": "verified historical source",
-      "sha256": "4e33980b42aeb06164ff0a22e660a6ef20a96f71eb10f92e5a6b34306113efe0"
+      "sha256": "6a16f63ff0643ecbd905b05275a92ad718b02356e04b0aa7946a0dbcea4ff344"
     },
     {
       "copyright": "NOASSERTION",
@@ -159,7 +159,7 @@
       "license": "CC-BY-4.0",
       "path": "OASI_PHILOSOPHY.md",
       "provenance": "v0.2 publication candidate",
-      "sha256": "da83f29cce98f4a51643fd777d1a2cfa7a97d1662de50b5d0d3598b70d3762c3"
+      "sha256": "fa1adb4950cc21d1eb44a261a2f582520d5cf8d3886e91d96a89c9da24d4296c"
     },
     {
       "copyright": "NOASSERTION",
@@ -173,35 +173,35 @@
       "license": "CC-BY-4.0",
       "path": "PUBLICATION_STATUS.md",
       "provenance": "v0.2 publication candidate",
-      "sha256": "fa17036efb259b1f5b5154bad3d356ca3356d1aee25f4055f509c84dea3b5c1d"
+      "sha256": "faedd861f082715952c4c2438c1977459107ae2ac5915ff90d057d454b462c72"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "README.md",
       "provenance": "v0.2 publication candidate",
-      "sha256": "6ee066f282a9a4d349b48aa72f51ac9ac162f3ea4ed3bcd984ae5ef1ee56d0d5"
+      "sha256": "b259a6611317c3e0874bb63bc1f271fb6ce5d654dc687efb5b5fee4193262df4"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "README_FR.md",
       "provenance": "v0.2 publication candidate",
-      "sha256": "c94179a757ad9d7bd30fda8fa833124b73981c70c03055ca2bca15e527a4212a"
+      "sha256": "171c13011fd9316dae891f40d045c0bcfed40b8e5a5288f315a275577ded3021"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "RELEASE_NOTES.md",
       "provenance": "v0.2 publication candidate",
-      "sha256": "cd77f65ec2620ec8348d76eb2e7e02c2262079162593b4528b82c7a6b6908189"
+      "sha256": "2213250217423b07ee1ebdfe6b951d55cdfad5ce2c7816c6ee7cd0071f8b66f2"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "REPRODUCIBILITY.md",
       "provenance": "v0.2 publication candidate",
-      "sha256": "8f6fc56e1cb095c087fffd79eeaafe98343656a3db3c25144a026dde7c7ca6eb"
+      "sha256": "f7228604b308636428dc70da6d664706c1c69ac95bfac3888b0e8de25e4e4434"
     },
     {
       "copyright": "NOASSERTION",
@@ -215,7 +215,7 @@
       "license": "Apache-2.0",
       "path": "SBOM.spdx.json",
       "provenance": "v0.2 publication candidate",
-      "sha256": "285dba488dbfc229662c1ebf9bac3961ae5611da5b46dc5cb5a4a9efb4f27da5"
+      "sha256": "40402dc8880e7b4b5bf4e233482e65a70e1679b5ad74fd8c1a1e485ed9c42ecc"
     },
     {
       "copyright": "NOASSERTION",
@@ -257,7 +257,7 @@
       "license": "CC-BY-4.0",
       "path": "V0_2_PROVENANCE_ADDENDUM.md",
       "provenance": "v0.2 publication candidate",
-      "sha256": "cab043c635e48ec53df7f81c776c0f4f0ed3f70521b8b0967a16a00647667531"
+      "sha256": "314ed2554ae32627ae68cba9a817930a5020e2ee658e746807e29bb32add392e"
     },
     {
       "copyright": "NOASSERTION",
@@ -677,21 +677,21 @@
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/ABSTRACT_FR.md",
       "provenance": "v0.4 article input",
-      "sha256": "bac9985430dc145d3d4a16363d48a24bc301bbd0cb4cb64fd29b3a7354160e80"
+      "sha256": "eef33da0025c940394d29929942ddd515bb2e4d5f0fd85ce2757a13c2e7bee7d"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/ARTICLE_SOURCE_MANIFEST.sha256",
       "provenance": "v0.4 article input",
-      "sha256": "9d1190a54aebfa3dbc98433f27c2e4ddd3eef6b1b475c586efe67f55b515bfe2"
+      "sha256": "a8d119d1bb1f1f21269af9a119b78ce63624abd70820aeae0527c992cd3cd680"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/BUILD_RECEIPT.json",
       "provenance": "v0.4 article input",
-      "sha256": "067674d617a2d1d736f1f49565620af6d73142dece0e5623174acfea5f19a5e0"
+      "sha256": "f0c53eb9fc7bac3de7cedebca3a11c6cdd5cb11a522c8d231695581864ee0c41"
     },
     {
       "copyright": "NOASSERTION",
@@ -719,14 +719,14 @@
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf",
       "provenance": "v0.4 article input",
-      "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a"
+      "sha256": "ac4d13380c5d2e433a28e689b15d61c655637dc752dbb12dce0c39b55d901fc4"
     },
     {
       "copyright": "NOASSERTION",
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/README.md",
       "provenance": "v0.4 article input",
-      "sha256": "af88c8ca778995f51b55f63e39cd7c0e4b94d8a474647ec9c8986bde2d79196e"
+      "sha256": "bf9b9d0dc715e8a504e810be2cfa6b1bf3249dbe7bd6dd8c92d587a2981b64f1"
     },
     {
       "copyright": "NOASSERTION",
@@ -824,7 +824,7 @@
       "license": "CC-BY-4.0",
       "path": "paper/v0.4/source/main.tex",
       "provenance": "v0.4 article input",
-      "sha256": "71ab66e9ffbab12845bb693f1faa9abf8a79e65ce396bd1d308d6f5b1c56c6da"
+      "sha256": "9a66238c066a4880228033a260821f7573f46211abf6b0649ac09b38d7376c9e"
     },
     {
       "copyright": "NOASSERTION",
@@ -838,7 +838,7 @@
       "license": "CC-BY-4.0",
       "path": "public_evidence/CLAIMS_EVIDENCE_LEDGER.json",
       "provenance": "v0.2 publication candidate",
-      "sha256": "ffc01c3f9340731262c95fe577edd0dd3eadef56017459c86a87f84545facdb5"
+      "sha256": "e4e042e8db189ee5588cf8333b31abb8f065c28e21272cdae7588635b9b7921f"
     },
     {
       "copyright": "NOASSERTION",
@@ -1034,7 +1034,7 @@
       "license": "Apache-2.0",
       "path": "tools/build_article_verified.py",
       "provenance": "v0.2 publication candidate",
-      "sha256": "af7906f27023d1332bfd9ca29a3afad4afc5088ee93364fd306171cf99e40d87"
+      "sha256": "e8508e9c892b8b44b1d257cdc1a1e9d5f52fa2d85e5f70be8098fb5668375e08"
     },
     {
       "copyright": "NOASSERTION",
@@ -1055,7 +1055,7 @@
       "license": "Apache-2.0",
       "path": "tools/rebuild_release_metadata.py",
       "provenance": "v0.2 publication candidate",
-      "sha256": "137869218a0c2fc63fe94b5f2767451087be28e79a7690fccc6946366aa38ad5"
+      "sha256": "720c859d066292f370ca895bd3b92f541638c38723b2182b7235e9c3b1eff7a1"
     },
     {
       "copyright": "NOASSERTION",
@@ -1076,7 +1076,7 @@
       "license": "Apache-2.0",
       "path": "tools/verify_archive.py",
       "provenance": "v0.2 publication candidate",
-      "sha256": "0ff93c8356f9841889d035c0790b0b7f992c0efe66d0be6c60ff7bf9458bdab7"
+      "sha256": "7a45711f2deb7467f78c1b9493b8aaed27e4dcfcc4f7b99cb43dfe28fa3568ea"
     },
     {
       "copyright": "NOASSERTION",
@@ -1090,7 +1090,7 @@
       "license": "Apache-2.0",
       "path": "tools/verify_release.py",
       "provenance": "v0.2 publication candidate",
-      "sha256": "2aa004b149f9d8f404fd0e74062e22210f693d00dc2d5a177cc1f93e8bd5b62a"
+      "sha256": "7f7fa0ac9b7686a397cad0a1551ff534659141bb17fbcdfcb0ba9b48d8d1ae2a"
     }
   ],
   "git_dependencies": [],

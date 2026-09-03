@@ -1,7 +1,7 @@
 # Contributing
 
 Issues and private security reports are welcome. External code is not merged
-into the `v0.2.0-research-preview` release until a contribution policy protects
+into the `v0.2.1-research-preview` release until a contribution policy protects
 provenance and any future licensing options.
 
 For now:

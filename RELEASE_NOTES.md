@@ -1,8 +1,21 @@
-# v0.2.0-research-preview
+# v0.2.1-research-preview
 
 Persistent identifiers: scientific preprint
 `10.5281/zenodo.22262138`; aggregate software/data research preview
 `10.5281/zenodo.22262143`.
+
+## Canonical name and conceptual provenance
+
+- This version records **Operational Artificial System Intelligence (OASI)** as
+  the canonical name of the research paradigm.
+- The article title retains the descriptive subtitle **An Organismic Computing
+  Architecture for Body-Bound Runtime Assurance and Developmental OS-AI
+  Integration**. Organismic computing describes the architectural hypothesis;
+  it is not an alternative expansion of the acronym.
+- In this name, `operational` refers to system operation, not production
+  readiness. The name does not claim achieved general or superintelligence,
+  consciousness, organismic unity, deployment, external validation, or
+  superiority.
 
 ## Scientific update
 

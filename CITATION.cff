@@ -1,22 +1,23 @@
 cff-version: 1.2.0
 message: "If you use this research preview, please cite the aggregate release and the accompanying article."
-title: "OASI/AERA: Bounded User-Space Research Preview"
+title: "OASI/AERA: Operational Artificial System Intelligence Research Preview"
 type: software
 authors:
   - family-names: "Messaoudene"
     given-names: "Mohammed"
     orcid: "https://orcid.org/0009-0007-4665-2548"
     affiliation: "Belhadj Bouchaib University of Ain Temouchent, Algeria"
-version: "0.2.0-research-preview"
+version: "0.2.1-research-preview"
 repository-code: "https://github.com/mohammedmessaoudene-cmd/oasi-research"
-date-released: "2026-09-02"
+date-released: "2026-09-03"
 url: "https://doi.org/10.5281/zenodo.22262143"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.22262143"
-abstract: "Bounded user-space AERA reference runtime and specification for the OASI research program, with negative T4 and S5 results, a diagnostic S6 safety-availability tradeoff, path-specific licensing, and explicit claim limitations."
+abstract: "Operational Artificial System Intelligence (OASI) is a research program investigating a system-level architecture in which operation, artificial embodiment, memory, cognition, authority, and development are coordinated through one versioned causal history and constitutionally mediated effects. This aggregate research preview contains a bounded user-space AERA reference runtime, negative T4 and S5 results, and a diagnostic S6 safety-availability tradeoff. Operational denotes system operation, not production readiness, and the name does not claim achieved general or superintelligence, consciousness, deployment, external validation, or superiority."
 keywords:
   - OASI
+  - Operational Artificial System Intelligence
   - AERA
   - runtime assurance
   - operating systems
@@ -24,7 +25,7 @@ keywords:
   - negative results
 preferred-citation:
   type: article
-  title: "OASI: An Organismic Computing Architecture for Body-Bound Runtime Assurance and Developmental OS-AI Integration"
+  title: "OASI: Operational Artificial System Intelligence — An Organismic Computing Architecture for Body-Bound Runtime Assurance and Developmental OS–AI Integration"
   authors:
     - family-names: "Messaoudene"
       given-names: "Mohammed"

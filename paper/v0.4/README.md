@@ -1,4 +1,4 @@
-# OASI Scientific Article Preprint v0.4
+# OASI: Operational Artificial System Intelligence — Scientific Article Preprint v0.4
 
 ## Main deliverable
 
@@ -32,6 +32,11 @@ v0.4 adds the S5 and S6 local deterministic trace simulations and their
 adversarial reanalysis. S5 is a negative result against a cooperative
 idempotent receiver. S6 diagnoses a safety--availability tradeoff but does not
 establish an OASI-specific advantage.
+
+The canonical project name is **Operational Artificial System Intelligence
+(OASI)**. The article's organismic-computing subtitle describes the proposed
+architecture. `Operational` refers to system operation, not production
+readiness, and the name does not claim achieved general or superintelligence.
 
 It does **not** claim a completed operating system, consciousness, production
 readiness, general superiority, or endorsement by IEEE, DARPA, OpenAI, or the

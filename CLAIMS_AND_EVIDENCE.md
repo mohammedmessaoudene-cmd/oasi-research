@@ -4,7 +4,7 @@ Every public claim has an ID, exact wording, evidence, scope, exclusions, and co
 
 | ID | Exact wording | Scope | Exclusions | Confidence |
 |---|---|---|---|---|
-| CL-001 | OASI is a research program for developmental OS-AI integration. | Program definition. | Not a completed system. | Definition |
+| CL-001 | Operational Artificial System Intelligence (OASI) is the canonical name of a research program for developmental OS-AI integration under one versioned causal history. | Program definition and terminology. | `Operational` does not mean production-ready; no achieved general or superintelligence, consciousness, deployment, external-validation, superiority, or legal-priority claim. | Definition |
 | CL-002 | The public Rust crate implements a bounded user-space AERA reference mechanism. | Shipped source and tests. | No kernel, hypervisor, hardware, or universal security claim. | Implemented and tested locally |
 | CL-003 | Authority in the tested design is bound to body, epoch, generation, certificate, principal, resource, and action, and is revalidated at commit. | Public tests and source. | Finite exercised model only. | Implemented and tested locally |
 | CL-004 | T4 produced a negative result: shared state alone did not establish decision superiority in the frozen task. | Historical 1,000 paired lives / 600,000 aligned events audit. | No general theorem about all organismic architectures. | Verified historical audit |

@@ -23,3 +23,10 @@ The v0.2 addendum covers the sanitized S5/S6 code, sealed local fixture data,
 revised interpretation, and preprint v0.4. It does not reclassify internal
 adversarial review as external peer review or authorize claims beyond the
 published evidence boundary.
+
+Version v0.2 also records `Operational Artificial System Intelligence (OASI)`
+as the author's canonical project terminology. The versioned commit, article,
+release archive, and DOI records provide a hash-addressed public provenance
+trail once published. This terminology record is not by itself a legal finding
+of novelty, priority, patentability, trademark registration, or exclusive
+rights.

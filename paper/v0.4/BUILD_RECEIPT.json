@@ -1,7 +1,7 @@
 {
   "article": {
-    "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a",
-    "size": 430121
+    "sha256": "ac4d13380c5d2e433a28e689b15d61c655637dc752dbb12dce0c39b55d901fc4",
+    "size": 433416
   },
   "build_definitions": {
     "tools/build_article.ps1": {
@@ -13,16 +13,16 @@
       "size": 160
     },
     "tools/build_article_verified.py": {
-      "sha256": "af7906f27023d1332bfd9ca29a3afad4afc5088ee93364fd306171cf99e40d87",
-      "size": 28454
+      "sha256": "e8508e9c892b8b44b1d257cdc1a1e9d5f52fa2d85e5f70be8098fb5668375e08",
+      "size": 28503
     }
   },
   "builds": {
     "A": {
       "outputs": {
         "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf": {
-          "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a",
-          "size": 430121
+          "sha256": "ac4d13380c5d2e433a28e689b15d61c655637dc752dbb12dce0c39b55d901fc4",
+          "size": 433416
         },
         "paper/v0.4/source/figures/fig1_layered_vs_organismic.pdf": {
           "sha256": "07ef1af62ec9242c211dd5316d755ad2446453e7ebd9a64b8c1a1f24460b70e8",
@@ -66,7 +66,7 @@
           "encrypted": false,
           "font_count": 27,
           "javascript": false,
-          "latex_log_sha256": "f79496a42d08b1c44194f8b551dcd4ad9d0581e23271865340e8e580994ffd69",
+          "latex_log_sha256": "863dee09054ea21da143145d16c6c2623f680d32e34c4052689c5e35c1b893a4",
           "latex_warnings": {
             "accepted_package_warning_first_lines": [
               "Package epstopdf Warning: Shell escape feature is not enabled."
@@ -87,7 +87,7 @@
           },
           "pages": 13,
           "pdf_version": "1.7",
-          "text_sha256": "636d542770316f2443addfae462e9949ebbce17f6221a9f1ac7dd1405afbac95"
+          "text_sha256": "d38cd2c4a4f05772a0704dc7fc2acbcfc0a50f3273d56c3db851a8ca6346c5f3"
         },
         "figures": {
           "fig1_layered_vs_organismic": {
@@ -232,8 +232,8 @@
     "B": {
       "outputs": {
         "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf": {
-          "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a",
-          "size": 430121
+          "sha256": "ac4d13380c5d2e433a28e689b15d61c655637dc752dbb12dce0c39b55d901fc4",
+          "size": 433416
         },
         "paper/v0.4/source/figures/fig1_layered_vs_organismic.pdf": {
           "sha256": "07ef1af62ec9242c211dd5316d755ad2446453e7ebd9a64b8c1a1f24460b70e8",
@@ -277,7 +277,7 @@
           "encrypted": false,
           "font_count": 27,
           "javascript": false,
-          "latex_log_sha256": "f79496a42d08b1c44194f8b551dcd4ad9d0581e23271865340e8e580994ffd69",
+          "latex_log_sha256": "863dee09054ea21da143145d16c6c2623f680d32e34c4052689c5e35c1b893a4",
           "latex_warnings": {
             "accepted_package_warning_first_lines": [
               "Package epstopdf Warning: Shell escape feature is not enabled."
@@ -298,7 +298,7 @@
           },
           "pages": 13,
           "pdf_version": "1.7",
-          "text_sha256": "636d542770316f2443addfae462e9949ebbce17f6221a9f1ac7dd1405afbac95"
+          "text_sha256": "d38cd2c4a4f05772a0704dc7fc2acbcfc0a50f3273d56c3db851a8ca6346c5f3"
         },
         "figures": {
           "fig1_layered_vs_organismic": {
@@ -451,8 +451,8 @@
   "phase": "final",
   "promoted_outputs": {
     "paper/v0.4/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4.pdf": {
-      "sha256": "66b87e02cd10f838c0a3b1f45b61f66013d76bd767a30d1ec07cf4b5a077377a",
-      "size": 430121
+      "sha256": "ac4d13380c5d2e433a28e689b15d61c655637dc752dbb12dce0c39b55d901fc4",
+      "size": 433416
     },
     "paper/v0.4/source/figures/fig1_layered_vs_organismic.pdf": {
       "sha256": "07ef1af62ec9242c211dd5316d755ad2446453e7ebd9a64b8c1a1f24460b70e8",
@@ -491,7 +491,7 @@
   "source_date_epoch": 1788307200,
   "source_manifest": {
     "path": "paper/v0.4/ARTICLE_SOURCE_MANIFEST.sha256",
-    "sha256": "9d1190a54aebfa3dbc98433f27c2e4ddd3eef6b1b475c586efe67f55b515bfe2",
+    "sha256": "a8d119d1bb1f1f21269af9a119b78ce63624abd70820aeae0527c992cd3cd680",
     "size": 676
   },
   "status": "PASS_REPRODUCIBLE_ARTICLE_BUILD",

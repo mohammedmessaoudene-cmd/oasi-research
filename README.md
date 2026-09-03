@@ -1,4 +1,4 @@
-# OASI / AERA research preview
+# OASI — Operational Artificial System Intelligence / AERA research preview
 
 > RESEARCH PROTOTYPE  
 > OASI COMPLETE SYSTEM: NOT DEMONSTRATED  
@@ -8,9 +8,19 @@
 > NO GENERAL SUPERIORITY CLAIM  
 > NO DARPA, IEEE, UNIVERSITY, OR OTHER INSTITUTIONAL ENDORSEMENT
 
-OASI is a research program exploring the thesis that operating-system activity, embodiment, system organization, and intelligence may form one developmental causal history: `OS = AI = continuous activity of one artificial organism`.
+**Operational Artificial System Intelligence (OASI)** is the canonical name of
+the research paradigm documented by this project. It investigates a system-level
+architecture in which operation, artificial embodiment, memory, cognition,
+authority, and development are coordinated through one versioned causal history
+and constitutionally mediated effects. Its technical thesis remains:
+`OS = AI = continuous activity of one artificial organism`.
 
-This `v0.2.0-research-preview` does **not** demonstrate that complete vision. It publishes the bounded AERA reference contribution and adds two local deterministic effect-boundary simulations. Their combined conclusion is negative or diagnostic: S5 does not establish an advantage over a cooperative idempotent receiver, and S6 exposes a retry-versus-omission tradeoff without isolating an OASI-specific advantage.
+In this name, **operational** refers to system operation, not production
+readiness. **System intelligence** names a research target; it does not claim
+achieved general or superintelligence, consciousness, organismic unity,
+deployment, external validation, or superiority.
+
+This `v0.2.1-research-preview` does **not** demonstrate that complete vision. It publishes the bounded AERA reference contribution and adds two local deterministic effect-boundary simulations. Their combined conclusion is negative or diagnostic: S5 does not establish an advantage over a cooperative idempotent receiver, and S6 exposes a retry-versus-omission tradeoff without isolating an OASI-specific advantage.
 
 ## What is included
 
@@ -28,7 +38,9 @@ This `v0.2.0-research-preview` does **not** demonstrate that complete vision. It
 The Rust crate retains the historical package name `osia-core-r1` and crate
 version `0.1.0-research-preview` because its code is unchanged. Version `v0.2`
 identifies the aggregate research release that adds the S5/S6 evidence and
-article v0.4; the public research program and architecture are named OASI/AERA.
+article v0.4. OASI names the Operational Artificial System Intelligence research
+paradigm; organismic computing describes its architectural hypothesis; AERA is
+the bounded assurance mechanism implemented by this preview.
 
 ## Current persistent identifiers (v0.2/v0.4)
 

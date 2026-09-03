@@ -4,7 +4,7 @@ version = "0.1.0-research-preview"
 edition = "2024"
 rust-version = "1.97.1"
 license = "Apache-2.0 OR MIT"
-description = "Bounded user-space AERA reference runtime for OASI research"
+description = "Bounded user-space AERA reference runtime for Operational Artificial System Intelligence research"
 
 [lib]
 name = "osia_core_r1"

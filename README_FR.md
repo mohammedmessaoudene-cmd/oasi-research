@@ -1,4 +1,4 @@
-# OASI / AERA — aperçu de recherche
+# OASI — Operational Artificial System Intelligence / AERA — aperçu de recherche
 
 > PROTOTYPE DE RECHERCHE  
 > AERA : IMPLÉMENTATION ET SPÉCIFICATION DE RÉFÉRENCE USER-SPACE BORNÉE  
@@ -10,9 +10,20 @@
 > AUCUNE REVENDICATION DE SUPÉRIORITÉ GÉNÉRALE  
 > AUCUNE VALIDATION DARPA, IEEE OU INSTITUTIONNELLE
 
-OASI est un programme de recherche fondé sur la thèse suivante : les activités du système d’exploitation, l’incarnation, l’organisation du système et l’intelligence pourraient appartenir à une même histoire causale développementale — `OS = IA = activité continue d’un même organisme artificiel`.
+**Operational Artificial System Intelligence (OASI)** est le nom canonique du
+paradigme de recherche documenté par ce projet. Il étudie une architecture dans
+laquelle l’opération du système, l’incarnation artificielle, la mémoire, la
+cognition, l’autorité et le développement sont coordonnés par une même histoire
+causale versionnée et des effets soumis à une constitution. Sa thèse technique
+reste : `OS = IA = activité continue d’un même organisme artificiel`.
 
-Cette version `v0.2.0-research-preview` ne démontre pas l’OASI complet. Elle publie la contribution AERA bornée et deux simulations locales déterministes de la frontière d’effet. Leur conclusion est négative ou diagnostique : S5 n’établit pas d’avantage face à un récepteur idempotent coopératif et S6 révèle un compromis rediffusion/omission sans isoler un avantage propre à OASI.
+Dans ce nom, **Operational** désigne l’activité opératoire du système et non un
+niveau de maturité prêt pour la production. **System Intelligence** désigne une
+cible de recherche ; ce nom ne revendique ni intelligence générale ou
+superintelligence accomplie, ni conscience, unité organismique démontrée,
+déploiement, validation externe ou supériorité.
+
+Cette version `v0.2.1-research-preview` ne démontre pas l’OASI complet. Elle publie la contribution AERA bornée et deux simulations locales déterministes de la frontière d’effet. Leur conclusion est négative ou diagnostique : S5 n’établit pas d’avantage face à un récepteur idempotent coopératif et S6 révèle un compromis rediffusion/omission sans isoler un avantage propre à OASI.
 
 ## Contenu
 
@@ -30,7 +41,8 @@ Cette version `v0.2.0-research-preview` ne démontre pas l’OASI complet. Elle 
 Le paquet Rust conserve son nom historique `osia-core-r1` et sa version
 `0.1.0-research-preview`, car son code est inchangé. `v0.2` désigne l'ensemble
 de publication ajoutant S5/S6 et l'article v0.4 ; le programme de recherche
-public se nomme OASI/AERA.
+public associe OASI, nom du paradigme Operational Artificial System
+Intelligence, à l’hypothèse d’architecture organismique et au mécanisme AERA.
 
 ## Identifiants pérennes actuels (v0.2/v0.4)
 
