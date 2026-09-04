@@ -2,11 +2,14 @@
 
 ## Status
 
-This directory contains the locally built pre-DOI candidate for a
+This directory contains the locally built, DOI-bound candidate for a
 terminology-only correction of the published v0.4 preprint. Its v0.4.1 PDF,
 source manifest, receipt, and deterministic twin-build evidence are complete
-locally. No v0.4.1 DOI or external release is claimed here.
+locally. The separate Zenodo records remain unpublished drafts; no external
+release is claimed here.
 
+- Corrective v0.4.1 preprint: [10.5281/zenodo.22266401](https://doi.org/10.5281/zenodo.22266401)
+- Companion v0.2.2 software/data preview: [10.5281/zenodo.22266419](https://doi.org/10.5281/zenodo.22266419)
 - Published v0.4 preprint: [10.5281/zenodo.22262138](https://doi.org/10.5281/zenodo.22262138)
 - Companion v0.2.1 software/data preview: [10.5281/zenodo.22262143](https://doi.org/10.5281/zenodo.22262143)
 - Earlier v0.3 preprint: [10.5281/zenodo.22151556](https://doi.org/10.5281/zenodo.22151556)
@@ -59,5 +62,5 @@ fixture-only, and outside production claims.
 
 The existing v0.4 PDF and build receipts were not reused as evidence for the
 v0.4.1 PDF. Separately versioned tooling produced fresh manifests and receipts
-and demonstrated deterministic twin output. DOI reservation, final DOI-bound
-rebuild, external release, and publication remain incomplete.
+and demonstrated deterministic twin output. The final DOI-bound rebuild is
+complete locally; external release and publication remain incomplete.

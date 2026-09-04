@@ -54,12 +54,14 @@ mechanism implemented by this preview.
 
 ## Corrective version identifiers (v0.2.2/v0.4.1)
 
-- Scientific preprint v0.4.1: DOI will be inserted only after Zenodo assigns it.
-- Aggregate software/data preview v0.2.2: DOI will be inserted only after Zenodo assigns it.
+- Scientific preprint v0.4.1: [doi:10.5281/zenodo.22266401](https://doi.org/10.5281/zenodo.22266401)
+- Aggregate software/data preview v0.2.2: [doi:10.5281/zenodo.22266419](https://doi.org/10.5281/zenodo.22266419)
 
-The final build is intentionally performed only after Zenodo reserves two
-distinct version-specific DOI values. The software and article records remain
-separate because their licensing scopes differ.
+These distinct version-specific DOI values were reserved before the final
+artifact build. They resolve through Zenodo once their separate draft records
+are public. DOI reservation does not by itself publish either record. The
+software and article records remain separate because their licensing scopes
+differ.
 
 ## Previous persistent identifiers (v0.2.1/v0.4)
 
@@ -88,17 +90,18 @@ behavior. Other Python 3.11+ environments may be useful for exploratory manual
 reproduction, but they are outside the qualified wrapper surface.
 
 ```text
-sh tools/run_tests.sh pre-doi
+sh tools/run_tests.sh post-doi 10.5281/zenodo.22266419 10.5281/zenodo.22266401
 ```
 
-The `pre-doi` phase is the only valid phase before Zenodo reserves the final,
-distinct software and article DOI records. On Windows, run
-`powershell -File tools/run_tests.ps1 pre-doi` for the bounded Rust subset and
-read-only S5/S6 data checks; that result must not be reported as the full Linux
-suite or as S5/S6 execution qualification. The verifier checks the manifest,
-claim schema, allowlist, license inventory, SBOM coverage, article files, and
-forbidden public-data patterns. It distinguishes symbolic protocol fields such
-as `nonce` from leaked operational authorization values.
+The `post-doi` phase binds verification to the final, distinct software and
+article DOI records above. On Windows, run `powershell -File
+tools/run_tests.ps1 post-doi 10.5281/zenodo.22266419
+10.5281/zenodo.22266401` for the bounded Rust subset and read-only S5/S6 data
+checks; that result must not be reported as the full Linux suite or as S5/S6
+execution qualification. The verifier checks the manifest, claim schema,
+allowlist, license inventory, SBOM coverage, article files, and forbidden
+public-data patterns. It distinguishes symbolic protocol fields such as
+`nonce` from leaked operational authorization values.
 
 ## Scope
 

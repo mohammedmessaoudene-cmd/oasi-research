@@ -1538,8 +1538,15 @@ reproducibility = (
     reproducibility_path.read_text(encoding="utf-8")
     if reproducibility_path.is_file() else ""
 )
-primary_test_phase = "pre-doi" if PRE_DOI else "post-doi"
-primary_test_block = f"```text\nsh tools/run_tests.sh {primary_test_phase}\n```"
+primary_test_command = (
+    "sh tools/run_tests.sh pre-doi"
+    if PRE_DOI
+    else (
+        "sh tools/run_tests.sh post-doi "
+        f"{args.expected_software_doi} {args.expected_article_doi}"
+    )
+)
+primary_test_block = f"```text\n{primary_test_command}\n```"
 if primary_test_block not in reproducibility:
     ERRORS.append("REPRODUCIBILITY primary test command does not match selected DOI phase")
 pre_doi_boundary = "will be inserted only after Zenodo assigns it"

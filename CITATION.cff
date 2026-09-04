@@ -9,6 +9,11 @@ authors:
     affiliation: "Belhadj Bouchaib University of Ain Temouchent, Algeria"
 version: "0.2.2-research-preview"
 repository-code: "https://github.com/mohammedmessaoudene-cmd/oasi-research"
+date-released: "2026-09-03"
+url: "https://doi.org/10.5281/zenodo.22266419"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22266419"
 abstract: "Operational Artificial System Intelligence (OASI) is a research program investigating a system-level architecture in which operation, artificial embodiment, memory, cognition, authority, and development are coordinated through one versioned causal history and constitutionally mediated effects. This aggregate research preview contains a bounded user-space AERA reference runtime, negative T4 and S5 results, and a diagnostic S6 safety-availability tradeoff. Operational denotes system operation, not production readiness, and the name does not claim achieved general or superintelligence, consciousness, deployment, external validation, or superiority."
 keywords:
   - OASI
@@ -27,3 +32,4 @@ preferred-citation:
       orcid: "https://orcid.org/0009-0007-4665-2548"
   year: 2026
   version: "0.4.1-preprint"
+  doi: "10.5281/zenodo.22266401"

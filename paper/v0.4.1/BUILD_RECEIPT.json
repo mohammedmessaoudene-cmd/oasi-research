@@ -1,7 +1,7 @@
 {
   "article": {
-    "sha256": "1a816f431825d1d2614c26c97e80400f1f29fe4a1cdc313c4ff3d55e20cc9efd",
-    "size": 433999
+    "sha256": "7c673732404336d0a3e084cca7552b3ec54031e78085855b77561c05f18cd915",
+    "size": 434183
   },
   "build_definitions": {
     "tools/build_article_v0_4_1.ps1": {
@@ -21,8 +21,8 @@
     "A": {
       "outputs": {
         "paper/v0.4.1/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4_1.pdf": {
-          "sha256": "1a816f431825d1d2614c26c97e80400f1f29fe4a1cdc313c4ff3d55e20cc9efd",
-          "size": 433999
+          "sha256": "7c673732404336d0a3e084cca7552b3ec54031e78085855b77561c05f18cd915",
+          "size": 434183
         },
         "paper/v0.4.1/source/figures/fig1_layered_vs_organismic.pdf": {
           "sha256": "07938024b4095f35748c2c9935bf94391eaece8901d7404810e860aa818e23ef",
@@ -66,7 +66,7 @@
           "encrypted": false,
           "font_count": 27,
           "javascript": false,
-          "latex_log_sha256": "6d3bd407a03e13b7fe0d2e420b5dcebfec51934c0a9dcd7b219feb2dac927797",
+          "latex_log_sha256": "87c167239e8f93b340eb7a7dc9128617e07c6debe8ab026efe3ca9cc1eb9a3b8",
           "latex_warnings": {
             "accepted_package_warning_first_lines": [
               "Package epstopdf Warning: Shell escape feature is not enabled."
@@ -87,7 +87,7 @@
           },
           "pages": 13,
           "pdf_version": "1.7",
-          "text_sha256": "bfb8c2eb697ba4052f22f5b81f33a903f929819bc29d502f3b72cf002561fa73"
+          "text_sha256": "79909d5e5b4bbe7a477ac00dba0276eed822be62e6c66aefc1b5c5b853e82b25"
         },
         "figures": {
           "fig1_layered_vs_organismic": {
@@ -232,8 +232,8 @@
     "B": {
       "outputs": {
         "paper/v0.4.1/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4_1.pdf": {
-          "sha256": "1a816f431825d1d2614c26c97e80400f1f29fe4a1cdc313c4ff3d55e20cc9efd",
-          "size": 433999
+          "sha256": "7c673732404336d0a3e084cca7552b3ec54031e78085855b77561c05f18cd915",
+          "size": 434183
         },
         "paper/v0.4.1/source/figures/fig1_layered_vs_organismic.pdf": {
           "sha256": "07938024b4095f35748c2c9935bf94391eaece8901d7404810e860aa818e23ef",
@@ -277,7 +277,7 @@
           "encrypted": false,
           "font_count": 27,
           "javascript": false,
-          "latex_log_sha256": "6d3bd407a03e13b7fe0d2e420b5dcebfec51934c0a9dcd7b219feb2dac927797",
+          "latex_log_sha256": "87c167239e8f93b340eb7a7dc9128617e07c6debe8ab026efe3ca9cc1eb9a3b8",
           "latex_warnings": {
             "accepted_package_warning_first_lines": [
               "Package epstopdf Warning: Shell escape feature is not enabled."
@@ -298,7 +298,7 @@
           },
           "pages": 13,
           "pdf_version": "1.7",
-          "text_sha256": "bfb8c2eb697ba4052f22f5b81f33a903f929819bc29d502f3b72cf002561fa73"
+          "text_sha256": "79909d5e5b4bbe7a477ac00dba0276eed822be62e6c66aefc1b5c5b853e82b25"
         },
         "figures": {
           "fig1_layered_vs_organismic": {
@@ -446,13 +446,13 @@
     "figure_pdf_svg_byte_identical": true,
     "output_set_identical": true
   },
-  "expected_article_doi": null,
+  "expected_article_doi": "10.5281/zenodo.22266401",
   "fixed_build_time_utc": "2026-09-03T00:00:00Z",
-  "phase": "pre-doi",
+  "phase": "final",
   "promoted_outputs": {
     "paper/v0.4.1/OASI_SCIENTIFIC_ARTICLE_PREPRINT_V0_4_1.pdf": {
-      "sha256": "1a816f431825d1d2614c26c97e80400f1f29fe4a1cdc313c4ff3d55e20cc9efd",
-      "size": 433999
+      "sha256": "7c673732404336d0a3e084cca7552b3ec54031e78085855b77561c05f18cd915",
+      "size": 434183
     },
     "paper/v0.4.1/source/figures/fig1_layered_vs_organismic.pdf": {
       "sha256": "07938024b4095f35748c2c9935bf94391eaece8901d7404810e860aa818e23ef",
@@ -491,7 +491,7 @@
   "source_date_epoch": 1788393600,
   "source_manifest": {
     "path": "paper/v0.4.1/ARTICLE_SOURCE_MANIFEST.sha256",
-    "sha256": "0f40468c67e3d89980970b72dee7590fcffba1835ba830747a9861b77845c0c0",
+    "sha256": "a81dee03bece131efd2e1d28cef9226c4a55de61d38274f8c5fd6dbfc33ea41c",
     "size": 688
   },
   "status": "PASS_REPRODUCIBLE_ARTICLE_BUILD",

@@ -2,9 +2,12 @@
 
 Current state: `PASS_OWNER_REPRESENTATION_ACCEPTED_FOR_V0_2_RELEASE`.
 
-Corrective-release state: `V0_2_2_PRE_DOI_TERMINOLOGY_CORRECTION_CANDIDATE`.
-No v0.2.2 tag, GitHub release, Zenodo version, external reproduction request,
-or expert message is implied by this source-tree state.
+Corrective-release state: `V0_2_2_POST_DOI_RELEASE_CANDIDATE`.
+The article DOI [10.5281/zenodo.22266401](https://doi.org/10.5281/zenodo.22266401)
+and software DOI [10.5281/zenodo.22266419](https://doi.org/10.5281/zenodo.22266419)
+are reserved in separate, unpublished Zenodo draft records. DOI reservation is
+not publication. No v0.2.2 tag, GitHub release, public Zenodo version, external
+reproduction request, or expert message is implied by this source-tree state.
 
 Mohammed Messaoudene has supplied the explicit representation in
 `OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md`. It states that the sanitized

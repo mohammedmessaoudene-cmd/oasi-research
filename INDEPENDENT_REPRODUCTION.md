@@ -19,8 +19,8 @@ git checkout --detach v0.2.2-research-preview
 git rev-parse HEAD
 test -z "$(git status --porcelain)"
 sh tools/run_tests.sh post-doi \
-  <version-specific-software-doi> \
-  <version-specific-article-doi>
+  10.5281/zenodo.22266419 \
+  10.5281/zenodo.22266401
 ```
 
 Record the resolved commit before running. The final public issue will also pin

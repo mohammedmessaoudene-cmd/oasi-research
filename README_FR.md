@@ -56,12 +56,14 @@ l’hypothèse d’architecture organismique et au mécanisme AERA.
 
 ## Identifiants de la version corrective (v0.2.2/v0.4.1)
 
-- Prépublication scientifique v0.4.1 : le DOI sera inséré seulement après son attribution par Zenodo.
-- Aperçu logiciel/données agrégé v0.2.2 : le DOI sera inséré seulement après son attribution par Zenodo.
+- Prépublication scientifique v0.4.1 : [doi:10.5281/zenodo.22266401](https://doi.org/10.5281/zenodo.22266401)
+- Aperçu logiciel/données agrégé v0.2.2 : [doi:10.5281/zenodo.22266419](https://doi.org/10.5281/zenodo.22266419)
 
-La construction finale n’a lieu qu’après la réservation de deux DOI de version
-distincts. Les notices article et logiciel restent séparées à cause de leurs
-périmètres de licence différents.
+Ces deux DOI de version distincts ont été réservés avant la construction finale
+des artefacts. Ils résoudront via Zenodo lorsque leurs notices brouillon
+séparées seront publiques. La réservation d’un DOI ne publie pas à elle seule
+la notice correspondante. Les notices article et logiciel restent séparées à
+cause de leurs périmètres de licence différents.
 
 ## Identifiants pérennes précédents (v0.2.1/v0.4)
 
@@ -91,7 +93,7 @@ reproduction manuelle exploratoire, mais ils ne font pas partie de la surface
 qualifiée du lanceur.
 
 ```text
-sh tools/run_tests.sh pre-doi
+sh tools/run_tests.sh post-doi 10.5281/zenodo.22266419 10.5281/zenodo.22266401
 ```
 
 ## Limites

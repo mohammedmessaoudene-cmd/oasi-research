@@ -1,7 +1,12 @@
 # v0.2.2-research-preview
 
-Status: corrective release candidate; final DOI values are intentionally absent
-until Zenodo reserves two distinct version DOI records.
+Status: post-DOI corrective release candidate. Zenodo has reserved two distinct
+version DOI values in unpublished draft records:
+
+- scientific preprint v0.4.1: [10.5281/zenodo.22266401](https://doi.org/10.5281/zenodo.22266401);
+- aggregate software/data preview v0.2.2: [10.5281/zenodo.22266419](https://doi.org/10.5281/zenodo.22266419).
+
+Reservation does not itself publish either record.
 
 ## Terminology correction
 

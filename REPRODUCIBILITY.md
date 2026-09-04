@@ -20,16 +20,18 @@ accepting the PDF.
 ## Test
 
 ```text
-sh tools/run_tests.sh pre-doi
+sh tools/run_tests.sh post-doi 10.5281/zenodo.22266419 10.5281/zenodo.22266401
 ```
 
 PowerShell and Linux-shell helper scripts are provided in `tools/`. Tests create only temporary user-space files and child processes.
 
 The phase argument is mandatory: use `pre-doi` before DOI reservation and
 `post-doi SOFTWARE_DOI ARTICLE_DOI` only after inserting the distinct final
-software and article DOI records. Both post-DOI values are external expected
-pins and must match every active record exactly. The Linux-shell helper requires
-Linux with Rust/Cargo 1.97.1 available. The PowerShell
+software and article DOI records. For v0.2.2/v0.4.1, the external expected pins
+are software `10.5281/zenodo.22266419` and article
+`10.5281/zenodo.22266401`; they must match every active record exactly. DOI
+reservation does not itself publish either Zenodo draft. The Linux-shell helper
+requires Linux with Rust/Cargo 1.97.1 available. The PowerShell
 helper runs only the bounded Rust subset using the Windows GNU
 toolchain plus read-only validation of the sealed S5/S6 data, and labels that
 result `PARTIAL`. It does not execute the S5/S6 unit or mutant tests. Those
