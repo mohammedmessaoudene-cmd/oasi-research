@@ -1,111 +1,17 @@
-# OASI — Operational Artificial System Intelligence / AERA — aperçu de recherche
+# OASI — version expérimentale v0.3.0
 
-> PROTOTYPE DE RECHERCHE  
-> AERA : IMPLÉMENTATION ET SPÉCIFICATION DE RÉFÉRENCE USER-SPACE BORNÉE  
-> SYSTÈME OASI COMPLET : NON DÉMONTRÉ  
-> RÉSULTAT SCIENTIFIQUE T4 : NÉGATIF / VALIDITÉ DE CONSTRUIT LIMITÉE  
-> G039 : HOLD / AUCUN REPLAY  
-> G040 : PRÉPARÉ UNIQUEMENT  
-> NON PRÊT POUR LA PRODUCTION  
-> AUCUNE REVENDICATION DE SUPÉRIORITÉ GÉNÉRALE  
-> AUCUNE VALIDATION DARPA, IEEE OU INSTITUTIONNELLE
+Le projet avance techniquement : un service local analyse des fichiers synthétiques, conserve ses résultats, suit son budget et reprend une tâche interrompue sans rembourser son exécution précédente. Ce n'est pas encore l'organisme informatique complet visé par OASI.
 
-**Operational Artificial System Intelligence (OASI)** est le nom canonique du
-paradigme de recherche documenté par ce projet. Il étudie une architecture dans
-laquelle l’opération du système, l’incarnation artificielle, la mémoire, la
-cognition, l’autorité et le développement sont coordonnés par une même histoire
-causale versionnée et des effets soumis à une constitution. Sa thèse technique
-reste : `OS = IA = activité continue d’un même organisme artificiel`.
-
-Dans ce nom, **Operational** désigne l’activité opératoire du système et non un
-niveau de maturité prêt pour la production. **System Intelligence** désigne une
-cible de recherche ; ce nom ne revendique ni intelligence générale ou
-superintelligence accomplie, ni conscience, unité organismique démontrée,
-déploiement, validation externe ou supériorité.
-
-Cette version `v0.2.2-research-preview` ne démontre pas l’OASI complet. Elle préserve l’implémentation et les résultats S5/S6 de v0.2.1 tout en corrigeant explicitement la terminologie AERA. Leur conclusion reste négative ou diagnostique : S5 n’établit pas d’avantage face à un récepteur idempotent coopératif et S6 révèle un compromis rediffusion/omission sans isoler un avantage propre à OASI.
-
-**AERA est un identifiant de projet non développé.** Son prédicat central
-revalide, immédiatement avant un effet protégé, une enveloppe d’autorité liée à
-l’identité du corps, l’époque, la génération, le certificat, le principal, la
-ressource, l’action et l’expiration. Les deux développements présents dans
-v0.2.1 sont des formulations historiques dépréciées ; aucune attestation
-cryptographique/matérielle ni atomicité transactionnelle inter-systèmes n’a été
-démontrée. Voir [l’erratum terminologique](AERA_TERMINOLOGY_ERRATUM.md).
-
-## Contenu
-
-- runtime Rust borné et tests publics ;
-- spécification AERA et modèle de menaces ;
-- prépublication historique v0.4, prépublication corrigée v0.4.1 et analyse
-  contradictoire S5/S6 ;
-- 2 700 traces déterministes, données brutes, scripts relocalisables sous
-  Linux/WSL et qualifiés sous WSL1 x86_64, tests,
-  vérificateurs d’agrégats, protocoles et dictionnaire de données ;
-- matrice exacte des affirmations et preuves ;
-- résultat T4 négatif et diagnostic de validité de construit ;
-- documentation de reproductibilité, sécurité, licences et supply chain ;
-- résumés publics et empreintes des preuves privées lourdes.
-
-Le paquet Rust conserve son nom historique `osia-core-r1` et sa version
-`0.1.0-research-preview`, car son code est inchangé. La version v0.2.1 a ajouté
-S5/S6 et l’article v0.4 ; v0.2.2 les préserve et ajoute la correction
-terminologique ainsi que l’article v0.4.1. Le programme de recherche public
-associe OASI, nom du paradigme Operational Artificial System Intelligence, à
-l’hypothèse d’architecture organismique et au mécanisme AERA.
-
-## Identifiants de la version corrective (v0.2.2/v0.4.1)
-
-- Prépublication scientifique v0.4.1 : [doi:10.5281/zenodo.22266401](https://doi.org/10.5281/zenodo.22266401)
-- Aperçu logiciel/données agrégé v0.2.2 : [doi:10.5281/zenodo.22266419](https://doi.org/10.5281/zenodo.22266419)
-
-Ces deux DOI de version distincts ont été réservés avant la construction finale
-des artefacts. Ils résoudront via Zenodo lorsque leurs notices brouillon
-séparées seront publiques. La réservation d’un DOI ne publie pas à elle seule
-la notice correspondante. Les notices article et logiciel restent séparées à
-cause de leurs périmètres de licence différents.
-
-## Identifiants pérennes précédents (v0.2.1/v0.4)
-
-- Prépublication scientifique v0.4 : [doi:10.5281/zenodo.22262138](https://doi.org/10.5281/zenodo.22262138)
-- Aperçu logiciel/données agrégé v0.2.1 : [doi:10.5281/zenodo.22262143](https://doi.org/10.5281/zenodo.22262143)
-
-Ces notices restent la provenance immuable des formulations corrigées ici.
-
-## Identifiants pérennes historiques (v0.1)
-
-- Prépublication scientifique antérieure v0.3 : [doi:10.5281/zenodo.22151556](https://doi.org/10.5281/zenodo.22151556)
-- Aperçu logiciel antérieur v0.1 : [doi:10.5281/zenodo.22151560](https://doi.org/10.5281/zenodo.22151560)
-- Dépôt source : <https://github.com/mohammedmessaoudene-cmd/oasi-research>
-
-Ces deux notices Zenodo historiques restent les identifiants des livrables
-v0.1 et n'identifient pas cette version v0.2.2/v0.4.1.
-
-## Vérification
-
-Le lanceur qualifié de la suite complète exige Linux x86_64, les builds exacts
-Rust/Cargo 1.97.1 consignés dans `TOOLCHAIN_PROVENANCE.json`, ainsi que CPython
-3.12.3, PyYAML 6.0.1, cryptography 41.0.7 et SQLite 3.45.1 exactement. Le
-sous-ensemble Windows/GNU utilise l'environnement de publication épinglé et
-reste volontairement partiel, car certains tests vérifient explicitement
-`/proc` et `/bin`. D'autres environnements Python 3.11+ peuvent servir à une
-reproduction manuelle exploratoire, mais ils ne font pas partie de la surface
-qualifiée du lanceur.
-
-```text
-sh tools/run_tests.sh post-doi 10.5281/zenodo.22266419 10.5281/zenodo.22266401
+## Vérifier en une commande, sans lancer le service
+```sh
+python -B experimental/bounded_service/verify_portable.py experimental/bounded_service/BOUNDED_SERVICE_PUBLIC_EVIDENCE.zip
 ```
+Python 3.11+ déjà installé suffit. Aucune installation, compilation, opération privilégiée, connexion ou exécution de tâche. Les chemins historiques sont des identités opaques : aucun fichier personnel n'est ouvert.
 
-## Limites
+Le recalcul porte sur 168 snapshots, 16 réservations, 16 débuts et 15 résultats exacts. L'interruption contrôlée suivie de reprise consomme deux places. Les 70 commandes ne sont pas 70 travaux. Les 28 décisions sont comptées ; le nouvel oracle ne revalide pas tout l'algorithme d'apprentissage.
 
-Il ne s’agit ni d’un noyau, ni d’un hyperviseur, ni d’un système d’exploitation complet, ni d’un dossier de sûreté de production, ni d’une preuve universelle de sécurité, ni d’une conscience artificielle.
+Le dossier public est un dérivé expurgé, pas l'archive brute : chemins, bindings de réservation et liens de chaîne correspondants ont été normalisés. La correspondance originale/dérivée a été contrôlée localement. Elle ne constitue pas une attestation extérieure.
 
-Les 30 répétitions par cellule S5/S6 ne sont pas des échantillons indépendants.
-Les crashs, déconnexions et écritures déchirées sont des traces simulées. S6
-compare principalement une politique de rediffusion à une politique
-at-most-once sans rediffusion : elle montre un compromis sûreté--disponibilité,
-pas une garantie exactly-once ni une supériorité générale.
+Les sources sont fournies sans binaire ; le service n'est donc pas présenté comme un installateur prêt à l'emploi. Le mode SHA256 seul n'a pas été qualifié séparément. Pas de résistance aux coupures électriques, d'isolation PID1 de ce service ou d'avantage scientifique démontré. La revue Pro provient d'un autre assistant IA, pas d'un laboratoire indépendant.
 
-Le propriétaire a fourni une déclaration explicite de droits et de provenance pour cette release assainie. La recherche contradictoire dans l’arbre public n’a trouvé aucun autre contributeur humain nommé, identifiant de subvention ou de contrat, code tiers embarqué, notice incompatible ni matériel de laboratoire privé. Cette acceptation reste bornée à la release : ce n’est ni une décision judiciaire ni une validation institutionnelle.
-
-Le code Rust historique et ses tests conservent `Apache-2.0 OR MIT`; les nouveaux outils, scripts d’expérience et schémas originaux utilisent `Apache-2.0`; l’article, les figures, les données, les spécifications, la documentation et les résumés publics utilisent `CC-BY-4.0`. L’AGPL n’est pas appliquée rétroactivement.
+L'article, le noyau Rust publié et les expériences S5/S6 antérieures sont conservés sans modification. [Détails](RELEASE_NOTES_V0_3.md) — [documentation du module](experimental/bounded_service/README.md).

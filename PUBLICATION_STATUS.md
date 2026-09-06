@@ -1,46 +1,11 @@
 # Publication status
 
-Current state: `PASS_OWNER_REPRESENTATION_ACCEPTED_FOR_V0_2_RELEASE`.
+Candidate: v0.3.0-research-preview. This is a local preparation; no upload, push, merge, release, DOI reservation or public Zenodo version is performed by its preparation.
 
-Corrective-release state: `V0_2_2_POST_DOI_RELEASE_CANDIDATE`.
-The article DOI [10.5281/zenodo.22266401](https://doi.org/10.5281/zenodo.22266401)
-and software DOI [10.5281/zenodo.22266419](https://doi.org/10.5281/zenodo.22266419)
-are reserved in separate, unpublished Zenodo draft records. DOI reservation is
-not publication. No v0.2.2 tag, GitHub release, public Zenodo version, external
-reproduction request, or expert message is implied by this source-tree state.
+Base Git tag v0.2.2-research-preview was checked remotely at commit 2cf5460d084cc76df1f8888a40727664c90f5b42. At preparation, remote main still referred to v0.2.1 commit 59dae3dc7ba736ea6a0c046762401ac754f21a50; publishing a tag alone would not update the main README. Any authorized publication must explicitly account for this branch divergence without overwriting unrelated changes.
 
-Mohammed Messaoudene has supplied the explicit representation in
-`OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md`. It states that the sanitized
-candidate is a personal research initiative, identifies no other human
-contributor, distinguishes academic affiliation from sponsorship or
-endorsement, accepts defensive disclosure, and authorizes the license split in
-`LICENSING_DECISION.md`.
+Prior software DOI: 10.5281/zenodo.22266419; prior unchanged article DOI: 10.5281/zenodo.22266401. Public Zenodo record access was not successfully refreshed in this preparation, so their live state and any existing successor draft must be checked immediately before a future external action. Never create a duplicate successor blindly.
 
-The release audit found no direct contradiction in the allowlisted tree: no
-other named author or contributor, grant or contract identifier, copied
-third-party source tree, incompatible notice, private laboratory history, or
-unknown binary dependency is distributed. External build tools and historical
-campaign dependencies are not vendored and retain their own licenses.
+Recommended future action is one software/data successor linked through Zenodo versioning, not a new unrelated record and not a cosmetic new article. Official versioning guidance: https://help.zenodo.org/docs/deposit/manage-versions/ . A future confirmation must identify the sealed assets, exact GitHub actions and the proposed licenses for additions. No old one-shot authorization is reused.
 
-This acceptance records the owner's representation for this bounded release;
-it is not a judicial, institutional, or patentability determination. Any later
-contradictory evidence must be evaluated rather than hidden.
-
-The v0.2 addendum covers the sanitized S5/S6 code, sealed local fixture data,
-revised interpretation, and preprint v0.4. It does not reclassify internal
-adversarial review as external peer review or authorize claims beyond the
-published evidence boundary.
-
-The v0.2.2 candidate preserves v0.2.1 and its DOI records byte-for-byte as
-historical provenance. It corrects an inconsistency between two historical
-long forms of AERA by treating AERA as an unexpanded identifier and adding
-article v0.4.1 plus an explicit corrigendum. This correction changes no code,
-sealed experiment result, scientific verdict, authorship, license, or owner
-representation.
-
-Version v0.2 also records `Operational Artificial System Intelligence (OASI)`
-as the author's canonical project terminology. The versioned commit, article,
-release archive, and DOI records provide a hash-addressed public provenance
-trail once published. This terminology record is not by itself a legal finding
-of novelty, priority, patentability, trademark registration, or exclusive
-rights.
+The earlier OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md remains evidence for the old candidate only. The proposed licenses of the additions are NOT represented as already confirmed by that declaration.

@@ -1,3 +1,9 @@
+# Current v0.3.0 scope
+
+This source/data candidate adds the bounded host service and passive oracle documented in [RELEASE_NOTES_V0_3.md](RELEASE_NOTES_V0_3.md). No new scientific advantage, production readiness or external peer review is asserted. The inherited text below applies to the v0.2.2 base, not an unqualified extension to every new module. For the new module use [its scoped documentation](experimental/bounded_service/README.md).
+
+---
+
 # AI-assisted development disclosure
 
 The project was developed with extensive assistance from ChatGPT, Codex, and Gemini for brainstorming, drafting, code generation, test design, audit automation, report preparation, and the v0.2 S5/S6 publication audit. The human owner supplied the research direction, selected goals and boundaries, authorized executions, reviewed decisions, and remains responsible for any publication.

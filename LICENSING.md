@@ -1,19 +1,7 @@
-# Licensing
+# Licensing — v0.3.0 candidate
 
-This research preview applies the owner's explicit rights and provenance representation to the exact allowlisted tree. The representation is preserved in `OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md`; it is not a court or institutional determination.
+Existing v0.2.2 paths retain their previous license mapping and notices. The historical OWNER_RIGHTS_AND_PROVENANCE_DECLARATION.md is preserved, not extended or rewritten as a fresh owner statement.
 
-## v0.2 license split
+For the new additions the proposed publication terms are Apache-2.0 for original code, and CC-BY-4.0 for documentation and synthetic derived evidence. These proposed terms must be accepted with the final scoped publication confirmation. Until then, this candidate is not a new grant of rights or a new owner representation. No legal conclusion of authorship, patentability or priority is made.
 
-- Historical Rust source and tests: `Apache-2.0 OR MIT`, preserved from the verified source metadata.
-- Newly authored schemas, examples, project tooling, and S5/S6 experiment and
-  checker code in this candidate: `Apache-2.0`.
-- Original documentation, specifications, paper, S5/S6 data, protocols,
-  reports, and public evidence summaries: `CC-BY-4.0`.
-- Third-party components: their original licenses only; none is vendored here.
-- OASI name and logo: project and trademark rights reserved; no registration is claimed.
-
-`LICENSE` contains Apache-2.0. `LICENSES/MIT.txt` provides the alternative historical code license, and `LICENSES/CC-BY-4.0.txt` covers separately identified documentation and evidence files. `LICENSE_INVENTORY.json` is authoritative for the per-file mapping.
-
-AGPL is **not** applied retroactively. A future clean-slate OASI runtime may use `AGPL-3.0-only` only after a fresh chain-of-title and compatibility audit. Any later generation must preserve applicable prior notices.
-
-No commercial dual license is claimed for v0.2. It remains a future option only for code whose copyrights are controlled by the project.
+The copied native/model.rs retains Apache-2.0 OR MIT, along with both license texts. The wrapper and other new source code are proposed Apache-2.0. No binary or downloaded third-party source is included. Dependencies/toolchains are not relicensed. The name and logo rights remain reserved as in the old release. LICENSE_INVENTORY.json gives the exact mapping; status fields distinguish inherited from proposed. SPDX files use the proposed license as a packaging plan, not a claim that human approval has already occurred.
