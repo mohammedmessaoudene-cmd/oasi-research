@@ -1,5 +1,11 @@
 # OASI — Operational Artificial System Intelligence
 
+## Operant evidence — v0.4.0 research preview
+
+The [results-only archive](public_evidence/operant_r1/oasi-operant-results.zip) lets a reader check a **recorded** experiment without installing OASI. Extract it, enter `oasi-operant-results` and run `python -B -E -s -S verify_results.py` (Python 3.11). The package contains derived data, a new passive reader and its tests, not the original runtime.
+
+In four situations from one deterministic task, the acquired rule changed a request before admission as capacity fell. All four controllers produced exact output in all four situations. The option controller used the same tree as OASI and followed the same action trajectories. Total transfer work: 104 units for each, versus 100 for planning and 100 for cache with replanning. This is an implementation finding, not a speed measurement, independent replication, or an OASI-specific advantage. Earlier releases and the article are unchanged. The earlier root manifests below describe their original release, not the new evidence archive, which has its own manifest.
+
 ## v0.3.0-research-preview — bounded service and portable evidence
 
 **Experimental source/data release candidate. Not production ready. Complete OASI and an OASI-specific scientific advantage remain unproven.** No institutional endorsement is claimed.

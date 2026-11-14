@@ -1,4 +1,12 @@
-# OASI — version expérimentale v0.3.0
+# OASI — résultats expérimentaux
+
+## v0.4.0 — vérifier l'expérience sur la règle acquise
+
+Le [paquet de résultats](public_evidence/operant_r1/oasi-operant-results.zip) permet de recalculer les sorties enregistrées sans installer OASI. Après extraction, ouvrir le dossier `oasi-operant-results` et lancer `python -B -E -s -S verify_results.py` avec Python 3.11. C'est une relecture des données, pas une nouvelle exécution de l'expérience.
+
+Quand la capacité du tampon diminue, OASI change la demande qu'il adresse au garde. Sur les quatre situations du même calcul, les quatre méthodes obtiennent toutes la sortie attendue. Le contrôleur classique utilisant le même arbre suit la même trajectoire qu'OASI : 104 unités de travail chacun, contre 100 pour le planificateur et 100 pour le cache avec replanification. Aucun avantage propre à OASI n'est démontré. L'article et les anciennes versions demeurent inchangés.
+
+## Version expérimentale v0.3.0
 
 Le projet avance techniquement : un service local analyse des fichiers synthétiques, conserve ses résultats, suit son budget et reprend une tâche interrompue sans rembourser son exécution précédente. Ce n'est pas encore l'organisme informatique complet visé par OASI.
 

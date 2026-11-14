@@ -1,14 +1,14 @@
 cff-version: 1.2.0
-message: "Experimental local candidate: cite the eventual published version, not an invented DOI."
-title: "OASI/AERA: Bounded Local Service and Portable Evidence — Research Preview"
+message: "Cite the version of the OASI software/data release used. This release is a results-only study supplement."
+title: "OASI Operant Evidence: Bounded Host-Process Experiment and Passive Readback"
 type: software
 authors:
   - family-names: "Messaoudene"
     given-names: "Mohammed"
     orcid: "https://orcid.org/0009-0007-4665-2548"
-version: "0.3.0-research-preview"
+version: "0.4.0-research-preview"
 repository-code: "https://github.com/mohammedmessaoudene-cmd/oasi-research"
-abstract: "Experimental source and derived data for a local cumulative-budget service. Archived results are checked by a portable passive verifier. No complete OASI, scientific superiority, external reproduction or production readiness is demonstrated. The earlier S5/S6 evidence and article remain unchanged."
+abstract: "A results-only archive and new offline reader for a bounded, same-generation study of a learned action policy. Sixteen transfer outputs were exact across four situations and four methods. No task-general benefit or advantage over the equivalent classical option is established. The campaign runtime is not included."
 keywords:
   - OASI
   - runtime assurance
